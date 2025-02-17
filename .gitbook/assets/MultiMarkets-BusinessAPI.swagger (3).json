@@ -4,7 +4,7 @@
     "description": "",
     "version": "1.0.0"
   },
-  "host":"https://quote.tradeswitcher.com",
+  "host":"https://quote.alltick.io",
   "tags": [],
   "paths": {
     "/quote-b-api/kline": {

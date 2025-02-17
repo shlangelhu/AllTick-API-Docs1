@@ -7,14 +7,14 @@
 **接口地址**
 
 * **基本路径**: `/quote-stock-b-ws-api`
-* **完整URL**: `wss://quote.tradeswitcher.com/quote-stock-b-ws-api`
+* **完整URL**: `wss://quote.alltick.io/quote-stock-b-ws-api`
 
 **认证信息**
 
 每次建立连接时，必须在URL中附加您的认证token，如下所示：
 
 ```arduino
-wss://quote.tradeswitcher.com/quote-stock-b-ws-api?token=您的token
+wss://quote.alltick.io/quote-stock-b-ws-api?token=您的token
 ```
 
 **订阅说明**
@@ -28,14 +28,14 @@ wss://quote.tradeswitcher.com/quote-stock-b-ws-api?token=您的token
 **接口地址**
 
 * **基本路径**: `/quote-b-ws-api`
-* **完整URL**: `wss://quote.tradeswitcher.com/quote-b-ws-api`
+* **完整URL**: `wss://quote.alltick.io/quote-b-ws-api`
 
 **认证信息**
 
 建立连接时，同样需要在URL中附加您的认证token，以确保数据传输的安全性。正确的格式应如下：
 
 ```arduino
-wss://quote.tradeswitcher.com/quote-b-ws-api?token=您的token
+wss://quote.alltick.io/quote-b-ws-api?token=您的token
 ```
 
 **订阅说明**

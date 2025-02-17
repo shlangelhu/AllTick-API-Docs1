@@ -41,12 +41,12 @@ type Request struct {
 	Token Application: https://alltick.co
 	Replace "testtoken" in the URL below with your own token
 	API addresses for forex, cryptocurrencies, and precious metals:
-	wss://quote.tradeswitcher.com/quote-b-ws-api
+	wss://quote.alltick.io/quote-b-ws-api
 	Stock API address:
-	wss://quote.tradeswitcher.com/quote-stock-b-ws-api
+	wss://quote.alltick.io/quote-stock-b-ws-api
 */
 const (
-	url = "wss://quote.tradeswitcher.com/quote-b-ws-api?token=testtoken"
+	url = "wss://quote.alltick.io/quote-b-ws-api?token=testtoken"
 )
 
 func websocket_example() {
@@ -151,9 +151,9 @@ import javax.websocket.*;
 // Token Application: https://alltick.co
 // Replace "testtoken" in the URL below with your own token
 // API addresses for forex, cryptocurrencies, and precious metals:
-// wss://quote.tradeswitcher.com/quote-b-ws-api
+// wss://quote.alltick.io/quote-b-ws-api
 // Stock API address:
-// wss://quote.tradeswitcher.com/quote-stock-b-ws-api
+// wss://quote.alltick.io/quote-stock-b-ws-api
 
 @ClientEndpoint
 public class WebSocketJavaExample {
@@ -191,12 +191,12 @@ public class WebSocketJavaExample {
         // Token Application: https://alltick.co
         // Replace "testtoken" in the URL below with your own token
         // API addresses for forex, cryptocurrencies, and precious metals:
-        // wss://quote.tradeswitcher.com/quote-b-ws-api
+        // wss://quote.alltick.io/quote-b-ws-api
         // Stock API address:
-        // wss://quote.tradeswitcher.com/quote-stock-b-ws-api
+        // wss://quote.alltick.io/quote-stock-b-ws-api
 
         WebSocketContainer container = ContainerProvider.getWebSocketContainer();
-        URI uri = new URI("wss://quote.tradeswitcher.com/quote-stock-b-ws-api?token=testtoken"); // Replace with your websocket endpoint URL
+        URI uri = new URI("wss://quote.alltick.io/quote-stock-b-ws-api?token=testtoken"); // Replace with your websocket endpoint URL
 
         WebSocketJavaExample client = new WebSocketJavaExample();
 
@@ -227,16 +227,16 @@ use Workerman\Connection\AsyncTcpConnection;
 // Token Application: https://alltick.co
 // Replace "testtoken" in the URL below with your own token
 // API addresses for forex, cryptocurrencies, and precious metals:
-// wss://quote.tradeswitcher.com/quote-b-ws-api
+// wss://quote.alltick.io/quote-b-ws-api
 // Stock API address:
-// wss://quote.tradeswitcher.com/quote-stock-b-ws-api
+// wss://quote.alltick.io/quote-stock-b-ws-api
 
 $worker = new Worker();
 // When the process starts
 $worker->onWorkerStart = function()
 {
     // Connect to remote websocket server using the websocket protocol
-    $ws_connection = new AsyncTcpConnection("ws://quote.tradeswitcher.com/quote-stock-b-ws-api?token=testtoken");
+    $ws_connection = new AsyncTcpConnection("ws://quote.alltick.io/quote-stock-b-ws-api?token=testtoken");
     // Send a websocket heartbeat opcode (0x9) to the server every 55 seconds
     $ws_connection->websocketPingInterval = 10;
     $ws_connection->websocketType = Ws::BINARY_TYPE_BLOB; // BINARY_TYPE_BLOB for text, BINARY_TYPE_ARRAYBUFFER for binary
@@ -283,15 +283,15 @@ import websocket    # pip install websocket-client
 # Token Application: https://alltick.co
 # Replace "testtoken" in the URL below with your own token
 # API addresses for forex, cryptocurrencies, and precious metals:
-# wss://quote.tradeswitcher.com/quote-b-ws-api
+# wss://quote.alltick.io/quote-b-ws-api
 # Stock API address:
-# wss://quote.tradeswitcher.com/quote-stock-b-ws-api
+# wss://quote.alltick.io/quote-stock-b-ws-api
 '''
 
 class Feed(object):
 
     def __init__(self):
-        self.url = 'wss://quote.tradeswitcher.com/quote-stock-b-ws-api?token=testtoken'  # Enter your websocket URL here
+        self.url = 'wss://quote.alltick.io/quote-stock-b-ws-api?token=testtoken'  # Enter your websocket URL here
         self.ws = None
 
     def on_open(self, ws):
