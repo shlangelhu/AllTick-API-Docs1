@@ -11,14 +11,14 @@ English / [中文](https://apis.alltick.co/rest-api/stock-http-interface-api/get
 ## **Interface Address**
 
 * **Base Path:** `/quote-stock-b-api/static_info`
-* **Full URL:** `https://quote.tradeswitcher.com/quote-stock-b-api/static_info`
+* **Full URL:** `https://quote.alltick.io/quote-stock-b-api/static_info`
 
 ## **Request Example**
 
 When sending a query request, it must include the method name and token information. An example of a request is as follows:
 
 ```arduino
-https://quote.tradeswitcher.com/quote-stock-b-api/static_info?token=您的token&query=queryData
+https://quote.alltick.io/quote-stock-b-api/static_info?token=您的token&query=queryData
 ```
 
 ## Request Parameters

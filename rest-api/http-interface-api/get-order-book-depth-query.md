@@ -23,10 +23,10 @@ The following is the maximum market depth for each product type:
 
 1. **US Stocks, Hong Kong Stocks, A Shares, Major Index Data API Endpoints:**
    * **Base Path:** `/quote-stock-b-api/depth-tick`
-   * **Full URL:** `https://quote.tradeswitcher.com/quote-stock-b-api/depth-tick`
+   * **Full URL:** `https://quote.alltick.io/quote-stock-b-api/depth-tick`
 2. **Forex, Precious Metals, Cryptocurrencies, Commodities API Endpoints:**
    * **Base Path:** `/quote-b-api/depth-tick`
-   * **Full URL:** `https://quote.tradeswitcher.com/quote-b-api/depth-tick`
+   * **Full URL:** `https://quote.alltick.io/quote-b-api/depth-tick`
 
 ***
 
@@ -36,13 +36,13 @@ The following is the maximum market depth for each product type:
     When sending a query request, you must include the method name and token information. An example request is as follows:
 
     ```plaintext
-    https://quote.tradeswitcher.com/quote-stock-b-api/depth-tick?token=your_token&query=queryData
+    https://quote.alltick.io/quote-stock-b-api/depth-tick?token=your_token&query=queryData
     ```
 2.  **Request Example for Forex, Precious Metals, Cryptocurrencies, Commodities:**\
     When sending a query request, you must include the method name and token information. An example request is as follows:
 
     ```plaintext
-    https://quote.tradeswitcher.com/quote-b-api/depth-tick?token=your_token&query=queryData
+    https://quote.alltick.io/quote-b-api/depth-tick?token=your_token&query=queryData
     ```
 
 ## Request Parameters
