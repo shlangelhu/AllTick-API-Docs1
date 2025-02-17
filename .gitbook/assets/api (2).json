@@ -6,7 +6,7 @@
   },
   "basePath": "",
   "schemes": ["https", "http"],
-  "host": "quote.tradeswitcher.com",
+  "host": "quote.alltick.io",
   "tags": [],
   "paths": {
     "/quote-stock-b-api/kline": {

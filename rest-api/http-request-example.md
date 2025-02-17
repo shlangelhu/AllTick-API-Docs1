@@ -25,11 +25,11 @@ func http_example() {
 		token申请：https://alltick.co
 		把下面url中的testtoken替换为您自己的token
 		外汇，加密货币（数字币），贵金属的api址：
-		https://quote.tradeswitcher.com/quote-b-api
+		https://quote.alltick.io/quote-b-api
 		股票api地址:
-		https://quote.tradeswitcher.com/quote-stock-b-api
+		https://quote.alltick.io/quote-stock-b-api
 	*/
-	url := "https://quote.tradeswitcher.com/quote-stock-b-api/kline"
+	url := "https://quote.alltick.io/quote-stock-b-api/kline"
 	log.Println("请求内容：", url)
 
 	req, err := http.NewRequest("GET", url, nil)
@@ -89,11 +89,11 @@ public class HttpJavaExample {
             Token Application: https://alltick.co
             Replace "testtoken" in the URL below with your own token
             API addresses for forex, cryptocurrencies, and precious metals:
-            https://quote.tradeswitcher.com/quote-b-api
+            https://quote.alltick.io/quote-b-api
             Stock API address:
-            https://quote.tradeswitcher.com/quote-stock-b-api
+            https://quote.alltick.io/quote-stock-b-api
             */
-            String url = "http://quote.tradeswitcher.com/quote-stock-b-api/kline?token=testtoken&query=%7B%22trace%22%20%3A%20%22java_http_test1%22%2C%22data%22%20%3A%20%7B%22code%22%20%3A%20%22700.HK%22%2C%22kline_type%22%20%3A%201%2C%22kline_timestamp_end%22%20%3A%200%2C%22query_kline_num%22%20%3A%202%2C%22adjust_type%22%3A%200%7D%7D";
+            String url = "http://quote.alltick.io/quote-stock-b-api/kline?token=testtoken&query=%7B%22trace%22%20%3A%20%22java_http_test1%22%2C%22data%22%20%3A%20%7B%22code%22%20%3A%20%22700.HK%22%2C%22kline_type%22%20%3A%201%2C%22kline_timestamp_end%22%20%3A%200%2C%22query_kline_num%22%20%3A%202%2C%22adjust_type%22%3A%200%7D%7D";
 
             URL obj = new URL(url);
 
@@ -136,13 +136,13 @@ public class HttpJavaExample {
 // Token Application: https://alltick.co
 // Replace "testtoken" in the URL below with your own token
 // API addresses for forex, cryptocurrencies, and precious metals:
-// https://quote.tradeswitcher.com/quote-b-ws-api
+// https://quote.alltick.io/quote-b-ws-api
 // Stock API address:
-// https://quote.tradeswitcher.com/quote-stock-b-ws-api
+// https://quote.alltick.io/quote-stock-b-ws-api
 
 $params = '{"trace":"1111111111111111111111111","data":{"code":"AAPL.US","kline_type":1,"kline_timestamp_end":0,"query_kline_num":10,"adjust_type":0}}';
 
-$url = 'https://quote.tradeswitcher.com/quote-stock-b-api/kline?token=testtoken';
+$url = 'https://quote.alltick.io/quote-stock-b-api/kline?token=testtoken';
 $method = 'GET';
 
 $opts = array(CURLOPT_TIMEOUT => 10, CURLOPT_RETURNTRANSFER => 1, CURLOPT_SSL_VERIFYPEER => false, CURLOPT_SSL_VERIFYHOST => false);
@@ -189,17 +189,17 @@ test_headers = {
 # Token Application: https://alltick.co
 # Replace "testtoken" in the URL below with your own token
 # API addresses for forex, cryptocurrencies, and precious metals:
-# https://quote.tradeswitcher.com/quote-b-ws-api
+# https://quote.alltick.io/quote-b-ws-api
 # Stock API address:
-# https://quote.tradeswitcher.com/quote-stock-b-ws-api
+# https://quote.alltick.io/quote-stock-b-ws-api
 Encode the following JSON and copy it to the "query" field of the HTTP query string
 {"trace": "python_http_test1", "data": {"code": "700.HK", "kline_type": 1, "kline_timestamp_end": 0, "query_kline_num": 2, "adjust_type": 0}}
 {"trace": "python_http_test2", "data": {"symbol_list": [{"code": "700.HK"}, {"code": "UNH.US"}]}}
 {"trace": "python_http_test3", "data": {"symbol_list": [{"code": "700.HK"}, {"code": "UNH.US"}]}}
 '''
-test_url1 = 'https://quote.tradeswitcher.com/quote-stock-b-api/kline?token=testtoken&query=%7B%22trace%22%20%3A%20%22python_http_test1%22%2C%22data%22%20%3A%20%7B%22code%22%20%3A%20%22700.HK%22%2C%22kline_type%22%20%3A%201%2C%22kline_timestamp_end%22%20%3A%200%2C%22query_kline_num%22%20%3A%202%2C%22adjust_type%22%3A%200%7D%7D'
-test_url2 = 'https://quote.tradeswitcher.com/quote-stock-b-api/depth-tick?token=testtoken&query=%7B%22trace%22%20%3A%20%22python_http_test2%22%2C%22data%22%20%3A%20%7B%22symbol_list%22%3A%20%5B%7B%22code%22%3A%20%22700.HK%22%7D%2C%7B%22code%22%3A%20%22UNH.US%22%7D%5D%7D%7D'
-test_url3 = 'https://quote.tradeswitcher.com/quote-stock-b-api/trade-tick?token=testtoken&query=%7B%22trace%22%20%3A%20%22python_http_test3%22%2C%22data%22%20%3A%20%7B%22symbol_list%22%3A%20%5B%7B%22code%22%3A%20%22700.HK%22%7D%2C%7B%22code%22%3A%20%22UNH.US%22%7D%5D%7D%7D'
+test_url1 = 'https://quote.alltick.io/quote-stock-b-api/kline?token=testtoken&query=%7B%22trace%22%20%3A%20%22python_http_test1%22%2C%22data%22%20%3A%20%7B%22code%22%20%3A%20%22700.HK%22%2C%22kline_type%22%20%3A%201%2C%22kline_timestamp_end%22%20%3A%200%2C%22query_kline_num%22%20%3A%202%2C%22adjust_type%22%3A%200%7D%7D'
+test_url2 = 'https://quote.alltick.io/quote-stock-b-api/depth-tick?token=testtoken&query=%7B%22trace%22%20%3A%20%22python_http_test2%22%2C%22data%22%20%3A%20%7B%22symbol_list%22%3A%20%5B%7B%22code%22%3A%20%22700.HK%22%7D%2C%7B%22code%22%3A%20%22UNH.US%22%7D%5D%7D%7D'
+test_url3 = 'https://quote.alltick.io/quote-stock-b-api/trade-tick?token=testtoken&query=%7B%22trace%22%20%3A%20%22python_http_test3%22%2C%22data%22%20%3A%20%7B%22symbol_list%22%3A%20%5B%7B%22code%22%3A%20%22700.HK%22%7D%2C%7B%22code%22%3A%20%22UNH.US%22%7D%5D%7D%7D'
 
 resp1 = requests.get(url=test_url1, headers=test_headers)
 time.sleep(1)

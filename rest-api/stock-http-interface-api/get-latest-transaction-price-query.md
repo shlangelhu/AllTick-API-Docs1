@@ -15,24 +15,24 @@
 **1、美股、港股、A股、大盘数据接口地址：**
 
 * 基本路径: /quote-stock-b-api/trade-tick
-* 完整URL: [https://quote.tradeswitcher.com/quote-stock-b-api/trade-tick](https://quote.tradeswitcher.com/quote-stock-b-api/trade-tick)
+* 完整URL: [https://quote.alltick.io/quote-stock-b-api/trade-tick](https://quote.alltick.io/quote-stock-b-api/trade-tick)
 
 **2、外汇、贵金属、加密货币、商品接口地址：**
 
 * 基本路径: /quote-b-api/trade-tick
-* 完整URL: [https://quote.tradeswitcher.com/quote-b-api/trade-tick](https://quote.tradeswitcher.com/quote-b-api/trade-tick)
+* 完整URL: [https://quote.alltick.io/quote-b-api/trade-tick](https://quote.alltick.io/quote-b-api/trade-tick)
 
 ## 请求示例
 
 **1、美股、港股、A股、大盘数据接口地址：**
 
 在发送查询请求时，必须包含方法名和token信息。一个请求的示例如下：\
-[https://quote.tradeswitcher.com/quote-stock-b-api/trade-tick?token=您的token\&query=queryData](https://quote.tradeswitcher.com/quote-stock-b-api/trade-tick?token=%E6%82%A8%E7%9A%84token\&query=queryData)
+[https://quote.alltick.io/quote-stock-b-api/trade-tick?token=您的token\&query=queryData](https://quote.alltick.io/quote-stock-b-api/trade-tick?token=%E6%82%A8%E7%9A%84token\&query=queryData)
 
 **2、外汇、贵金属、加密货币、商品接口地址：**
 
 在发送查询请求时，必须包含方法名和token信息。一个请求的示例如下：\
-[https://quote.tradeswitcher.com/quote-b-api/trade-tick?token=您的token\&query=queryData](https://quote.tradeswitcher.com/quote-b-api/trade-tick?token=%E6%82%A8%E7%9A%84token\&query=queryData)
+[https://quote.alltick.io/quote-b-api/trade-tick?token=您的token\&query=queryData](https://quote.alltick.io/quote-b-api/trade-tick?token=%E6%82%A8%E7%9A%84token\&query=queryData)
 
 ## 请求参数
 
