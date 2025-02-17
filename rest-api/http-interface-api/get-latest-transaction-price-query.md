@@ -10,10 +10,10 @@ English / [中文](https://apis.alltick.co/rest-api/gu-piao-http-jie-kou-api/get
 
 1. **US Stocks, Hong Kong Stocks, A Shares, Major Index Data API Endpoints:**
    * **Base Path:** `/quote-stock-b-api/trade-tick`
-   * **Full URL:** `https://quote.tradeswitcher.com/quote-stock-b-api/trade-tick`
+   * **Full URL:** `https://quote.alltick.io/quote-stock-b-api/trade-tick`
 2. **Forex, Precious Metals, Cryptocurrencies, Commodities API Endpoints:**
    * **Base Path:** `/quote-b-api/trade-tick`
-   * **Full URL:** `https://quote.tradeswitcher.com/quote-b-api/trade-tick`
+   * **Full URL:** `https://quote.alltick.io/quote-b-api/trade-tick`
 
 ***
 
@@ -23,13 +23,13 @@ English / [中文](https://apis.alltick.co/rest-api/gu-piao-http-jie-kou-api/get
     When sending a query request, you must include the method name and token information. An example request is as follows:
 
     ```plaintext
-    https://quote.tradeswitcher.com/quote-stock-b-api/trade-tick?token=your_token&query=queryData
+    https://quote.alltick.io/quote-stock-b-api/trade-tick?token=your_token&query=queryData
     ```
 2.  **Request Example for Forex, Precious Metals, Cryptocurrencies, Commodities:**\
     When sending a query request, you must include the method name and token information. An example request is as follows:
 
     ```plaintext
-    https://quote.tradeswitcher.com/quote-b-api/trade-tick?token=your_token&query=queryData
+    https://quote.alltick.io/quote-b-api/trade-tick?token=your_token&query=queryData
     ```
 
 #### Batch Code Latest K-Line Query functionality. Due to the large number of batch query parameters, they are placed in the body, with only the token field parameter remaining in the URL parameters.
