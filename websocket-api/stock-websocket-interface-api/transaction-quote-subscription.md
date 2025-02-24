@@ -89,6 +89,33 @@ wss://quote.alltick.io/quote-b-ws-api?token=您的token
 }
 ```
 
+## 推送-协议号：22006
+
+### data定义
+
+<table data-full-width="true"><thead><tr><th>字段</th><th>名称</th><th>类型</th><th>说明</th></tr></thead><tbody><tr><td>code</td><td>代码</td><td>string</td><td>具体内容，请查阅code列表</td></tr><tr><td>seq</td><td>报价序号</td><td>string</td><td></td></tr><tr><td>tick_time</td><td>报价时间错</td><td>string</td><td>单位毫秒</td></tr><tr><td>price</td><td>成交价</td><td>string</td><td></td></tr><tr><td>volumn</td><td>成交量</td><td>string</td><td></td></tr><tr><td>turnover</td><td>成交额</td><td>string</td><td></td></tr><tr><td>trade_direction</td><td>成交方向</td><td>string</td><td>0为默认值，1为Buy，2为SELL</td></tr></tbody></table>
+
+### 数据结构（json）
+
+```
+{
+    "cmd_id":22998,
+    "data":{
+	"code": "1288.HK",
+        "seq": "1605509068000001",
+        "tick_time": "1605509068",
+        "price": "651.12",
+        "volume": "300",
+        "turnover": "12345.6",
+        "trade_direction": 1,
+    }
+}
+```
+
+
+
+
+
 #### AllTick网站
 
 {% hint style="info" %}
