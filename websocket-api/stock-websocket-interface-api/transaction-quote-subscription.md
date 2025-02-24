@@ -89,7 +89,7 @@ wss://quote.alltick.io/quote-b-ws-api?token=您的token
 }
 ```
 
-## 推送-协议号：22006
+## 推送-协议号：22998
 
 ### data定义
 
