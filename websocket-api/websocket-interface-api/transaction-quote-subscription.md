@@ -53,6 +53,37 @@ The feature of this interface is that for each websocket connection, every time 
 }
 ```
 
+## Push - Protocol Number: 22998
+
+#### Definition of data
+
+| Field            | Name                  | Type   | Description                              |
+| ---------------- | --------------------- | ------ | ---------------------------------------- |
+| code             | Code                  | string | Specific content, refer to the code list |
+| seq              | Quote Number          | string |                                          |
+| tick\_time       | Quote Timestamp       | string | In milliseconds                          |
+| price            | Transaction Price     | string |                                          |
+| volumn           | Transaction Volume    | string |                                          |
+| turnover         | Transaction Turnover  | string |                                          |
+| trade\_direction | Transaction Direction | string | 0 as default, 1 for BUY, 2 for SELL      |
+
+### Data Structure (JSON)
+
+```
+{
+    "cmd_id":22998,
+    "data":{
+	"code": "1288.HK",
+        "seq": "1605509068000001",
+        "tick_time": "1605509068",
+        "price": "651.12",
+        "volume": "300",
+        "turnover": "12345.6",
+        "trade_direction": 1,
+    }
+}
+```
+
 ### Official Website
 
 {% hint style="info" %}
