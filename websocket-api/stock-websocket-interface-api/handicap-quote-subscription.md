@@ -125,6 +125,33 @@ wss://quote.alltick.io/quote-b-ws-api?token=您的token
 |  price | 卖一价，卖盘价格 | string |     |
 | volume |  卖一量，卖盘量 | string |     |
 
+### 数据结构(json)
+
+```
+{
+    "cmd_id":22999,
+    "data":{
+	"code": "HK-1288",
+        "seq": "1605509068000001",
+        "tick_time": "1605509068",
+        "bids": [
+            {
+                "price": "9.12",
+                "volume": "9.12",
+            },
+        ],
+        "asks": [
+            {
+                "price": "147.12",
+                "volume": "147.12",
+            },
+        ],
+    }
+}
+```
+
+
+
 #### AllTick网站
 
 {% hint style="info" %}
