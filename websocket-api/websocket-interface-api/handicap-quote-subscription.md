@@ -55,6 +55,54 @@ The feature of this interface is that for each websocket connection, every time 
 }
 ```
 
+## Push - Protocol Number: 22999
+
+#### Definition of data
+
+| Field      | Name            | Type   | Description                              |
+| ---------- | --------------- | ------ | ---------------------------------------- |
+| code       | Code            | string | Specific content, refer to the code list |
+| seq        | Quote Number    | string |                                          |
+| tick\_time | Quote Timestamp | string | In milliseconds                          |
+| bids       | Bid Depth       | array  | See below for bids definition            |
+| asks       | Ask Depth       | array  | See below for asks definition            |
+
+#### bids definition
+
+| Field  | Name       | Type   | Description |
+| ------ | ---------- | ------ | ----------- |
+| price  | Bid Price  | string |             |
+| volume | Bid Volume | string |             |
+
+asks definition
+
+<table><thead><tr><th>Field</th><th width="187">Name</th><th>Type</th><th>Description</th></tr></thead><tbody><tr><td>price</td><td>Ask Price</td><td>string</td><td></td></tr><tr><td>volume</td><td>Ask Volume</td><td>string</td><td></td></tr></tbody></table>
+
+### Data Structure (JSON)
+
+```
+{
+    "cmd_id":22999,
+    "data":{
+	"code": "HK-1288",
+        "seq": "1605509068000001",
+        "tick_time": "1605509068",
+        "bids": [
+            {
+                "price": "9.12",
+                "volume": "9.12",
+            },
+        ],
+        "asks": [
+            {
+                "price": "147.12",
+                "volume": "147.12",
+            },
+        ],
+    }
+}
+```
+
 ### Official Website
 
 {% hint style="info" %}
