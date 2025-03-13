@@ -30,9 +30,9 @@ The feature of this interface is that for each websocket connection, every time 
     "data":{
         "symbol_list": [
             {
-        "code": "BTCUSDT"
-            },
-    ],
+                "code": "BTCUSDT"
+            }
+        ]
     }
 }
 ```
@@ -79,7 +79,7 @@ The feature of this interface is that for each websocket connection, every time 
         "price": "651.12",
         "volume": "300",
         "turnover": "12345.6",
-        "trade_direction": 1,
+        "trade_direction": 1
     }
 }
 ```

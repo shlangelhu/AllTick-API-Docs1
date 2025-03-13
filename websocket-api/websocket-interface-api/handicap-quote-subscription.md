@@ -31,10 +31,10 @@ The feature of this interface is that for each websocket connection, every time 
     "data":{
         "symbol_list": [
             {
-        "code": "BTCUSDT",
-                "depth_level": 5,
+                "code": "BTCUSDT",
+                "depth_level": 5
             }
-    ]
+        ]
     }
 }
 ```
@@ -90,15 +90,15 @@ asks definition
         "bids": [
             {
                 "price": "9.12",
-                "volume": "9.12",
-            },
+                "volume": "9.12"
+            }
         ],
         "asks": [
             {
                 "price": "147.12",
-                "volume": "147.12",
-            },
-        ],
+                "volume": "147.12"
+            }
+        ]
     }
 }
 ```
