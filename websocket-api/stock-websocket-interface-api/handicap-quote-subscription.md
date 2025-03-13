@@ -75,10 +75,10 @@ wss://quote.alltick.io/quote-b-ws-api?token=您的token
     "data":{
         "symbol_list": [
             {
-        "code": "BTCUSDT",
-                "depth_level": 5,
+                "code": "BTCUSDT",
+                "depth_level": 5
             }
-    ]
+        ]
     }
 }
 ```
@@ -138,14 +138,14 @@ wss://quote.alltick.io/quote-b-ws-api?token=您的token
             {
                 "price": "9.12",
                 "volume": "9.12",
-            },
+            }
         ],
         "asks": [
             {
                 "price": "147.12",
                 "volume": "147.12",
-            },
-        ],
+            }
+        ]
     }
 }
 ```
