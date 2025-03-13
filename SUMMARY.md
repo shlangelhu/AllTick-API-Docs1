@@ -39,7 +39,7 @@
 * [Websocket 请求示例](websocket-api/websocket-request-example.md)
 * [Websocket接口API](websocket-api/stock-websocket-interface-api/README.md)
   * [最新成交价(实时逐笔Tick数据)批量订阅](websocket-api/stock-websocket-interface-api/transaction-quote-subscription.md)
-  * [最新盘口(Order Book)订阅](websocket-api/stock-websocket-interface-api/handicap-quote-subscription.md)
+  * [最新盘口(实时逐笔深度、Order Book)订阅](websocket-api/stock-websocket-interface-api/handicap-quote-subscription.md)
   * [取消报价订阅](websocket-api/stock-websocket-interface-api/cancel-quote-subscription.md)
   * [心跳](websocket-api/stock-websocket-interface-api/ping-pong.md)
 
