@@ -1,10 +1,12 @@
-# 最新盘口(Order Book)订阅
+# 最新盘口(实时逐笔深度、Order Book)订阅
 
 [English ](https://en.apis.alltick.co/websocket-api/stock-websocket-interface-api/handicap-quote-subscription)/ 中文
 
 ## 接口说明
 
-该接口支持订阅产品的最新盘口(Order Book)，该接口特性：对于每一个websocket连接，每发送一次该请求，后台会默认覆盖上一次订阅请求。订阅成功后会进行推送数据。
+该接口支持订阅产品的最新盘口(实时逐笔深度、Order Book)数据，不支持历史盘口和历史逐笔tick数据。
+
+该接口特性：对于每一个websocket连接，每发送一次该请求，后台会默认覆盖上一次订阅请求。订阅成功后会进行推送数据。
 
 注意：
 
@@ -60,13 +62,13 @@ wss://quote.alltick.io/quote-b-ws-api?token=您的token
 
 #### data定义 <a href="#data-ding-yi" id="data-ding-yi"></a>
 
-| 字段           | 名称   | 类型    | 必填项 | 说明                                                                                                                                                   |
-| ------------ | ---- | ----- | --- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
-| symbol\_list | 产品列表 | array | 是   | 具体格式见下面symbol定义：[\[点击code列表\]](https://docs.google.com/spreadsheets/d/1avkeR1heZSj6gXIkDeBt8X3nv4EzJetw4yFuKjSDYtA/edit?gid=495387863#gid=495387863) |
+| 字段           | 名称   | 类型    | 必填项 | 说明              |
+| ------------ | ---- | ----- | --- | --------------- |
+| symbol\_list | 产品列表 | array | 是   | 具体格式见下面symbol定义 |
 
 #### symbol定义 <a href="#symbol-ding-yi" id="symbol-ding-yi"></a>
 
-<table><thead><tr><th width="128.109375">字段</th><th width="119.26171875">名称</th><th width="110.75390625">类型</th><th width="82.98828125">必填项</th><th>说明</th></tr></thead><tbody><tr><td>code</td><td>代码</td><td>string</td><td>是</td><td>具体内容，请查阅code列表</td></tr><tr><td>depth_level</td><td>深度层级</td><td>uint32</td><td>否</td><td>如果没有depth_level字段时，后台只会提供一层的报价，请求的层级大于实际报价层级，或者如果没有depth_level字段时，则后台按实际报价有多少层给多少层</td></tr></tbody></table>
+<table><thead><tr><th width="128.109375">字段</th><th width="103.89453125">名称</th><th width="90.39453125">类型</th><th width="74.04296875">必填项</th><th>说明</th></tr></thead><tbody><tr><td>code</td><td>代码</td><td>string</td><td>是</td><td>具体内容，请查阅code列表：<a href="https://docs.google.com/spreadsheets/d/1avkeR1heZSj6gXIkDeBt8X3nv4EzJetw4yFuKjSDYtA/edit?gid=495387863#gid=495387863">[点击code列表]</a></td></tr><tr><td>depth_level</td><td>深度层级</td><td>uint32</td><td>否</td><td>如果没有depth_level字段时，后台只会提供一层的报价，请求的层级大于实际报价层级，或者如果没有depth_level字段时，则后台按实际报价有多少层给多少层</td></tr></tbody></table>
 
 ### 数据结构(json)
 
@@ -106,13 +108,7 @@ wss://quote.alltick.io/quote-b-ws-api?token=您的token
 
 #### data定义
 
-|     字段     |   名称  |   类型   |       说明       |
-| :--------: | :---: | :----: | :------------: |
-|    code    |   代码  | string | 具体内容，请查阅code列表 |
-|     seq    |  报价序号 | string |                |
-| tick\_time | 报价时间戳 | string |      单位毫秒      |
-|    bids    | bid深度 | string |    见下面bids定义   |
-|    asks    | ask深度 | string |    见下面asks定义   |
+<table><thead><tr><th width="123.359375" align="center">字段</th><th width="147.140625" align="center">名称</th><th width="128.4453125" align="center">类型</th><th align="center">说明</th></tr></thead><tbody><tr><td align="center">code</td><td align="center">代码</td><td align="center">string</td><td align="center">具体内容，请查阅code列表：<a href="https://docs.google.com/spreadsheets/d/1avkeR1heZSj6gXIkDeBt8X3nv4EzJetw4yFuKjSDYtA/edit?gid=495387863#gid=495387863">[点击code列表]</a></td></tr><tr><td align="center">seq</td><td align="center">报价序号</td><td align="center">string</td><td align="center"></td></tr><tr><td align="center">tick_time</td><td align="center">报价时间戳</td><td align="center">string</td><td align="center">单位毫秒</td></tr><tr><td align="center">bids</td><td align="center">bid深度</td><td align="center">string</td><td align="center">见下面bids定义</td></tr><tr><td align="center">asks</td><td align="center">ask深度</td><td align="center">string</td><td align="center">见下面asks定义</td></tr></tbody></table>
 
 #### bids定义
 
