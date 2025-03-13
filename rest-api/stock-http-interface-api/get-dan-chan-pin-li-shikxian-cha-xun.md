@@ -10,6 +10,13 @@
 
 该接口可用来查询历史k线，但每次只能查询一个产品，<mark style="color:red;">建议将查询到的历史K线缓存本地数据库。</mark>
 
+使用HTTP接口获取K线的客户，建议将/kline和/batch-kline这2个接口结合使用,步骤如下：
+
+* 首先，通过 /kline 接口轮询请求历史数据并存储到本地数据库，后续历史数据可直接从客户的数据库获取，无需再通过接口请求。
+* 然后，后续持续使用 /batch-kline 接口批量请求多个产品的最新2根K线，并将数据更新到数据库。
+
+这种方式能够快速更新最新的K线，同时避免频繁请求历史K线造成频率受到限制。
+
 ## 接口限制 <a href="#jie-kou-xian-zhi" id="jie-kou-xian-zhi"></a>
 
 1、请务必阅读：[HTTP接口限制说明](../../integration-process/interface-restriction-description/http-interface-restrictions.md)
