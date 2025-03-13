@@ -8,11 +8,17 @@
 
 ## **接口说明** <a href="#id-6orp08a6xb1u8d" id="id-6orp08a6xb1u8d"></a>
 
-该接口可用来查询历史k线，但每次只能查询一个产品，建议将查询到的历史k线缓存本地
+该接口可用来查询历史k线，但每次只能查询一个产品，<mark style="color:red;">建议将查询到的历史K线缓存本地数据库。</mark>
+
+## 接口限制 <a href="#jie-kou-xian-zhi" id="jie-kou-xian-zhi"></a>
+
+1、请务必阅读：[HTTP接口限制说明](../../integration-process/interface-restriction-description/http-interface-restrictions.md)
+
+2、请务必阅读：[错误码说明](https://apis.alltick.co/integration-process/interface-restriction-description/error-code-description)
 
 ## **请求频率**
 
-<table data-full-width="true"><thead><tr><th width="81">计划</th><th width="208">单独请求</th><th width="472">同时请求多个http接口</th></tr></thead><tbody><tr><td>免费</td><td>每10秒，只能1次请求</td><td><p>1、同1秒只能请求1个接口</p><p><mark style="color:red;">2、多个接口请求时，需注意/batch-kline接口需间隔10秒</mark><br>3、所有接口相加，1分钟最大请求10次(6秒1次) <br>4、每天总共最大可请求14400次，超过则第二天凌晨恢复使用</p></td></tr><tr><td>基础</td><td>每1秒，只能1次请求</td><td><p>1、同1秒只能请求1个接口</p><p><mark style="color:red;">2、多个接口请求时，需注意/batch-kline接口需间隔3秒</mark><br>3、所有接口相加，1分钟最大请求60次(1秒1次)<br>4、每天总共最大可请求86400次，超过则第二天凌晨恢复使用</p></td></tr><tr><td>高级</td><td>每1秒，最大可10次请求</td><td><p>1、所以接口相加，每1秒可请求10次</p><p><mark style="color:red;">2、多个接口请求时，需注意/batch-kline接口需间隔2秒</mark><br>3、所有接口相加，1分钟最大请求600次(1秒10次)<br>4、每天总共最大可请求864000次，超过则第二天凌晨恢复使用</p></td></tr><tr><td>专业</td><td>每1秒，最大可20次请求</td><td><p>1、所以接口相加，每1秒可请求20次</p><p><mark style="color:red;">2、多个接口请求时，需注意/batch-kline接口需间隔1秒</mark><br>3、所有接口相加，1分钟最大请求1200次(1秒20次)<br>4、每天总共最大可请求1728000次，超过则第二天凌晨恢复使用</p></td></tr><tr><td>全部港股</td><td>每1秒，最大可20次请求</td><td><p>1、所以接口相加，每1秒可请求20次</p><p><mark style="color:red;">2、多个接口请求时，需注意/batch-kline接口需间隔1秒</mark><br>3、所有接口相加，1分钟最大请求1200次(1秒20次)<br>4、每天总共最大可请求1728000次，超过则第二天凌晨恢复使用</p></td></tr><tr><td>全部A股</td><td>每1秒，最大可20次请求</td><td><p>1、所以接口相加，每1秒可请求20次</p><p><mark style="color:red;">2、多个接口请求时，需注意/batch-kline接口需间隔1秒</mark><br>3、所有接口相加，1分钟最大请求1200次(1秒20次)<br>4、每天总共最大可请求1728000次，超过则第二天凌晨恢复使用</p></td></tr><tr><td>全部美股</td><td>每1秒，最大可20次请求</td><td><p>1、所以接口相加，每1秒可请求20次</p><p><mark style="color:red;">2、多个接口请求时，需注意/batch-kline接口需间隔1秒</mark><br>3、所有接口相加，1分钟最大请求1200次(1秒20次)<br>4、每天总共最大可请求1728000次，超过则第二天凌晨恢复使用</p></td></tr></tbody></table>
+<table data-full-width="true"><thead><tr><th width="81">计划</th><th width="208">单独请求</th><th width="472">同时请求多个http接口</th></tr></thead><tbody><tr><td>免费</td><td>每10秒，只能1次请求</td><td><p>1、同1秒只能请求1个接口</p><p><mark style="color:red;">2、多个接口请求时，需注意/batch-kline接口需间隔10秒</mark><br>3、所有接口相加，1分钟最大请求10次(6秒1次)<br>4、每天总共最大可请求14400次，超过则第二天凌晨恢复使用</p></td></tr><tr><td>基础</td><td>每1秒，只能1次请求</td><td><p>1、同1秒只能请求1个接口</p><p><mark style="color:red;">2、多个接口请求时，需注意/batch-kline接口需间隔3秒</mark><br>3、所有接口相加，1分钟最大请求60次(1秒1次)<br>4、每天总共最大可请求86400次，超过则第二天凌晨恢复使用</p></td></tr><tr><td>高级</td><td>每1秒，最大可10次请求</td><td><p>1、所以接口相加，每1秒可请求10次</p><p><mark style="color:red;">2、多个接口请求时，需注意/batch-kline接口需间隔2秒</mark><br>3、所有接口相加，1分钟最大请求600次(1秒10次)<br>4、每天总共最大可请求864000次，超过则第二天凌晨恢复使用</p></td></tr><tr><td>专业</td><td>每1秒，最大可20次请求</td><td><p>1、所以接口相加，每1秒可请求20次</p><p><mark style="color:red;">2、多个接口请求时，需注意/batch-kline接口需间隔1秒</mark><br>3、所有接口相加，1分钟最大请求1200次(1秒20次)<br>4、每天总共最大可请求1728000次，超过则第二天凌晨恢复使用</p></td></tr><tr><td>全部港股</td><td>每1秒，最大可20次请求</td><td><p>1、所以接口相加，每1秒可请求20次</p><p><mark style="color:red;">2、多个接口请求时，需注意/batch-kline接口需间隔1秒</mark><br>3、所有接口相加，1分钟最大请求1200次(1秒20次)<br>4、每天总共最大可请求1728000次，超过则第二天凌晨恢复使用</p></td></tr><tr><td>全部A股</td><td>每1秒，最大可20次请求</td><td><p>1、所以接口相加，每1秒可请求20次</p><p><mark style="color:red;">2、多个接口请求时，需注意/batch-kline接口需间隔1秒</mark><br>3、所有接口相加，1分钟最大请求1200次(1秒20次)<br>4、每天总共最大可请求1728000次，超过则第二天凌晨恢复使用</p></td></tr><tr><td>全部美股</td><td>每1秒，最大可20次请求</td><td><p>1、所以接口相加，每1秒可请求20次</p><p><mark style="color:red;">2、多个接口请求时，需注意/batch-kline接口需间隔1秒</mark><br>3、所有接口相加，1分钟最大请求1200次(1秒20次)<br>4、每天总共最大可请求1728000次，超过则第二天凌晨恢复使用</p></td></tr></tbody></table>
 
 ## 接口地址
 
@@ -60,7 +66,7 @@
 }
 ```
 
-<table data-full-width="true"><thead><tr><th width="291">名称</th><th width="128">类型</th><th width="92">必选</th><th>说明</th></tr></thead><tbody><tr><td>trace</td><td>string</td><td>是</td><td>追踪码，用来查询日志使用，请保证每次请求时唯一</td></tr><tr><td>data</td><td>object</td><td>是</td><td></td></tr><tr><td>» code</td><td>string</td><td>是</td><td>请查看code列表，选择你要查询的code</td></tr><tr><td>» kline_type</td><td>integer</td><td>是</td><td>k线类型<br>1、1是1分钟K，2是5分钟K，3是15分钟K，4是30分钟K，5是小时K，6是2小时K(股票不支持2小时)，7是4小时K(股票不支持4小时)，8是日K，9是周K，10是月K （注：股票不支持2小时K、4小时K）<br>2、最短的k线只支持1分钟</td></tr><tr><td>» kline_timestamp_end</td><td>integer</td><td>是</td><td>从指定时间往前查询K线 <br>1、传0表示从当前最新的交易日往前查k线 <br>2、指定时间请传时间戳，传时间戳表示从该时间戳往前查k线 <br>3、只有外汇贵金属加密货币支持传时间戳，股票类的code不支持</td></tr><tr><td>» query_kline_num</td><td>integer</td><td>是</td><td>表示查询多少根K线，每次最大请求1000根，可根据时间戳循环往前请求</td></tr><tr><td>» adjust_type</td><td>integer</td><td>是</td><td>复权类型,对于股票类的code才有效，例如：0:除权,1:前复权，目前仅支持0</td></tr></tbody></table>
+<table data-full-width="true"><thead><tr><th width="291">名称</th><th width="128">类型</th><th width="92">必选</th><th>说明</th></tr></thead><tbody><tr><td>trace</td><td>string</td><td>是</td><td>追踪码，用来查询日志使用，请保证每次请求时唯一</td></tr><tr><td>data</td><td>object</td><td>是</td><td></td></tr><tr><td>» code</td><td>string</td><td>是</td><td>请查看code列表，选择你要查询的code：<a href="https://docs.google.com/spreadsheets/d/1avkeR1heZSj6gXIkDeBt8X3nv4EzJetw4yFuKjSDYtA/edit?gid=495387863#gid=495387863">[点击code列表]</a></td></tr><tr><td>» kline_type</td><td>integer</td><td>是</td><td>k线类型<br>1、1是1分钟K，2是5分钟K，3是15分钟K，4是30分钟K，5是小时K，6是2小时K(股票不支持2小时)，7是4小时K(股票不支持4小时)，8是日K，9是周K，10是月K （注：股票不支持2小时K、4小时K）<br>2、最短的k线只支持1分钟</td></tr><tr><td>» kline_timestamp_end</td><td>integer</td><td>是</td><td>从指定时间往前查询K线<br>1、传0表示从当前最新的交易日往前查k线<br>2、指定时间请传时间戳，传时间戳表示从该时间戳往前查k线<br>3、只有外汇贵金属加密货币支持传时间戳，股票类的code不支持</td></tr><tr><td>» query_kline_num</td><td>integer</td><td>是</td><td>表示查询多少根K线，每次最大请求1000根，可根据时间戳循环往前请求</td></tr><tr><td>» adjust_type</td><td>integer</td><td>是</td><td>复权类型,对于股票类的code才有效，例如：0:除权,1:前复权，目前仅支持0</td></tr></tbody></table>
 
 ## 返回示例
 
@@ -106,9 +112,9 @@
 
 <table data-full-width="true"><thead><tr><th width="245">名称</th><th width="186">类型</th><th width="172">必选</th><th>说明</th></tr></thead><tbody><tr><td>» ret</td><td>integer</td><td>true</td><td></td></tr><tr><td>» msg</td><td>string</td><td>true</td><td></td></tr><tr><td>» trace</td><td>string</td><td>true</td><td></td></tr><tr><td>» data</td><td>object</td><td>true</td><td></td></tr><tr><td>»» code</td><td>string</td><td>true</td><td>代码</td></tr><tr><td>»» kline_type</td><td>integer</td><td>true</td><td>k线类型<br>1、1是1分钟K，2是5分钟K，3是15分钟K，4是30分钟K，5是小时K，6是2小时K(股票不支持2小时)，7是4小时K(股票不支持4小时)，8是日K，9是周K，10是月K （注：股票不支持2小时K、4小时K）<br>2、最短的k线只支持1分钟</td></tr><tr><td>»» kline_list</td><td>[object]</td><td>true</td><td></td></tr><tr><td>»»» timestamp</td><td>string</td><td>true</td><td>该K线时间戳</td></tr><tr><td>»»» open_price</td><td>string</td><td>true</td><td>该K线开盘价</td></tr><tr><td>»»» close_price</td><td>string</td><td>true</td><td>该K线收盘价</td></tr><tr><td>»»» high_price</td><td>string</td><td>true</td><td>该K线最高价</td></tr><tr><td>»»» low_price</td><td>string</td><td>true</td><td>该K线最低价</td></tr><tr><td>»»» volume</td><td>string</td><td>true</td><td>该K线成交数量</td></tr><tr><td>»»» turnover</td><td>string</td><td>true</td><td>该K线成交金额</td></tr></tbody></table>
 
-{% swagger src="../../.gitbook/assets/MultiMarkets-BusinessAPI.swagger (1).json" path="/quote-stock-b-api/kline" method="get" %}
+{% openapi src="../../.gitbook/assets/MultiMarkets-BusinessAPI.swagger (1).json" path="/quote-stock-b-api/kline" method="get" %}
 [MultiMarkets-BusinessAPI.swagger (1).json](<../../.gitbook/assets/MultiMarkets-BusinessAPI.swagger (1).json>)
-{% endswagger %}
+{% endopenapi %}
 
 #### AllTick网站
 
