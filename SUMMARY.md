@@ -31,7 +31,7 @@
   * [GET 单产品历史K线查询](rest-api/stock-http-interface-api/get-dan-chan-pin-li-shikxian-cha-xun.md)
   * [POST 批量查询产品最新2根K线](rest-api/stock-http-interface-api/post-pi-liang-cha-xun-chan-pin-zui-xin-2-genkxian.md)
   * [GET 最新盘口报价查询](rest-api/stock-http-interface-api/get-latest-handicap-quotation-query.md)
-  * [GET 最新成交价批量查询](rest-api/stock-http-interface-api/get-latest-transaction-price-query.md)
+  * [GET 最新成交价(最新tick)批量查询](rest-api/stock-http-interface-api/get-latest-transaction-price-query.md)
   * [GET 股票产品基础信息批量查询](rest-api/stock-http-interface-api/get-latest-transaction-price-query-1.md)
 
 ## Websocket API
