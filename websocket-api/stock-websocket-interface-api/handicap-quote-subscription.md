@@ -20,6 +20,12 @@
 
 <table><thead><tr><th width="82"></th><th width="181">外汇、贵金属、原油</th><th width="97">加密货币</th><th width="100">港股</th><th width="92">美股</th><th>沪深A股</th></tr></thead><tbody><tr><td>深度说明</td><td>最大5档</td><td>最大5档</td><td>最大10档</td><td>最大1档</td><td>最大5档</td></tr></tbody></table>
 
+## 接口限制
+
+1、请务必阅读：[Websocket限制说明](https://apis.alltick.co/integration-process/interface-restriction-description/websocket-interface-limitations)
+
+2、请务必阅读：[错误码说明](https://apis.alltick.co/integration-process/interface-restriction-description/error-code-description)
+
 ## 接口地址
 
 **1、美股、港股、A股、大盘数据接口地址：**
@@ -48,22 +54,19 @@ wss://quote.alltick.io/quote-stock-b-ws-api?token=您的token
 
 wss://quote.alltick.io/quote-b-ws-api?token=您的token
 
-连接成功后，您可以根据需要订阅特定的外汇、加密货币、贵金属、商品数据。详细的调用方法请参考下面的文档说明。\\
+连接成功后，您可以根据需要订阅特定的外汇、加密货币、贵金属、商品数据。详细的调用方法请参考下面的文档说明。
 
 ## 请求-协议号：22002
 
 #### data定义 <a href="#data-ding-yi" id="data-ding-yi"></a>
 
-| 字段           | 名称   | 类型    | 必填项 | 说明              |
-| ------------ | ---- | ----- | --- | --------------- |
-| symbol\_list | 产品列表 | array | 是   | 具体格式见下面symbol定义 |
+| 字段           | 名称   | 类型    | 必填项 | 说明                                                                                                                                                   |
+| ------------ | ---- | ----- | --- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| symbol\_list | 产品列表 | array | 是   | 具体格式见下面symbol定义：[\[点击code列表\]](https://docs.google.com/spreadsheets/d/1avkeR1heZSj6gXIkDeBt8X3nv4EzJetw4yFuKjSDYtA/edit?gid=495387863#gid=495387863) |
 
 #### symbol定义 <a href="#symbol-ding-yi" id="symbol-ding-yi"></a>
 
-| 字段           | 名称   | 类型     | 必填项 | 说明                                                                                   |
-| ------------ | ---- | ------ | --- | ------------------------------------------------------------------------------------ |
-| code         | 代码   | string | 是   | 具体内容，请查阅code列表                                                                       |
-| depth\_level | 深度层级 | uint32 | 否   | 如果没有depth\_level字段时，后台只会提供一层的报价，请求的层级大于实际报价层级，或者如果没有depth\_level字段时，则后台按实际报价有多少层给多少层 |
+<table><thead><tr><th width="128.109375">字段</th><th width="119.26171875">名称</th><th width="110.75390625">类型</th><th width="82.98828125">必填项</th><th>说明</th></tr></thead><tbody><tr><td>code</td><td>代码</td><td>string</td><td>是</td><td>具体内容，请查阅code列表</td></tr><tr><td>depth_level</td><td>深度层级</td><td>uint32</td><td>否</td><td>如果没有depth_level字段时，后台只会提供一层的报价，请求的层级大于实际报价层级，或者如果没有depth_level字段时，则后台按实际报价有多少层给多少层</td></tr></tbody></table>
 
 ### 数据结构(json)
 
