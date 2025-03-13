@@ -137,13 +137,13 @@ wss://quote.alltick.io/quote-b-ws-api?token=您的token
         "bids": [
             {
                 "price": "9.12",
-                "volume": "9.12",
+                "volume": "9.12"
             }
         ],
         "asks": [
             {
                 "price": "147.12",
-                "volume": "147.12",
+                "volume": "147.12"
             }
         ]
     }
