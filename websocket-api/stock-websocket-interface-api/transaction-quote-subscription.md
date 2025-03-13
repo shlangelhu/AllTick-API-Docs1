@@ -14,9 +14,11 @@
 
 2、接入时，客户可增加断开自动重连的逻辑，确保因网络等原因断开可自动重连
 
-## 接口限制说明
+## 接口限制
 
-请务必仔阅读：[\[websocket限制说明\]](../../integration-process/interface-restriction-description/websocket-interface-limitations.md#websocket-jie-kou-xian-zhi)
+1、请务必阅读：[Websocket限制说明](../../integration-process/interface-restriction-description/websocket-interface-limitations.md)
+
+2、请务必阅读：[错误码说明](../../integration-process/interface-restriction-description/error-code-description.md)
 
 ## 接口地址
 
@@ -72,13 +74,6 @@ wss://quote.alltick.io/quote-b-ws-api?token=您的token
             {
                 "code": "BTCUSDT"
             }
-      
-
-
-
-
-
-  ]
     }
 }
 ```
