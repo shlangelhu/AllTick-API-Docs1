@@ -74,6 +74,7 @@ wss://quote.alltick.io/quote-b-ws-api?token=您的token
             {
                 "code": "BTCUSDT"
             }
+        [
     }
 }
 ```
