@@ -1,6 +1,6 @@
 # 实时K线推送(不支持)
 
-[English ](https://en.apis.alltick.co/websocket-api/stock-websocket-interface-api/ping-pang)/ 中文
+[English ](https://app.gitbook.com/s/hl2stTwtjPsR73Ky9JWD/websocket-api/websocket-interface-api/ping-pong-1)/ 中文
 
 ## 实时K线说明
 
