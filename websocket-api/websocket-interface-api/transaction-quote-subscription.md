@@ -19,54 +19,38 @@ To handle network disconnections, clients should implement an auto-reconnect mec
 
 ### Interface Limitations <a href="#interface-limitations" id="interface-limitations"></a>
 
-1. Please be sure to read:[ \[ Websocket Interface Limitations \].](https://en.apis.alltick.co/integration-process/interface-restriction-description/http-interface-restrictions)
+1. Please be sure to read:[ \[ Websocket Interface Limitations \].](../../integration-process/interface-restriction-description/websocket-interface-limitations.md)
 2. Please be sure to read: [\[ Error Code Descriptions \].](https://en.apis.alltick.co/integration-process/interface-restriction-description/error-code-description)
 
 ## API Endpoints
 
-1.  **Stock Market Data API for US, HK, A-shares, and Index:**
+**1、Stock Market Data API for US, HK, A-shares, and Index:**
 
-    &#x20;
+Base Path: `/quote-stock-b-ws-api`\
+Full URL: `wss://quote.alltick.io/quote-stock-b-ws-api`&#x20;
 
-    Base Path: `/quote-stock-b-ws-api`\
-    Full URL: `wss://quote.alltick.io/quote-stock-b-ws-api`
-2.  **API for Forex, Precious Metals, Cryptocurrencies, and Commodities:**
+**2、API for Forex, Precious Metals, Cryptocurrencies, and Commodities:**
 
-    &#x20;
+Base Path: `/quote-b-ws-api`\
+Full URL: `wss://quote.alltick.io/quote-b-ws-api`
 
-    Base Path: `/quote-b-ws-api`\
-    Full URL: `wss://quote.alltick.io/quote-b-ws-api`
+## Request Examples <a href="#request-examples" id="request-examples"></a>
 
-Request Examples\
- <a href="#request-examples" id="request-examples"></a>
--------------------------------------------------------
+**1、Request Example for US, HK, A-shares, and Index Data:**
 
-1.  **Request Example for US, HK, A-shares, and Index Data:**
+Each time you establish a connection, you must append your authentication token to the URL as follows:
 
-    &#x20;
+`wss://quote.alltick.io/quote-stock-b-ws-api?token=your_token`
 
-    Each time you establish a connection, you must append your authentication token to the URL as follows:
+After a successful connection, you can subscribe to specific stock market data as needed. Please refer to the documentation below for detailed calling methods.
 
-    &#x20;
+**2、Request Example for Forex, Precious Metals, Cryptocurrencies, and Commodities:**
 
-    `wss://quote.alltick.io/quote-stock-b-ws-api?token=your_token`
+Each time you establish a connection, you must append your authentication token to the URL as follows:
 
-    &#x20;
+`wss://quote.alltick.io/quote-b-ws-api?token=your_token`
 
-    After a successful connection, you can subscribe to specific stock market data as needed. Please refer to the documentation below for detailed calling methods.
-2.  **Request Example for Forex, Precious Metals, Cryptocurrencies, and Commodities:**
-
-    &#x20;
-
-    Each time you establish a connection, you must append your authentication token to the URL as follows:
-
-    &#x20;
-
-    `wss://quote.alltick.io/quote-b-ws-api?token=your_token`
-
-    &#x20;
-
-    After a successful connection, you can subscribe to specific forex, cryptocurrency, precious metals, and commodities data as needed. Please refer to the documentation below for detailed calling methods.
+After a successful connection, you can subscribe to specific forex, cryptocurrency, precious metals, and commodities data as needed. Please refer to the documentation below for detailed calling methods.
 
 ## Request - Protocol Number：22004
 
@@ -115,7 +99,7 @@ symbol definition
 
 #### Definition of data
 
-<table><thead><tr><th width="137.61328125">Field</th><th width="176.65625">Name</th><th width="73.16796875">Type</th><th>Description</th></tr></thead><tbody><tr><td>code</td><td>Code</td><td>string</td><td>Specific content, refer to the code list：<a href="https://docs.google.com/spreadsheets/d/1avkeR1heZSj6gXIkDeBt8X3nv4EzJetw4yFuKjSDYtA/edit?gid=495387863#gid=495387863">[Click on the code list]</a></td></tr><tr><td>seq</td><td>Quote Number</td><td>string</td><td></td></tr><tr><td>tick_time</td><td>Quote Timestamp</td><td>string</td><td>In milliseconds</td></tr><tr><td>price</td><td>Transaction Price</td><td>string</td><td></td></tr><tr><td>volumn</td><td>Transaction Volume</td><td>string</td><td></td></tr><tr><td>turnover</td><td>Transaction Turnover</td><td>string</td><td><p>Turnover:</p><ol><li>For forex, precious metals, and energy, turnover is not provided. You can calculate it using the formula: <code>turnover = price * volume</code>.</li><li>For stocks and cryptocurrencies, turnover is returned normally.</li></ol></td></tr><tr><td>trade_direction</td><td>Transaction Direction</td><td>string</td><td><p><strong>Trade Direction:</strong></p><ol><li>0 is the default value, 1 is Buy, and 2 is Sell.</li><li>For forex, precious metals, and energy, the default return is only 0.</li><li>For stocks and cryptocurrencies, it can return 0, 1, or 2 based on market conditions.</li><li><p>Detailed Explanation:</p><ul><li>0: Neutral, indicating a trade executed at a price between the best bid and best ask.</li><li>1: Aggressive Buy, indicating a trade executed at the ask price or higher.</li><li>2: Aggressive Sell, indicating a trade executed at the bid price or lower.</li></ul></li></ol></td></tr></tbody></table>
+<table><thead><tr><th width="137.61328125">Field</th><th width="176.65625">Name</th><th width="73.16796875">Type</th><th>Description</th></tr></thead><tbody><tr><td>code</td><td>Code</td><td>string</td><td>Specific content, refer to the code list：<a href="https://docs.google.com/spreadsheets/d/1avkeR1heZSj6gXIkDeBt8X3nv4EzJetw4yFuKjSDYtA/edit?gid=495387863#gid=495387863">[Click on the code list]</a></td></tr><tr><td>seq</td><td>Quote Number</td><td>string</td><td></td></tr><tr><td>tick_time</td><td>Quote Timestamp</td><td>string</td><td>In milliseconds</td></tr><tr><td>price</td><td>Transaction Price</td><td>string</td><td></td></tr><tr><td>volumn</td><td>Transaction Volume</td><td>string</td><td></td></tr><tr><td>turnover</td><td>Transaction Turnover</td><td>string</td><td><p>Turnover:</p><ol><li>For forex, precious metals, and energy, turnover is not provided. You can calculate it using the formula: <code>turnover = price * volume</code>.</li><li>For stocks and cryptocurrencies, turnover is returned normally.</li></ol></td></tr><tr><td>trade_direction</td><td>Transaction Direction</td><td>string</td><td><p>Trade Direction:</p><ol><li>0 is the default value, 1 is Buy, and 2 is Sell.</li><li>For forex, precious metals, and energy, the default return is only 0.</li><li>For stocks and cryptocurrencies, it can return 0, 1, or 2 based on market conditions.</li><li><p>Detailed Explanation:</p><ul><li>0: Neutral, indicating a trade executed at a price between the best bid and best ask.</li><li>1: Aggressive Buy, indicating a trade executed at the ask price or higher.</li><li>2: Aggressive Sell, indicating a trade executed at the bid price or lower.</li></ul></li></ol></td></tr></tbody></table>
 
 ### Data Structure (JSON)
 
