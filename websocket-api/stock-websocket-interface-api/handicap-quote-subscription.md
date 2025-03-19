@@ -20,7 +20,7 @@
 
 3.2 存在单边深度是空的情况，例如股票涨停跌停时，单边盘口可能是空的
 
-<table><thead><tr><th width="82"></th><th width="181">外汇、贵金属、原油</th><th width="97">加密货币</th><th width="100">港股</th><th width="92">美股</th><th>沪深A股</th></tr></thead><tbody><tr><td>深度说明</td><td>最大5档</td><td>最大5档</td><td>最大10档</td><td>最大1档</td><td>最大5档</td></tr></tbody></table>
+<table><thead><tr><th width="82"></th><th width="181">外汇、贵金属、原油</th><th width="97">加密货币</th><th width="100">港股</th><th width="92">美股</th><th>沪深A股</th></tr></thead><tbody><tr><td>深度说明</td><td>最大1 档</td><td>最大5档</td><td>最大10档</td><td>最大1档</td><td>最大5档</td></tr></tbody></table>
 
 ## 接口限制
 
