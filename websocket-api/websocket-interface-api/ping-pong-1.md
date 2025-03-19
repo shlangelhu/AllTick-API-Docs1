@@ -8,10 +8,12 @@ Alltick's WebSocket interface does not support K-line data push. Both historical
 
 **Implementation Suggestions (for reference):**
 
-1. **Periodic K-line Retrieval:** To ensure quick updates, consider purchasing a high-frequency request plan.
-2. **Combine HTTP Interfaces:** It is recommended to use both `/kline` and `/batch-kline` interfaces as follows:
-   * First, use the `/kline` interface to poll and store historical data in a local database. Subsequent historical data can be retrieved directly from the database without additional requests.
-   * Then, continuously use the `/batch-kline` interface to request the latest two K-lines for multiple products and update the database.
+**1、Periodic K-line Retrieval:** To ensure quick updates, consider purchasing a high-frequency request plan.
+
+**2、Combine HTTP Interfaces:** It is recommended to use both `/kline` and `/batch-kline` interfaces as follows:
+
+* First, use the `/kline` interface to poll and store historical data in a local database. Subsequent historical data can be retrieved directly from the database without additional requests.
+* Then, continuously use the `/batch-kline` interface to request the latest two K-lines for multiple products and update the database.
 
 This method allows for quick updates of the latest K-lines while avoiding limitations from frequent historical requests.
 
@@ -19,7 +21,7 @@ This method allows for quick updates of the latest K-lines while avoiding limita
 
 **Alltick API does not provide price change or 24-hour price change fields.** Users can calculate price changes using Alltick data.
 
-**1、Daily Price Change Calculation**
+**1、Daily Price Change Calculation：**
 
 **Method 1:** Use the HTTP API to get the daily K-line closing price for today and the previous day.
 
@@ -29,7 +31,7 @@ This method allows for quick updates of the latest K-lines while avoiding limita
 
 **Formula:** `Price Change (%) = (Latest Price - Previous Day's Closing Price) / Previous Day's Closing Price * 100%`
 
-**2、24-Hour Price Change Calculation**
+**2、24-Hour Price Change Calculation：**
 
 Use the WebSocket trade price API (Request Protocol: 22004) to receive real-time tick data.
 
