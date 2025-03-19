@@ -1,6 +1,6 @@
 # 涨跌幅、休市、假期、涨停跌停、新股上市和退市
 
-[English](https://en.apis.alltick.co/rest-api/stock-http-interface-api/get-product-information-query) / 中文
+[English](https://app.gitbook.com/s/hl2stTwtjPsR73Ky9JWD/rest-api/http-interface-api/get-stocks-product-information-query-1) / 中文
 
 ## 涨跌幅说明
 
