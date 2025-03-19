@@ -92,24 +92,9 @@
 
 ## 返回结果
 
-| 状态码 | 状态码含义 | 说明 | 数据模型   |
-| --- | ----- | -- | ------ |
-| 200 | OK    | OK | Inline |
+<table><thead><tr><th width="174.19140625">状态码</th><th width="115.3828125">状态码含义</th><th width="82.82421875">说明</th><th>数据模型</th></tr></thead><tbody><tr><td>200</td><td>OK</td><td>OK</td><td>Inline</td></tr></tbody></table>
 
-| 名称                   | 类型        | 必选    | 说明                      |
-| -------------------- | --------- | ----- | ----------------------- |
-| » ret                | integer   | true  | 返回code                  |
-| » msg                | string    | true  | 返回code对应消息              |
-| » trace              | string    | true  | 请求的trace                |
-| » data               | object    | true  |                         |
-| »» tick\_list        | \[object] | true  |                         |
-| »»» code             | string    | false | 代码                      |
-| »»» seq              | string    | false | 序号                      |
-| »»» tick\_time       | string    | false | 时间戳                     |
-| »»» price            | string    | false | 成交价                     |
-| »»» volume           | string    | false | 成交量                     |
-| »»» turnover         | string    | false | 成交额                     |
-| »»» trade\_direction | integer   | false | 交易方向，0为默认值，1为BUY，2为SELL |
+<table><thead><tr><th width="173.29296875">名称</th><th width="109.71875">类型</th><th width="84.66796875">必选</th><th width="377.25390625">说明</th></tr></thead><tbody><tr><td>» ret</td><td>integer</td><td>true</td><td>返回code</td></tr><tr><td>» msg</td><td>string</td><td>true</td><td>返回code对应消息</td></tr><tr><td>» trace</td><td>string</td><td>true</td><td>请求的trace</td></tr><tr><td>» data</td><td>object</td><td>true</td><td></td></tr><tr><td>»» tick_list</td><td>[object]</td><td>true</td><td></td></tr><tr><td>»»» code</td><td>string</td><td>false</td><td>代码</td></tr><tr><td>»»» seq</td><td>string</td><td>false</td><td>序号</td></tr><tr><td>»»» tick_time</td><td>string</td><td>false</td><td>时间戳</td></tr><tr><td>»»» price</td><td>string</td><td>false</td><td>成交价</td></tr><tr><td>»»» volume</td><td>string</td><td>false</td><td>成交量</td></tr><tr><td>»»» turnover</td><td>string</td><td>false</td><td>成交额<br>1、外汇、贵金属、能源不返回成交额，可自行根据每次推送的数据计算，计算公式：turnover = price * volume<br>2、股票、加密货币正常返回成交额。</td></tr><tr><td>»»» trade_direction</td><td>integer</td><td>false</td><td>交易方向：<br>1、0为默认值，1为Buy，2为SELL<br>2、外汇、贵金属、能源默认只会返回0<br>3、股票、加密货币根据市场情况会返回0、1、2<br>4、详细说明：<br>0:表示中性盘，即以买一价与卖一价之间的价格撮合成交。<br>1:表示主动买入，即以卖一价或者更高价格成交的股票<br>2:表示主动卖出，即以买一价或者更低价格成交的股票</td></tr></tbody></table>
 
 {% openapi src="../../.gitbook/assets/api.json" path="/quote-stock-b-api/trade-tick" method="get" %}
 [api.json](../../.gitbook/assets/api.json)
