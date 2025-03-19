@@ -39,7 +39,7 @@
 
 * [Websocket request example](websocket-api/websocket-request-example.md)
 * [Websocket Interface API](websocket-api/websocket-interface-api/README.md)
-  * [Transaction quote subscription](websocket-api/websocket-interface-api/transaction-quote-subscription.md)
+  * [Latest Trade Price (Real-time Tick Data) Batch Subscription](websocket-api/websocket-interface-api/transaction-quote-subscription.md)
   * [Order Book (Real-time Tick-by-Tick, Market Depth) Subscription](websocket-api/websocket-interface-api/handicap-quote-subscription.md)
   * [Cancel quote subscription](websocket-api/websocket-interface-api/cancel-quote-subscription.md)
   * [Ping Pong](websocket-api/websocket-interface-api/ping-pong.md)
