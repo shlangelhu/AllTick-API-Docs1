@@ -4,11 +4,21 @@ English / [中文](https://apis.alltick.co/rest-api/gu-piao-http-jie-kou-api/get
 
 ## Post /batch-kline
 
-> Please refer to the complete URL in [API Address Description](../../integration-process/market-address-description/http-quotes-api-address-description.md)
-
 ## Interface Description
 
-This interface can query multiple products in batches at one time, and can query multiple k-line types in batches at one time (k-line types refer to 1 minute, 15 minutes, 30 minutes, etc.), but can only query the latest 2 k-lines in batches.
+This interface allows batch querying of multiple products and multiple K-line types (e.g., 1-minute, 15-minute, 30-minute), but only the latest two K-lines can be queried at once.
+
+For clients using the HTTP interface to obtain K-lines, it is advisable to combine the `/kline` and `/batch-kline` interfaces as follows:
+
+* First, use the `/kline` interface to poll for historical data and store it in a local database. Subsequent historical data can be retrieved directly from the client's database without needing to make additional requests through the interface.
+* Then, continuously use the `/batch-kline` interface to request the latest two K-lines for multiple products in bulk and update the database with this data.
+
+This method allows for quick updates of the latest K-lines while avoiding limitations on request frequency caused by frequent requests for historical K-lines.
+
+## Interface Limitations
+
+1. Please be sure to read:[ \[ HTTP Interface Limitations \].](../../integration-process/interface-restriction-description/http-interface-restrictions.md)
+2. Please be sure to read: [\[ Error Code Descriptions \].](../../integration-process/interface-restriction-description/error-code-description.md)
 
 ### Request Frequency
 
@@ -129,9 +139,9 @@ The following JSON should be URL-encoded and assigned to the `query` query strin
 | »»» turnover         | string    | false    | Turnover                                                |
 | »»» trade\_direction | integer   | false    | Trading direction, 0 for default, 1 for BUY, 2 for SELL |
 
-{% swagger src="../../.gitbook/assets/api (1).json" path="/quote-stock-b-api/batch-kline" method="post" %}
+{% openapi src="../../.gitbook/assets/api (1).json" path="/quote-stock-b-api/batch-kline" method="post" %}
 [api (1).json](<../../.gitbook/assets/api (1).json>)
-{% endswagger %}
+{% endopenapi %}
 
 ### Official Website
 
