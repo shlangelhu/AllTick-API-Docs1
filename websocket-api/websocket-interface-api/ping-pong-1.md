@@ -1,6 +1,6 @@
 # K-line push (not supported)
 
-English / [中文](https://apis.alltick.co/websocket-api/gu-piao-websocket-jie-kou-api/xin-tiao)
+English / [中文](https://app.gitbook.com/s/AnPIgTqJ2rek1QSPVUja/websocket-api/stock-websocket-interface-api/ping-pong-1)
 
 ## K-line Push Explanation
 
