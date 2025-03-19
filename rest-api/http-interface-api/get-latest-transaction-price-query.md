@@ -4,7 +4,10 @@ English / [中文](https://apis.alltick.co/rest-api/gu-piao-http-jie-kou-api/get
 
 ## GET /trade-tick
 
-> Please refer to the complete URL in [API Address Description](../../integration-process/market-address-description/http-quotes-api-address-description.md)
+### Interface Limitations <a href="#interface-limitations" id="interface-limitations"></a>
+
+1. Please be sure to read:[ \[ HTTP Interface Limitations \].](https://en.apis.alltick.co/integration-process/interface-restriction-description/http-interface-restrictions)
+2. Please be sure to read: [\[ Error Code Descriptions \].](https://en.apis.alltick.co/integration-process/interface-restriction-description/error-code-description)
 
 ### Request Frequency
 
@@ -98,8 +101,6 @@ The following JSON should be URL-encoded and assigned to the `query` query strin
 
 ## Response Result
 
-
-
 | Status Code | Status Meaning | Description | Data Model |
 | ----------- | -------------- | ----------- | ---------- |
 | 200         | OK             | OK          | Inline     |
@@ -110,9 +111,9 @@ Status Code **200**
 
 <table><thead><tr><th>Name</th><th>Type</th><th>Required</th><th>Constraint</th><th width="40">Chinese Name</th><th>Description</th></tr></thead><tbody><tr><td>» ret</td><td>integer</td><td>true</td><td></td><td></td><td>Return code</td></tr><tr><td>» msg</td><td>string</td><td>true</td><td></td><td></td><td>Message corresponding to the return code</td></tr><tr><td>» trace</td><td>string</td><td>true</td><td></td><td></td><td>Request trace</td></tr><tr><td>» data</td><td>object</td><td>true</td><td></td><td></td><td></td></tr><tr><td>»» tick_list</td><td>[object]</td><td>true</td><td></td><td></td><td></td></tr><tr><td>»»» code</td><td>string</td><td>false</td><td></td><td></td><td>Code</td></tr><tr><td>»»» seq</td><td>string</td><td>false</td><td></td><td></td><td>Sequence</td></tr><tr><td>»»» tick_time</td><td>string</td><td>false</td><td></td><td></td><td>Timestamp</td></tr><tr><td>»»» price</td><td>string</td><td>false</td><td></td><td></td><td>Price</td></tr><tr><td>»»» volume</td><td>string</td><td>false</td><td></td><td></td><td>Volume</td></tr><tr><td>»»» turnover</td><td>string</td><td>false</td><td></td><td></td><td>Turnover</td></tr><tr><td>»»» trade_direction</td><td>integer</td><td>false</td><td></td><td></td><td>Trading direction, 0 for default, 1 for BUY, 2 for SELL</td></tr></tbody></table>
 
-{% swagger src="../../.gitbook/assets/MultiMarkets-BusinessAPI.openapi (1).json" path="/quote-b-api/trade-tick" method="get" expanded="true" %}
+{% openapi src="../../.gitbook/assets/MultiMarkets-BusinessAPI.openapi (1).json" path="/quote-b-api/trade-tick" method="get" expanded="true" %}
 [MultiMarkets-BusinessAPI.openapi (1).json](<../../.gitbook/assets/MultiMarkets-BusinessAPI.openapi (1).json>)
-{% endswagger %}
+{% endopenapi %}
 
 ### Official Website
 
