@@ -33,6 +33,7 @@
   * [GET 最新盘口(最新深度、Order Book)查询](rest-api/stock-http-interface-api/get-latest-handicap-quotation-query.md)
   * [GET 最新成交价(最新tick)批量查询](rest-api/stock-http-interface-api/get-latest-transaction-price-query.md)
   * [GET 股票产品基础信息批量查询](rest-api/stock-http-interface-api/get-latest-transaction-price-query-1.md)
+  * [涨跌幅、休市、假期、涨停跌停、新股上市和退市](rest-api/stock-http-interface-api/get-latest-transaction-price-query-1-1.md)
 
 ## Websocket API
 
