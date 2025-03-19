@@ -43,6 +43,7 @@
   * [Handicap Quote Subscription](websocket-api/websocket-interface-api/handicap-quote-subscription.md)
   * [Cancel quote subscription](websocket-api/websocket-interface-api/cancel-quote-subscription.md)
   * [Ping Pong](websocket-api/websocket-interface-api/ping-pong.md)
+  * [K-line push (not supported)](websocket-api/websocket-interface-api/ping-pong-1.md)
 
 ## FAQs
 
