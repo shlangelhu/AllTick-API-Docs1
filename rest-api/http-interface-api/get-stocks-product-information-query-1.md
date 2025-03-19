@@ -40,12 +40,18 @@ Alltick does not provide a holiday interface. Holiday market closure notificatio
 
 ## Explanation of Price Limits for Stocks
 
-Alltick does not provide an interface to determine price limits. Customers can assess whether a stock is at its price limit using the following method:
+**Alltick does not provide an API to determine stock limit-up or limit-down.** Users can determine this using the depth market data API:
 
-**1、Depth Market Data Judgement**: When subscribing to the depth market data interface, if only one side has data while the other side's price and volume return as 0, it indicates a price limit. The specific criteria are:
+**Depth Market Data Judgment：**
 
-* If only the bid side has data and the ask side's price and volume are both 0, the stock is at its upper limit.
-* If only the ask side has data and the bid side's price and volume are both 0, the stock is at its lower limit.
+When subscribing to the depth market data API:
+
+* If only one side (bid or ask) has data, and the other side's price and volume are both **zero**, the stock is at its limit-up or limit-down.
+
+**Judgment Rules:**
+
+* **Limit-Up:** Only the **bid** side has data, while the **ask** price and volume are **zero**.
+* **Limit-Down:** Only the **ask** side has data, while the **bid** price and volume are **zero**.
 
 Below is a sample screenshot of the data returned:\
 
