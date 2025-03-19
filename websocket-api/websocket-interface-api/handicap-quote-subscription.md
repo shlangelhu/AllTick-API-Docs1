@@ -4,7 +4,25 @@ English / [中文](https://apis.alltick.co/websocket-api/gu-piao-websocket-jie-k
 
 ## Interface Description
 
-The feature of this interface is that for each websocket connection, every time the request is sent, the background will overwrite the previous subscription request by default. After the subscription is successful, the data will be pushed.
+This interface supports subscribing to the latest market depth (real-time tick-by-tick, Order Book) data for products, but does not support historical market depth or historical tick data.
+
+**Interface Features:** For each WebSocket connection, sending this request will overwrite the previous subscription by default. For example, if you initially subscribed to products A, B, and C and want to add E, F, and G, you must resend A, B, C, E, F, and G. After successful subscription, data will be pushed.
+
+**Note:**
+
+1、After a successful subscription, avoid frequent requests. Send a heartbeat every 10 seconds; if no heartbeat is received in 30 seconds, the WebSocket will disconnect.
+
+2、Implement automatic reconnection logic to handle network disconnections.
+
+3、Maximum market depth limits for each product:
+
+3.1  Inactive products may have less depth than listed.
+
+3.2 One side of the depth may be empty, such as during limit up or down for stocks.
+
+
+
+
 
 ## Request - Protocol Number：22002
 
