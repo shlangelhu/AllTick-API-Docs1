@@ -42,6 +42,7 @@
   * [最新盘口(实时逐笔深度、Order Book)订阅](websocket-api/stock-websocket-interface-api/handicap-quote-subscription.md)
   * [取消报价订阅](websocket-api/stock-websocket-interface-api/cancel-quote-subscription.md)
   * [心跳](websocket-api/stock-websocket-interface-api/ping-pong.md)
+  * [实时K线推送(不支持)](websocket-api/stock-websocket-interface-api/ping-pong-1.md)
 
 ## FAQs
 
