@@ -20,24 +20,54 @@ This interface supports subscribing to the latest market depth (real-time tick-b
 
 3.2 One side of the depth may be empty, such as during limit up or down for stocks.
 
+<table data-full-width="true"><thead><tr><th width="133"></th><th width="130.95703125">FX、Metals</th><th width="133.65234375">Cryptocurrency</th><th width="142.38671875">HK Stocks</th><th width="141.296875">Chinese Stocks</th></tr></thead><tbody><tr><td>Order Book Description</td><td>Maximum 1 gears</td><td>Maximum 5 gears</td><td>Maximum 10 gears</td><td>Maximum 5 gears</td></tr></tbody></table>
 
+## Interface Limitations <a href="#interface-limitations" id="interface-limitations"></a>
 
+1. Please be sure to read:[ \[ Websocket Interface Limitations \].](https://en.apis.alltick.co/integration-process/interface-restriction-description/websocket-interface-limitations)
+2. Please be sure to read: [\[ Error Code Descriptions \].](https://en.apis.alltick.co/integration-process/interface-restriction-description/error-code-description)
 
+### API Endpoints <a href="#api-endpoints" id="api-endpoints"></a>
+
+**1、Stock Market Data API for US, HK, A-shares, and Index:**
+
+Base Path: `/quote-stock-b-ws-api`&#x20;
+
+Full URL: `wss://quote.alltick.io/quote-stock-b-ws-api`
+
+**2、API for Forex, Precious Metals, Cryptocurrencies, and Commodities:**
+
+Base Path: `/quote-b-ws-api`&#x20;
+
+Full URL: `wss://quote.alltick.io/quote-b-ws-api`
+
+## Request Examples
+
+**1、Request Example for US, HK, A-shares, and Index Data:**
+
+Each time you establish a connection, you must append your authentication token to the URL as follows:
+
+`wss://quote.alltick.io/quote-stock-b-ws-api?token=your_token`
+
+After a successful connection, you can subscribe to specific stock market data as needed. Please refer to the documentation below for detailed calling methods.
+
+**2、Request Example for Forex, Precious Metals, Cryptocurrencies, and Commodities:**
+
+Each time you establish a connection, you must append your authentication token to the URL as follows:
+
+`wss://quote.alltick.io/quote-b-ws-api?token=your_token`
+
+After a successful connection, you can subscribe to specific forex, cryptocurrency, precious metals, and commodities data as needed. Please refer to the documentation below for detailed calling methods.
 
 ## Request - Protocol Number：22002
 
 #### Data definition
 
-| Field        | Name         | Type  | Required | Description                                              |
-| ------------ | ------------ | ----- | -------- | -------------------------------------------------------- |
-| symbol\_list | Product List | array | Yes      | See the symbol definition below for the specific format. |
+<table><thead><tr><th width="115.2265625">Field</th><th width="126.30859375">Name</th><th width="78.6796875">Type</th><th width="98.59375">Required</th><th>Description</th></tr></thead><tbody><tr><td>symbol_list</td><td>Product List</td><td>array</td><td>Yes</td><td>See the symbol definition below for the specific format.</td></tr></tbody></table>
 
 #### Symbol definition
 
-| Field        | Name        | Type   | Required | Description                                                                                                                                                                                                                                                             |
-| ------------ | ----------- | ------ | -------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| code         | Code        | string | Yes      | For specific content, please refer to the code list                                                                                                                                                                                                                     |
-| depth\_level | Depth level | uint32 | No       | If there is no depth\_level field, the background will only provide a quote for one layer, and the requested level is greater than the actual quote level, or if there is no depth\_level field, the background will provide as many layers as there are actual quotes. |
+<table><thead><tr><th width="129.5703125">Field</th><th width="124.73828125">Name</th><th width="84.43359375">Type</th><th width="97.16796875">Required</th><th>Description</th></tr></thead><tbody><tr><td>code</td><td>Code</td><td>string</td><td>Yes</td><td>For specific content, please refer to the code list ：<a href="https://docs.google.com/spreadsheets/d/1avkeR1heZSj6gXIkDeBt8X3nv4EzJetw4yFuKjSDYtA/edit?gid=495387863#gid=495387863">[Click on the code list]</a></td></tr><tr><td>depth_level</td><td>Depth level</td><td>uint32</td><td>No</td><td>If there is no depth_level field, the background will only provide a quote for one layer, and the requested level is greater than the actual quote level, or if there is no depth_level field, the background will provide as many layers as there are actual quotes.</td></tr></tbody></table>
 
 ### Data Structure (JSON)
 
@@ -77,24 +107,15 @@ This interface supports subscribing to the latest market depth (real-time tick-b
 
 #### Definition of data
 
-| Field      | Name            | Type   | Description                              |
-| ---------- | --------------- | ------ | ---------------------------------------- |
-| code       | Code            | string | Specific content, refer to the code list |
-| seq        | Quote Number    | string |                                          |
-| tick\_time | Quote Timestamp | string | In milliseconds                          |
-| bids       | Bid Depth       | array  | See below for bids definition            |
-| asks       | Ask Depth       | array  | See below for asks definition            |
+<table><thead><tr><th width="130.23828125">Field</th><th width="180.63671875">Name</th><th width="103.8203125">Type</th><th>Description</th></tr></thead><tbody><tr><td>code</td><td>Code</td><td>string</td><td>Specific content, refer to the code list：<a href="https://docs.google.com/spreadsheets/d/1avkeR1heZSj6gXIkDeBt8X3nv4EzJetw4yFuKjSDYtA/edit?gid=495387863#gid=495387863">[Click on the code list]</a></td></tr><tr><td>seq</td><td>Quote Number</td><td>string</td><td></td></tr><tr><td>tick_time</td><td>Quote Timestamp</td><td>string</td><td>In milliseconds</td></tr><tr><td>bids</td><td>Bid Depth</td><td>array</td><td>See below for bids definition</td></tr><tr><td>asks</td><td>Ask Depth</td><td>array</td><td>See below for asks definition</td></tr></tbody></table>
 
 #### bids definition
 
-| Field  | Name       | Type   | Description |
-| ------ | ---------- | ------ | ----------- |
-| price  | Bid Price  | string |             |
-| volume | Bid Volume | string |             |
+<table><thead><tr><th width="141.9921875">Field</th><th width="166.859375">Name</th><th width="142.4609375">Type</th><th>Description</th></tr></thead><tbody><tr><td>price</td><td>Bid Price</td><td>string</td><td></td></tr><tr><td>volume</td><td>Bid Volume</td><td>string</td><td></td></tr></tbody></table>
 
 asks definition
 
-<table><thead><tr><th>Field</th><th width="187">Name</th><th>Type</th><th>Description</th></tr></thead><tbody><tr><td>price</td><td>Ask Price</td><td>string</td><td></td></tr><tr><td>volume</td><td>Ask Volume</td><td>string</td><td></td></tr></tbody></table>
+<table><thead><tr><th width="147.1796875">Field</th><th width="163.4765625">Name</th><th width="143.359375">Type</th><th>Description</th></tr></thead><tbody><tr><td>price</td><td>Ask Price</td><td>string</td><td></td></tr><tr><td>volume</td><td>Ask Volume</td><td>string</td><td></td></tr></tbody></table>
 
 ### Data Structure (JSON)
 
