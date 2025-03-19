@@ -4,8 +4,6 @@
 
 ## GET /kline
 
-> 完整的URL请参见[API地址说明](../../integration-process/market-address-description/http-quotes-api-address-description.md)
-
 ## **接口说明** <a href="#id-6orp08a6xb1u8d" id="id-6orp08a6xb1u8d"></a>
 
 该接口可用来查询历史k线，但每次只能查询一个产品，<mark style="color:red;">建议将查询到的历史K线缓存本地数据库。</mark>
