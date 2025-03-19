@@ -1,6 +1,6 @@
 # Price changes, Market closure, Holidays, Limit up/down, New listings, and Delistings
 
-English / [中文](https://apis.alltick.co/rest-api/stock-http-interface-api/get-latest-transaction-price-query-1)
+English / [中文](https://app.gitbook.com/s/AnPIgTqJ2rek1QSPVUja/rest-api/stock-http-interface-api/get-latest-transaction-price-query-1-1)
 
 ## Price Change Calculation <a href="#interface-limitations" id="interface-limitations"></a>
 
