@@ -4,8 +4,6 @@
 
 ## POST /batch-kline
 
-> 完整的URL请参见[API地址说明](../../integration-process/market-address-description/http-quotes-api-address-description.md)
-
 ## **接口说明**
 
 该接口可以一次性批量查询多个产品，且可批量一次性查询多个k线类型（k线类型指的是1分钟，15分钟，30分钟等），<mark style="color:red;">**但只能批量查询最新的2根k线。**</mark>
