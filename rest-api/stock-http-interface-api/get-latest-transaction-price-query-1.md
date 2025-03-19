@@ -4,8 +4,6 @@
 
 ## GET /static\_info
 
-> 完整的URL请参见[API地址说明](../../integration-process/market-address-description/http-quotes-api-address-description.md)
-
 ## 接口限制 <a href="#jie-kou-xian-zhi" id="jie-kou-xian-zhi"></a>
 
 1、请务必阅读：[HTTP接口限制说明](https://apis.alltick.co/integration-process/interface-restriction-description/http-interface-restrictions)
