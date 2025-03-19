@@ -4,8 +4,6 @@ English / [中文](https://apis.alltick.co/rest-api/gu-piao-http-jie-kou-api/get
 
 ## GET /depth-tick
 
-> Please refer to the complete URL in [API Address Description](../../integration-process/market-address-description/http-quotes-api-address-description.md)
-
 ## Interface Description
 
 The following is the maximum market depth for each product type:
@@ -14,6 +12,11 @@ The following is the maximum market depth for each product type:
 2. There is a situation where the unilateral depth is empty. For example, when the stock price limit rises or falls, the unilateral market opening may be empty.
 
 <table data-full-width="true"><thead><tr><th width="133"></th><th width="148">FX、Metals</th><th width="114">Cryptocurrency</th><th width="111">HK Stocks</th><th>CN Stocks</th></tr></thead><tbody><tr><td>Order Book Description</td><td>Maximum 5 gears</td><td>Maximum 5 gears</td><td>Maximum 10 gears</td><td>Maximum 5 gears</td></tr></tbody></table>
+
+### Interface Limitations <a href="#interface-limitations" id="interface-limitations"></a>
+
+1. Please be sure to read:[ \[ HTTP Interface Limitations \].](https://en.apis.alltick.co/integration-process/interface-restriction-description/http-interface-restrictions)
+2. Please be sure to read: [\[ Error Code Descriptions \].](https://en.apis.alltick.co/integration-process/interface-restriction-description/error-code-description)
 
 ### Request Frequency
 
@@ -135,11 +138,9 @@ Encode the following JSON into URL format and assign it to the `query` query str
 | »» »» price     | string    | false    | Price                                    |
 | »» »» volume    | string    | false    | Volume                                   |
 
-
-
-{% swagger src="../../.gitbook/assets/MultiMarkets-BusinessAPI.openapi (1).json" path="/quote-b-api/depth-tick" method="get" expanded="true" %}
+{% openapi src="../../.gitbook/assets/MultiMarkets-BusinessAPI.openapi (1).json" path="/quote-b-api/depth-tick" method="get" expanded="true" %}
 [MultiMarkets-BusinessAPI.openapi (1).json](<../../.gitbook/assets/MultiMarkets-BusinessAPI.openapi (1).json>)
-{% endswagger %}
+{% endopenapi %}
 
 ### Official Website
 
