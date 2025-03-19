@@ -20,7 +20,7 @@ This interface supports subscribing to the latest market depth (real-time tick-b
 
 3.2 One side of the depth may be empty, such as during limit up or down for stocks.
 
-<table data-full-width="true"><thead><tr><th width="133"></th><th width="130.95703125">FX、Metals</th><th width="133.65234375">Cryptocurrency</th><th width="142.38671875">HK Stocks</th><th width="141.296875">Chinese Stocks</th></tr></thead><tbody><tr><td>Order Book Description</td><td>Maximum 1 gears</td><td>Maximum 5 gears</td><td>Maximum 10 gears</td><td>Maximum 5 gears</td></tr></tbody></table>
+<table data-full-width="false"><thead><tr><th width="133"></th><th width="130.95703125">FX、Metals</th><th width="133.65234375">Cryptocurrency</th><th width="142.38671875">HK Stocks</th><th width="141.296875">Chinese Stocks</th></tr></thead><tbody><tr><td>Order Book Description</td><td>Maximum 1 gears</td><td>Maximum 5 gears</td><td>Maximum 10 gears</td><td>Maximum 5 gears</td></tr></tbody></table>
 
 ## Interface Limitations <a href="#interface-limitations" id="interface-limitations"></a>
 
