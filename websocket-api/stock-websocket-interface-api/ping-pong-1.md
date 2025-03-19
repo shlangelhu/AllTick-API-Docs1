@@ -1,8 +1,8 @@
-# 实时K线推送(不支持)
+# K线推送(不支持)
 
 [English ](https://app.gitbook.com/s/hl2stTwtjPsR73Ky9JWD/websocket-api/websocket-interface-api/ping-pong-1)/ 中文
 
-## 实时K线说明
+## K线推送说明
 
 <mark style="color:red;">Alltick的WebSocket接口不支持K线数据的推送。</mark>由于许多客户对此有疑问，特此说明：无论是历史K线还是实时K线，目前仅支持通过HTTP接口直接获取。推荐的实现方式如下：
 
