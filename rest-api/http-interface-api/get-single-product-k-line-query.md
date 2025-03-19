@@ -4,11 +4,21 @@ English / [中文](https://apis.alltick.co/rest-api/gu-piao-http-jie-kou-api/get
 
 ## GET /kline
 
-> Please refer to the complete URL in [API Address Description](../../integration-process/market-address-description/http-quotes-api-address-description.md)
-
 ## Interface Description
 
-This interface can be used to query historical K-lines, but only one product can be queried at a time. It is recommended to cache the queried historical K-lines locally.
+This interface can be used to query historical K-line data, but it only allows querying one product at a time. It is recommended to cache the retrieved historical K-lines in a local database.
+
+For clients using the HTTP interface to obtain K-lines, it is advisable to combine the `/kline` and `/batch-kline` interfaces as follows:
+
+* First, use the `/kline` interface to poll for historical data and store it in a local database. Subsequent historical data can be retrieved directly from the client's database without needing to make additional requests through the interface.
+* Then, continuously use the `/batch-kline` interface to request the latest two K-lines for multiple products in bulk and update the database with this data.
+
+This method allows for quick updates of the latest K-lines while avoiding limitations on request frequency caused by frequent requests for historical K-lines.
+
+## Interface Limitations
+
+1. Please be sure to read:[ \[ HTTP Interface Limitations \].](../../integration-process/interface-restriction-description/http-interface-restrictions.md)
+2. Please be sure to read: [\[ Error Code Descriptions \].](../../integration-process/interface-restriction-description/error-code-description.md)
 
 ### Request Frequency
 
@@ -61,15 +71,7 @@ Encode the following JSON using URL encoding and assign it to the 'query' query 
 
 ## Query Request Parameters
 
-| Name                    | Type    | Required | Description                                                                                                                                                                                                                             |
-| ----------------------- | ------- | -------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| trace                   | string  | Yes      | Trace code used for logging purposes, ensure uniqueness for each request                                                                                                                                                                |
-| data                    | object  | Yes      |                                                                                                                                                                                                                                         |
-| » code                  | string  | Yes      | Refer to the code list and select the code you want to query                                                                                                                                                                            |
-| » kline\_type           | integer | Yes      | Type of K-line: 1 minute K, 2 for 5-minute K, 3 for 15-minute K, 4 for 30-minute K, 5 for hourly K, 6 for 2-hour K, 7 for 4-hour K, 8 for daily K, 9 for weekly K, 10 for monthly K (Note: Stocks do not support 2-hour K and 4-hour K) |
-| » kline\_timestamp\_end | integer | Yes      | Indicates the time point to query backward from. Set to 0 for current time, only effective for non-stock type codes                                                                                                                     |
-| » query\_kline\_num     | integer | Yes      | Number of K-lines to query, maximum of 1000                                                                                                                                                                                             |
-| » adjust\_type          | integer | Yes      | Adjustment type, effective only for stock codes, e.g., 0: ex-rights, 1: pre-adjustment, currently only supports 0                                                                                                                       |
+<table><thead><tr><th width="185.38671875">Name</th><th width="92.25">Type</th><th width="85.22265625">Required</th><th>Description</th></tr></thead><tbody><tr><td>trace</td><td>string</td><td>Yes</td><td>Trace code used for logging purposes, ensure uniqueness for each request</td></tr><tr><td>data</td><td>object</td><td>Yes</td><td></td></tr><tr><td>» code</td><td>string</td><td>Yes</td><td>Refer to the code list and select the code you want to query：<a href="https://docs.google.com/spreadsheets/d/1avkeR1heZSj6gXIkDeBt8X3nv4EzJetw4yFuKjSDYtA/edit?gid=495387863#gid=495387863">[Click on the code list]</a></td></tr><tr><td>» kline_type</td><td>integer</td><td>Yes</td><td>Type of K-line: <br>1、1 represents 1-minute K-line, 2 represents 5-minute K-line, 3 represents 15-minute K-line, 4 represents 30-minute K-line, 5 represents 1-hour K-line, 6 represents 2-hour K-line (not supported for stocks), 7 represents 4-hour K-line (not supported for stocks), 8 represents daily K-line, 9 represents weekly K-line, and 10 represents monthly K-line. (Note: Stocks do not support 2-hour and 4-hour K-lines.)<br>2、The shortest K-line supported is 1 minute.</td></tr><tr><td>» kline_timestamp_end</td><td>integer</td><td>Yes</td><td><p>Query K-lines from a specified time:</p><p>1、Send 0 to query from the latest trading day.</p><p>2、Send a timestamp to query from that time.</p><p>3、Only forex, precious metals, and cryptocurrencies support timestamps; stock codes do not.</p></td></tr><tr><td>» query_kline_num</td><td>integer</td><td>Yes</td><td>Number of K-lines to query, maximum of 1000</td></tr><tr><td>» adjust_type</td><td>integer</td><td>Yes</td><td>Adjustment type, effective only for stock codes, e.g., 0: ex-rights, 1: pre-adjustment, currently only supports 0</td></tr></tbody></table>
 
 > Response Example OK
 
@@ -107,30 +109,13 @@ Encode the following JSON using URL encoding and assign it to the 'query' query 
 
 ## Response Results
 
-| Status Code | Status Code Meaning | Description | Data Model |
-| ----------- | ------------------- | ----------- | ---------- |
-| 200         | OK                  | OK          | Inline     |
+<table><thead><tr><th width="161.30078125">Status Code</th><th width="196.50390625">Status Code Meaning</th><th>Description</th><th>Data Model</th></tr></thead><tbody><tr><td>200</td><td>OK</td><td>OK</td><td>Inline</td></tr></tbody></table>
 
-| Name             | Type      | Required | Description                                                                                                                                                                                                                             |
-| ---------------- | --------- | -------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| » ret            | integer   | true     |                                                                                                                                                                                                                                         |
-| » msg            | string    | true     |                                                                                                                                                                                                                                         |
-| » trace          | string    | true     |                                                                                                                                                                                                                                         |
-| » data           | object    | true     |                                                                                                                                                                                                                                         |
-| »» code          | string    | true     | Code                                                                                                                                                                                                                                    |
-| »» kline\_type   | integer   | true     | Type of K-line: 1 minute K, 2 for 5-minute K, 3 for 15-minute K, 4 for 30-minute K, 5 for hourly K, 6 for 2-hour K, 7 for 4-hour K, 8 for daily K, 9 for weekly K, 10 for monthly K (Note: Stocks do not support 2-hour K and 4-hour K) |
-| »» kline\_list   | \[object] | true     |                                                                                                                                                                                                                                         |
-| »»» timestamp    | string    | true     | Timestamp of the K-line                                                                                                                                                                                                                 |
-| »»» open\_price  | string    | true     | Opening price of the K-line                                                                                                                                                                                                             |
-| »»» close\_price | string    | true     | Closing price of the K-line                                                                                                                                                                                                             |
-| »»» high\_price  | string    | true     | Highest price of the K-line                                                                                                                                                                                                             |
-| »»» low\_price   | string    | true     | Lowest price of the K-line                                                                                                                                                                                                              |
-| »»» volume       | string    | true     | Trading volume of the K-line                                                                                                                                                                                                            |
-| »»» turnover     | string    | true     | Trading turnover of the K-line                                                                                                                                                                                                          |
+<table><thead><tr><th width="157.20703125">Name</th><th width="109.15625">Type</th><th width="98.421875">Required</th><th>Description</th></tr></thead><tbody><tr><td>» ret</td><td>integer</td><td>true</td><td></td></tr><tr><td>» msg</td><td>string</td><td>true</td><td></td></tr><tr><td>» trace</td><td>string</td><td>true</td><td></td></tr><tr><td>» data</td><td>object</td><td>true</td><td></td></tr><tr><td>»» code</td><td>string</td><td>true</td><td>Code</td></tr><tr><td>»» kline_type</td><td>integer</td><td>true</td><td>Type of K-line: <br>1、1 represents 1-minute K-line, 2 represents 5-minute K-line, 3 represents 15-minute K-line, 4 represents 30-minute K-line, 5 represents 1-hour K-line, 6 represents 2-hour K-line (not supported for stocks), 7 represents 4-hour K-line (not supported for stocks), 8 represents daily K-line, 9 represents weekly K-line, and 10 represents monthly K-line. (Note: Stocks do not support 2-hour and 4-hour K-lines.)<br>2、The shortest K-line supported is 1 minute.</td></tr><tr><td>»» kline_list</td><td>[object]</td><td>true</td><td></td></tr><tr><td>»»» timestamp</td><td>string</td><td>true</td><td>Timestamp of the K-line</td></tr><tr><td>»»» open_price</td><td>string</td><td>true</td><td>Opening price of the K-line</td></tr><tr><td>»»» close_price</td><td>string</td><td>true</td><td>Closing price of the K-line</td></tr><tr><td>»»» high_price</td><td>string</td><td>true</td><td>Highest price of the K-line</td></tr><tr><td>»»» low_price</td><td>string</td><td>true</td><td>Lowest price of the K-line</td></tr><tr><td>»»» volume</td><td>string</td><td>true</td><td>Trading volume of the K-line</td></tr><tr><td>»»» turnover</td><td>string</td><td>true</td><td>Trading turnover of the K-line</td></tr></tbody></table>
 
-{% swagger src="../../.gitbook/assets/MultiMarkets-BusinessAPI.openapi.json" path="https://quote.alltick.io/quote-stock-b-api/kline" method="get" %}
+{% openapi src="../../.gitbook/assets/MultiMarkets-BusinessAPI.openapi.json" path="https://quote.alltick.io/quote-stock-b-api/kline" method="get" %}
 [MultiMarkets-BusinessAPI.openapi.json](../../.gitbook/assets/MultiMarkets-BusinessAPI.openapi.json)
-{% endswagger %}
+{% endopenapi %}
 
 ### Official Website
 
