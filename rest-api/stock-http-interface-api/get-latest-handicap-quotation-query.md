@@ -1,10 +1,8 @@
-# GET 最新盘口报价查询
+# GET 最新盘口(最新深度、Order Book)查询
 
 [English ](https://en.apis.alltick.co/rest-api/stock-http-interface-api/get-latest-handicap-quotation-query)/ 中文
 
 ## GET /depth-tick
-
-> 完整的URL请参见[API地址说明](../../integration-process/market-address-description/http-quotes-api-address-description.md)
 
 ## **接口说明**
 
