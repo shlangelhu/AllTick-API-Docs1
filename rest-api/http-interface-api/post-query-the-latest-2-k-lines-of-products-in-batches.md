@@ -1,6 +1,6 @@
 # POST Query the latest 2 K lines of products in batches
 
-English / [中文](https://apis.alltick.co/rest-api/gu-piao-http-jie-kou-api/get-pi-liangkxian-cha-xun)
+English / [中文](https://app.gitbook.com/s/AnPIgTqJ2rek1QSPVUja/rest-api/stock-http-interface-api/post-pi-liang-cha-xun-chan-pin-zui-xin-2-genkxian)
 
 ## Post /batch-kline
 
