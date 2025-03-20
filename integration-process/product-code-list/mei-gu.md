@@ -2,15 +2,11 @@
 
 [English ](https://en.apis.alltick.co/integration-process/product-code-list/us-stock)/ 中文
 
-### 美股全code：
+### 美股产品的code列表，点击下面链接查看：
 
 [https://docs.google.com/spreadsheets/d/1avkeR1heZSj6gXIkDeBt8X3nv4EzJetw4yFuKjSDYtA/edit?gid=583033325#gid=583033325](https://docs.google.com/spreadsheets/d/1avkeR1heZSj6gXIkDeBt8X3nv4EzJetw4yFuKjSDYtA/edit?gid=583033325#gid=583033325)
 
-### 需要更多产品可直接联系:
-
-* Telegram: [https://t.me/alltick001](https://t.me/alltick001)
-* Email: [support@alltick.co](mailto:support@alltick.co)
-* Skype: [https://join.skype.com/invite/xokTc695huNu](https://join.skype.com/invite/xokTc695huNu)
+备注：产品列表能搜索到的code表示Alltick支持，搜索不到的code表示不支持。
 
 ### Code 示例
 
