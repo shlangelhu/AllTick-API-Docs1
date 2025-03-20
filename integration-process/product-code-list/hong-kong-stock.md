@@ -2,17 +2,13 @@
 
 English / [中文](https://apis.alltick.co/jie-ru-liu-cheng/chan-pin-code-lie-biao/gang-gu)
 
-### Hong Kong Stock All Code： <a href="#gang-gu-quan-code" id="gang-gu-quan-code"></a>
+## List of codes for all Hong Kong stocks, click the link below to view:： <a href="#gang-gu-quan-code" id="gang-gu-quan-code"></a>
 
 [https://docs.google.com/spreadsheets/d/1avkeR1heZSj6gXIkDeBt8X3nv4EzJetw4yFuKjSDYtA/edit?gid=1134034911#gid=1134034911](https://docs.google.com/spreadsheets/d/1avkeR1heZSj6gXIkDeBt8X3nv4EzJetw4yFuKjSDYtA/edit?gid=1134034911#gid=1134034911)
 
-## If you need more products, please contact:
+(Note: Codes that can be searched in the product list are supported by Alltick, while codes that cannot be found are not supported.)
 
-* Telegram: [https://t.me/alltick001](https://t.me/alltick001)
-* Email: [support@alltick.co](mailto:support@alltick.co)
-* Skype: [https://join.skype.com/invite/xokTc695huNu](https://join.skype.com/invite/xokTc695huNu)
-
-### Code Example
+## Code Example
 
 | Name   | code    |
 | ------ | ------- |
