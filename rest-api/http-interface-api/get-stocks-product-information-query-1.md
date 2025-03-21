@@ -8,12 +8,12 @@ English / [中文](https://app.gitbook.com/s/AnPIgTqJ2rek1QSPVUja/rest-api/stock
 
 **1、Daily Price Change Calculation**
 
-**Method 1:** Use the HTTP API to get the daily K-line closing price for today and the previous day.
+**Method 1:** Use the HTTP API to get the daily K-line closing price for today and the previous day：
 
 **Formula:**\
 `Price Change (%) = (Today's Closing Price - Previous Day's Closing Price) / Previous Day's Closing Price * 100%`
 
-**Method 2:** Use the WebSocket API to get the latest price and the HTTP API to fetch the previous day's closing price.
+**Method 2:** Use the WebSocket API to get the latest price and the HTTP API to retrieve the previous day's closing price for the daily candlestick chart. The calculation formula is as follows:
 
 **Formula:**\
 `Price Change (%) = (Latest Price - Previous Day's Closing Price) / Previous Day's Closing Price * 100%`
