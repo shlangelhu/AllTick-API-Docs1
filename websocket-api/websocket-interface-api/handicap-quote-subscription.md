@@ -1,4 +1,4 @@
-# Handicap Quote Subscription
+# Order Book (Real-time Tick-by-Tick, Market Depth) Subscription
 
 English / [中文](https://apis.alltick.co/websocket-api/gu-piao-websocket-jie-kou-api/pan-kou-bao-jia-ding-yue)
 
@@ -61,9 +61,9 @@ After a successful connection, you can subscribe to specific forex, cryptocurren
 
 ## Request - Protocol Number：22002
 
-#### Data definition
+#### Json definition
 
-<table><thead><tr><th width="115.2265625">Field</th><th width="126.30859375">Name</th><th width="78.6796875">Type</th><th width="98.59375">Required</th><th>Description</th></tr></thead><tbody><tr><td>symbol_list</td><td>Product List</td><td>array</td><td>Yes</td><td>See the symbol definition below for the specific format.</td></tr></tbody></table>
+<table><thead><tr><th width="115.2265625">Field</th><th width="150.30859375">Name</th><th width="78.6796875">Type</th><th width="98.59375">Required</th><th>Description</th></tr></thead><tbody><tr><td>cmd_id</td><td>protocol number</td><td>integer</td><td>Yes</td><td>The protocol number for the order book data request is fixed: 22002</td></tr><tr><td>seq_id</td><td>response id</td><td>integer</td><td>Yes</td><td>Subscription request identifier, which will be returned in the response. (Customizable and can be repeated for each request)</td></tr><tr><td>trace</td><td>traceable id</td><td>string</td><td>Yes</td><td>Traceable ID for request log information (Customizable, and it should not be repeated for each request)</td></tr><tr><td>symbol_list</td><td>Product List</td><td>array</td><td>Yes</td><td>See the symbol definition below for the specific format.</td></tr></tbody></table>
 
 #### Symbol definition
 

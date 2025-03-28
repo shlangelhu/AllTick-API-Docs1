@@ -1,4 +1,4 @@
-# Transaction quote subscription
+# Latest Trade Price (Real-time Tick Data) Batch Subscription
 
 English / [中文](https://apis.alltick.co/websocket-api/gu-piao-websocket-jie-kou-api/cheng-jiao-bao-jia-ding-yue)
 
@@ -54,9 +54,9 @@ After a successful connection, you can subscribe to specific forex, cryptocurren
 
 ## Request - Protocol Number：22004
 
-data definition
+Json definition
 
-<table><thead><tr><th width="119.00390625">Field</th><th width="134.81640625">Name</th><th width="88.484375">Type</th><th width="106.0546875">Required</th><th>Description</th></tr></thead><tbody><tr><td>symbol_list</td><td>Symbol List</td><td>array</td><td>Yes</td><td>See the symbol definition below for the specific format.</td></tr></tbody></table>
+<table><thead><tr><th width="119.00390625">Field</th><th width="147.81640625">Name</th><th width="88.484375">Type</th><th width="106.0546875">Required</th><th>Description</th></tr></thead><tbody><tr><td>cmd_id</td><td>protocol number</td><td>integer</td><td>Yes</td><td>The protocol number for the latest trade price data request is fixed: 22004</td></tr><tr><td>seq_id</td><td>response id</td><td>integer</td><td>Yes</td><td>Subscription request identifier, which will be returned in the response. (Customizable and can be repeated for each request)</td></tr><tr><td>trace</td><td>traceable id</td><td>string</td><td>Yes</td><td>Traceable ID for request log information (Customizable, and it should not be repeated for each request)</td></tr><tr><td>symbol_list</td><td>Symbol List</td><td>array</td><td>Yes</td><td>See the symbol definition below for the specific format.</td></tr></tbody></table>
 
 symbol definition
 
