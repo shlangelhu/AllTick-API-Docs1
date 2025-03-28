@@ -111,11 +111,11 @@ After a successful connection, you can subscribe to specific forex, cryptocurren
 
 #### bids definition
 
-<table><thead><tr><th width="141.9921875">Field</th><th width="166.859375">Name</th><th width="142.4609375">Type</th><th>Description</th></tr></thead><tbody><tr><td>price</td><td>Bid Price</td><td>string</td><td></td></tr><tr><td>volume</td><td>Bid Volume</td><td>string</td><td></td></tr></tbody></table>
+<table><thead><tr><th width="141.9921875">Field</th><th width="166.859375">Name</th><th width="142.4609375">Type</th><th>Description</th></tr></thead><tbody><tr><td>price</td><td>Bid Price</td><td>string</td><td></td></tr><tr><td>volume</td><td>Bid Volume</td><td>string</td><td><p>1、Forex, precious metals, and CFD indices do not provide volume.</p><p>2、Stocks and cryptocurrency data provide volume.</p></td></tr></tbody></table>
 
 asks definition
 
-<table><thead><tr><th width="147.1796875">Field</th><th width="163.4765625">Name</th><th width="143.359375">Type</th><th>Description</th></tr></thead><tbody><tr><td>price</td><td>Ask Price</td><td>string</td><td></td></tr><tr><td>volume</td><td>Ask Volume</td><td>string</td><td></td></tr></tbody></table>
+<table><thead><tr><th width="147.1796875">Field</th><th width="163.4765625">Name</th><th width="143.359375">Type</th><th>Description</th></tr></thead><tbody><tr><td>price</td><td>Ask Price</td><td>string</td><td></td></tr><tr><td>volume</td><td>Ask Volume</td><td>string</td><td><p>1、Forex, precious metals, and CFD indices do not provide volume.</p><p>2、Stocks and cryptocurrency data provide volume.</p></td></tr></tbody></table>
 
 ### Data Structure (JSON)
 
