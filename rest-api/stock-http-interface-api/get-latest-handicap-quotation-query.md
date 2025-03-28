@@ -110,26 +110,9 @@
 
 ## 返回结果
 
-| 状态码 | 状态码含义 | 说明 | 数据模型   |
-| --- | ----- | -- | ------ |
-| 200 | OK    | OK | Inline |
+<table><thead><tr><th width="160.484375">状态码</th><th width="158.4453125">状态码含义</th><th width="124.49609375">说明</th><th>数据模型</th></tr></thead><tbody><tr><td>200</td><td>OK</td><td>OK</td><td>Inline</td></tr></tbody></table>
 
-| 名称             | 类型        | 必选    | 说明         |
-| -------------- | --------- | ----- | ---------- |
-| » ret          | integer   | true  | 返回code     |
-| » msg          | string    | true  | 返回code对应消息 |
-| » trace        | string    | true  | 请求的trace   |
-| » data         | object    | true  |            |
-| »» tick\_list  | \[object] | true  |            |
-| »»» code       | string    | false | 代码         |
-| »»» seq        | string    | false | 报价序号       |
-| »»» tick\_time | string    | false | 报价时间戳      |
-| »»» bids       | \[object] | false | bid列表      |
-| »»»» price     | string    | false | 价          |
-| »»»» volume    | string    | false | 量          |
-| »»» asks       | \[object] | false | ask列表      |
-| »»»» price     | string    | false | 价          |
-| »»»» volume    | string    | false | 量          |
+<table><thead><tr><th width="156.6640625">名称</th><th width="156.48046875">类型</th><th width="123.80078125">必选</th><th>说明</th></tr></thead><tbody><tr><td>» ret</td><td>integer</td><td>true</td><td>返回code</td></tr><tr><td>» msg</td><td>string</td><td>true</td><td>返回code对应消息</td></tr><tr><td>» trace</td><td>string</td><td>true</td><td>请求的trace</td></tr><tr><td>» data</td><td>object</td><td>true</td><td></td></tr><tr><td>»» tick_list</td><td>[object]</td><td>true</td><td></td></tr><tr><td>»»» code</td><td>string</td><td>false</td><td>代码</td></tr><tr><td>»»» seq</td><td>string</td><td>false</td><td>报价序号</td></tr><tr><td>»»» tick_time</td><td>string</td><td>false</td><td>报价时间戳</td></tr><tr><td>»»» bids</td><td>[object]</td><td>false</td><td>bid列表</td></tr><tr><td>»»»» price</td><td>string</td><td>false</td><td>价</td></tr><tr><td>»»»» volume</td><td>string</td><td>false</td><td>量</td></tr><tr><td>»»» asks</td><td>[object]</td><td>false</td><td>ask列表</td></tr><tr><td>»»»» price</td><td>string</td><td>false</td><td>价</td></tr><tr><td>»»»» volume</td><td>string</td><td>false</td><td>量<br>1、外汇、贵金属、CFD指数不提供volume<br>2、股票，加密货币数据均提供volume</td></tr></tbody></table>
 
 {% openapi src="../../.gitbook/assets/api.json" path="/quote-stock-b-api/depth-tick" method="get" %}
 [api.json](../../.gitbook/assets/api.json)
