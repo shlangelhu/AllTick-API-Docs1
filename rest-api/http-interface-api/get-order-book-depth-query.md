@@ -119,22 +119,22 @@ Encode the following JSON into URL format and assign it to the `query` query str
 | ----------- | -------------- | ----------- | ---------- |
 | 200         | OK             | OK          | Inline     |
 
-| Name            | Type      | Required | Description                              |
-| --------------- | --------- | -------- | ---------------------------------------- |
-| » ret           | integer   | true     | Return code                              |
-| » msg           | string    | true     | Message corresponding to the return code |
-| » trace         | string    | true     | Request trace                            |
-| » data          | object    | true     |                                          |
-| »» tick\_list   | \[object] | true     |                                          |
-| »» » code       | string    | false    | Code                                     |
-| »» » seq        | string    | false    | Quote sequence number                    |
-| »» » tick\_time | string    | false    | Quote timestamp                          |
-| »» » bids       | \[object] | false    | Bid list                                 |
-| »» »» price     | string    | false    | Price                                    |
-| »» »» volume    | string    | false    | Volume                                   |
-| »» » asks       | \[object] | false    | Ask list                                 |
-| »» »» price     | string    | false    | Price                                    |
-| »» »» volume    | string    | false    | Volume                                   |
+| Name            | Type      | Required | Description                                                                                                                                  |
+| --------------- | --------- | -------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| » ret           | integer   | true     | Return code                                                                                                                                  |
+| » msg           | string    | true     | Message corresponding to the return code                                                                                                     |
+| » trace         | string    | true     | Request trace                                                                                                                                |
+| » data          | object    | true     |                                                                                                                                              |
+| »» tick\_list   | \[object] | true     |                                                                                                                                              |
+| »» » code       | string    | false    | Code                                                                                                                                         |
+| »» » seq        | string    | false    | Quote sequence number                                                                                                                        |
+| »» » tick\_time | string    | false    | Quote timestamp                                                                                                                              |
+| »» » bids       | \[object] | false    | Bid list                                                                                                                                     |
+| »» »» price     | string    | false    | Price                                                                                                                                        |
+| »» »» volume    | string    | false    | Volume                                                                                                                                       |
+| »» » asks       | \[object] | false    | Ask list                                                                                                                                     |
+| »» »» price     | string    | false    | Price                                                                                                                                        |
+| »» »» volume    | string    | false    | <p>Volume:</p><p>1、Forex, precious metals, and CFD indices do not provide volume.</p><p>2、Stocks and cryptocurrency data provide volume.</p> |
 
 {% openapi src="../../.gitbook/assets/MultiMarkets-BusinessAPI.openapi (1).json" path="/quote-b-api/depth-tick" method="get" expanded="true" %}
 [MultiMarkets-BusinessAPI.openapi (1).json](<../../.gitbook/assets/MultiMarkets-BusinessAPI.openapi (1).json>)
