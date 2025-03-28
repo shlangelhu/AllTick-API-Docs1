@@ -115,17 +115,11 @@ wss://quote.alltick.io/quote-b-ws-api?token=您的token
 
 #### bids定义
 
-|   字段   |    名称    |   类型   |  说明 |
-| :----: | :------: | :----: | :-: |
-|  price | 买一价，买盘价格 | string |     |
-| volume |  买一量，买盘量 | string |     |
+<table><thead><tr><th width="134.42578125" align="center">字段</th><th width="169.01171875" align="center">名称</th><th width="140.16015625" align="center">类型</th><th align="center">说明</th></tr></thead><tbody><tr><td align="center">price</td><td align="center">买一价，买盘价格</td><td align="center">string</td><td align="center"></td></tr><tr><td align="center">volume</td><td align="center">买一量，买盘量</td><td align="center">string</td><td align="center">1、外汇、贵金属、CFD指数不提供volume<br>2、股票，加密货币数据均提供volume</td></tr></tbody></table>
 
 #### asks定义
 
-|   字段   |    名称    |   类型   |  说明 |
-| :----: | :------: | :----: | :-: |
-|  price | 卖一价，卖盘价格 | string |     |
-| volume |  卖一量，卖盘量 | string |     |
+<table><thead><tr><th width="142.23828125" align="center">字段</th><th width="159.4765625" align="center">名称</th><th width="156.50390625" align="center">类型</th><th align="center">说明</th></tr></thead><tbody><tr><td align="center">price</td><td align="center">卖一价，卖盘价格</td><td align="center">string</td><td align="center"></td></tr><tr><td align="center">volume</td><td align="center">卖一量，卖盘量</td><td align="center">string</td><td align="center">1、外汇、贵金属、CFD指数不提供volume<br>2、股票，加密货币数据均提供volume</td></tr></tbody></table>
 
 ### 数据结构(json)
 
