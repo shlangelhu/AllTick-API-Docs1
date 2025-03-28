@@ -52,11 +52,14 @@ wss://quote.alltick.io/quote-b-ws-api?token=您的token
 
 ## 请求-协议号：22004
 
-#### data定义 <a href="#data-ding-yi" id="data-ding-yi"></a>
+#### json定义 <a href="#data-ding-yi" id="data-ding-yi"></a>
 
-| 字段           | 名称   | 类型    | 必填项 | 说明              |
-| ------------ | ---- | ----- | --- | --------------- |
-| symbol\_list | 产品列表 | array | 是   | 具体格式见下面symbol定义 |
+| 字段           | 名称    | 类型      | 必填项 | 说明                        |
+| ------------ | ----- | ------- | --- | ------------------------- |
+| cmd\_id      | 协议号   | integer | 是   | 逐笔订阅请求协议号固定：22004         |
+| seq\_id      | 响应id  | integer | 是   | 订阅请求标识，响应回传(自定义，每次请求可重复)  |
+| trace        | 可追溯id | string  | 是   | 请求日志信息可追溯id(自定义，每次请求不可重复) |
+| symbol\_list | 产品列表  | array   | 是   | 具体格式见下面symbol定义           |
 
 #### symbol定义 <a href="#symbol-ding-yi" id="symbol-ding-yi"></a>
 
