@@ -29,7 +29,7 @@
 * [HTTP 请求示例](rest-api/http-request-example.md)
 * [HTTP接口API](rest-api/stock-http-interface-api/README.md)
   * [GET 单产品历史K线查询（最高、最低、开盘、收盘价）](rest-api/stock-http-interface-api/get-dan-chan-pin-li-shikxian-cha-xun.md)
-  * [POST 批量查询产品最新2根K线](rest-api/stock-http-interface-api/post-pi-liang-cha-xun-chan-pin-zui-xin-2-genkxian.md)
+  * [POST 批量查询产品最新2根K线（最高、最低、开盘、收盘价）](rest-api/stock-http-interface-api/post-pi-liang-cha-xun-chan-pin-zui-xin-2-genkxian.md)
   * [GET 最新盘口(最新深度、Order Book)查询](rest-api/stock-http-interface-api/get-latest-handicap-quotation-query.md)
   * [GET 最新成交价(最新tick)批量查询](rest-api/stock-http-interface-api/get-latest-transaction-price-query.md)
   * [GET 股票产品基础信息批量查询](rest-api/stock-http-interface-api/get-latest-transaction-price-query-1.md)
