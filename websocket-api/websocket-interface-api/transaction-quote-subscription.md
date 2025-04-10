@@ -4,7 +4,7 @@ English / [中文](https://apis.alltick.co/websocket-api/gu-piao-websocket-jie-k
 
 ## Interface Description
 
-This API supports batch subscription to real-time trade prices (tick-by-tick data) but does not provide historical trade prices.
+This API supports batch subscription to real-time trade prices (tick-by-tick data、Latest Price) but does not provide historical trade prices.
 
 Each WebSocket connection allows one active subscription at a time.\
 Sending a new subscription request overwrites the previous one.\
