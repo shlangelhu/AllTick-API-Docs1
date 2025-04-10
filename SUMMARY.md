@@ -29,7 +29,7 @@
 * [HTTP request example](rest-api/http-request-example.md)
 * [HTTP interface API](rest-api/http-interface-api/README.md)
   * [GET Single Product K line query（High Low, Open, Close）](rest-api/http-interface-api/get-single-product-k-line-query.md)
-  * [POST Query the latest 2 K lines of products in batches](rest-api/http-interface-api/post-query-the-latest-2-k-lines-of-products-in-batches.md)
+  * [POST Query the latest 2 K lines of products in batches（High , Low, Open, Close）](rest-api/http-interface-api/post-query-the-latest-2-k-lines-of-products-in-batches.md)
   * [GET Order Book（Depth） Query](rest-api/http-interface-api/get-order-book-depth-query.md)
   * [GET Latest transaction price query](rest-api/http-interface-api/get-latest-transaction-price-query.md)
   * [GET Stocks product information query](rest-api/http-interface-api/get-stocks-product-information-query.md)
