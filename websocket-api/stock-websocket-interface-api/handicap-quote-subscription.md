@@ -20,7 +20,7 @@
 
 3.2 存在单边深度是空的情况，例如股票涨停跌停时，单边盘口可能是空的
 
-<table><thead><tr><th width="82"></th><th width="181">外汇、贵金属、原油</th><th width="97">加密货币</th><th width="100">港股</th><th width="92">美股</th><th>沪深A股</th></tr></thead><tbody><tr><td>深度说明</td><td>最大1 档</td><td>最大5档</td><td>最大10档</td><td>最大1档</td><td>最大5档</td></tr></tbody></table>
+<table><thead><tr><th width="82"></th><th width="181">外汇、贵金属、原油</th><th width="97">加密货币</th><th width="100">港股</th><th width="92">美股</th><th>沪深A股</th></tr></thead><tbody><tr><td>深度说明</td><td>最大1 档<br>(只有委托价，没有量)</td><td>最大5档</td><td>最大10档</td><td>最大1档</td><td>最大5档</td></tr></tbody></table>
 
 ## 接口限制
 
@@ -35,7 +35,7 @@
 * 基本路径: /quote-stock-b-ws-api
 * 完整URL: wss://quote.alltick.io/quote-stock-b-ws-api
 
-**2、外汇、贵金属、加密货币、商品接口地址：**
+**2、外汇、贵金属、加密货币、原油、CFD指数、商品接口地址：**
 
 * 基本路径: /quote-b-ws-api
 * 完整URL: wss://quote.alltick.io/quote-b-ws-api
@@ -50,7 +50,7 @@ wss://quote.alltick.io/quote-stock-b-ws-api?token=您的token
 
 连接成功后，您可以根据需要订阅特定的股票市场数据。详细的调用方法请参考下面的文档说明。
 
-**2、外汇、贵金属、加密货币、商品请求示例：**
+**2、外汇、贵金属、加密货币、原油、CFD指数、商品请求示例：**
 
 每次建立连接时，必须在URL中附加您的认证token，如下所示：
 
