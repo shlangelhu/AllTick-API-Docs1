@@ -1,4 +1,4 @@
-# GET Latest transaction price query
+# GET Latest transaction price query（Latest Price）
 
 English / [中文](https://apis.alltick.co/rest-api/gu-piao-http-jie-kou-api/get-zui-xin-cheng-jiao-jia-cha-xun)
 
@@ -6,7 +6,7 @@ English / [中文](https://apis.alltick.co/rest-api/gu-piao-http-jie-kou-api/get
 
 ## Interface Description
 
-This interface supports batch requests for the latest trade prices (latest tick data) but does not support requests for historical trade prices (historical tick data).
+This interface supports batch requests for the latest trade prices (latest tick data、Latest Price) but does not support requests for historical trade prices (historical tick data).
 
 ## Request Frequency
 

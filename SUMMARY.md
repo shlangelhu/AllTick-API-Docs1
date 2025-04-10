@@ -31,7 +31,7 @@
   * [GET Single Product K line query（High Low, Open, Close）](rest-api/http-interface-api/get-single-product-k-line-query.md)
   * [POST Query the latest 2 K lines of products in batches（High , Low, Open, Close）](rest-api/http-interface-api/post-query-the-latest-2-k-lines-of-products-in-batches.md)
   * [GET Order Book（Depth） Query](rest-api/http-interface-api/get-order-book-depth-query.md)
-  * [GET Latest transaction price query](rest-api/http-interface-api/get-latest-transaction-price-query.md)
+  * [GET Latest transaction price query（Latest Price）](rest-api/http-interface-api/get-latest-transaction-price-query.md)
   * [GET Stocks product information query](rest-api/http-interface-api/get-stocks-product-information-query.md)
   * [Price changes, Market closure, Holidays, Limit up/down, New listings, and Delistings](rest-api/http-interface-api/get-stocks-product-information-query-1.md)
 
