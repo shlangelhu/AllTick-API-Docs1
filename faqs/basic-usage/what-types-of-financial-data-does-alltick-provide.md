@@ -1,3 +1,22 @@
+---
+description: >-
+  AllTick 提供广泛的金融市场数据，包括但不限于以下类型： 外汇（Forex）数据：覆盖1000+
+  货币对的实时和历史数据，包括主要货币对、交叉货币对和外币兑换率。
+  商品（Commodities）数据：提供包括贵金属（如黄金、白银）、能源（如原油、天然气）在内的实时和历史商品价格数据。
+  股票（Stocks）数据：涵盖170,000+ 美国和香港股票的实时和历史数据，包括股票价格、交易量和市值等
+layout:
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # AllTick 提供哪些类型的金融数据？
 
 AllTick 提供广泛的金融市场数据，包括但不限于以下类型：
