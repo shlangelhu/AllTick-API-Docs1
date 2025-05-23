@@ -1,3 +1,18 @@
+---
+description: HTTP request example
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # HTTP request example
 
 English / [中文](https://apis.alltick.co/rest-api/http-qing-qiu-shi-li)
@@ -219,8 +234,6 @@ print(text3)
 ```
 {% endtab %}
 {% endtabs %}
-
-
 
 ***
 

@@ -1,3 +1,21 @@
+---
+description: >-
+  Step 1: Familiarize Yourself with the API Endpoint and Parameters Objective:
+  Gain a deep understanding of the API's URL structure and its expected
+  parameters. Action: Carefully read the market address
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # Process Description
 
 English / [中文](https://apis.alltick.co/jie-ru-liu-cheng/liu-cheng-shuo-ming)

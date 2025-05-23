@@ -1,3 +1,21 @@
+---
+description: >-
+  Price Change Calculation Alltick API does not provide price change or 24-hour
+  price change fields. Users can calculate price changes using Alltick data.
+  1、Daily Price Change Calculation Method 1:
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # Price changes, Market closure, Holidays, Limit up/down, New listings, and Delistings
 
 English / [中文](https://app.gitbook.com/s/AnPIgTqJ2rek1QSPVUja/rest-api/stock-http-interface-api/get-latest-transaction-price-query-1-1)

@@ -1,63 +1,63 @@
+---
+description: >-
+  API Address Description Stock HTTP Interface API Address   The query API uses
+  HTTPS protocol, the complete URL is:   Each time a query request is sent, the
+  method name and token information need to be
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # HTTP Quotes API Address Description
 
 English / [中文](https://apis.alltick.co/jie-ru-liu-cheng/hang-qing-di-zhi-shuo-ming/http-hang-qing-api-di-zhi-shuo-ming)
 
 ## API Address Description
 
-
-
 ### Stock HTTP Interface API Address
 
-
-
-/quote-stock-b-api Stock Query API\
-
+/quote-stock-b-api Stock Query API\\
 
 The query API uses HTTPS protocol, the complete URL is:\
-[https://quote.alltick.io/quote-stock-b-api](https://quote.alltick.io/quote-stock-b-api)\
+[https://quote.alltick.io/quote-stock-b-api](https://quote.alltick.io/quote-stock-b-api)\\
 
-
-Each time a query request is sent, the method name and token information need to be provided\
-
+Each time a query request is sent, the method name and token information need to be provided\\
 
 Single product request K-line example:\
-[https://quote.alltick.io/quote-stock-b-api/kline?token=yourToken\&query=queryData](https://quote.alltick.io/quote-stock-b-api/kline?token=yourToken\&query=queryData)\
-
+[https://quote.alltick.io/quote-stock-b-api/kline?token=yourToken\&query=queryData](https://quote.alltick.io/quote-stock-b-api/kline?token=yourToken\&query=queryData)\\
 
 Batch product request K-line example:\
 [https://quote.alltick.io/quote-stock-b-api/batch-kline?token=yourToken](https://quote.alltick.io/quote-stock-b-api/batch-kline?token=yourToken)\
-Note: When making batch product requests for K-line, the request parameters should be placed in the body.\
-
+Note: When making batch product requests for K-line, the request parameters should be placed in the body.\\
 
 Request for latest transaction price example:\
-[https://quote.alltick.io/quote-stock-b-api/trade-tick?token=yourToken\&query=queryData](https://quote.alltick.io/quote-stock-b-api/trade-tick?token=yourToken\&query=queryData)\
-
+[https://quote.alltick.io/quote-stock-b-api/trade-tick?token=yourToken\&query=queryData](https://quote.alltick.io/quote-stock-b-api/trade-tick?token=yourToken\&query=queryData)\\
 
 Request for latest market depth example:\
-[https://quote.alltick.io/quote-stock-b-api/depth-tick?token=yourToken\&query=queryData](https://quote.alltick.io/quote-stock-b-api/depth-tick?token=yourToken\&query=queryData)\
+[https://quote.alltick.io/quote-stock-b-api/depth-tick?token=yourToken\&query=queryData](https://quote.alltick.io/quote-stock-b-api/depth-tick?token=yourToken\&query=queryData)\\
 
-
-For specific calling methods, please refer to the HTTP interface list\
-
+For specific calling methods, please refer to the HTTP interface list\\
 
 ### Forex, Cryptocurrency (Digital Currency), Commodity (Precious Metal) HTTP Interface API Address
 
-
-
-/quote-b-api Forex, Cryptocurrency (Digital Currency), Commodity (Precious Metal) Query API\
-
+/quote-b-api Forex, Cryptocurrency (Digital Currency), Commodity (Precious Metal) Query API\\
 
 The query API uses HTTPS protocol, the complete URL is:\
-[https://quote.alltick.io/quote-b-api](https://quote.alltick.io/quote-b-api)\
+[https://quote.alltick.io/quote-b-api](https://quote.alltick.io/quote-b-api)\\
 
-
-Each time a query request is sent, the method name and token information need to be provided\
-
+Each time a query request is sent, the method name and token information need to be provided\\
 
 Single product request K-line example: [https://quote.alltick.io/quote-b-api/kline?token=yourToken\&query=queryData](https://quote.alltick.io/quote-b-api/kline?token=yourToken\&query=queryData)
 
-Batch product request K-line example: [https://quote.alltick.io/quote-b-api/batch-kline?token=yourToken](https://quote.alltick.io/quote-b-api/batch-kline?token=yourToken) Note: When making batch product requests for K-line, the request parameters should be placed in the body.\
-
+Batch product request K-line example: [https://quote.alltick.io/quote-b-api/batch-kline?token=yourToken](https://quote.alltick.io/quote-b-api/batch-kline?token=yourToken) Note: When making batch product requests for K-line, the request parameters should be placed in the body.\\
 
 Request for latest transaction price example: [https://quote.alltick.io/quote-b-api/trade-tick?token=yourToken\&query=queryData](https://quote.alltick.io/quote-b-api/trade-tick?token=yourToken\&query=queryData)
 
@@ -106,8 +106,6 @@ This interface allows you to query market data for forex, cryptocurrencies (digi
 ***
 
 **Note:** For the security of your account, please ensure your token information is kept safe. If you need further assistance or have any questions, feel free to contact our technical support team at any time.
-
-
 
 ***
 

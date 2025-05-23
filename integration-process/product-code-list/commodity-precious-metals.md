@@ -1,3 +1,20 @@
+---
+description: >-
+  List of codes for precious metals (gold and silver) and crude oil products,
+  click the link below to view
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # Commodity (Precious Metals)
 
 English / [中文](https://apis.alltick.co/jie-ru-liu-cheng/chan-pin-code-lie-biao/shang-pin-gui-jin-shu)

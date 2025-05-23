@@ -1,3 +1,21 @@
+---
+description: >-
+  Changing your AllTick account information typically involves the following
+  steps. Please note that specific steps may vary due to the design and
+  functionality updates of the AllTick website.
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # How to change my account information?
 
 Changing your AllTick account information typically involves the following steps. Please note that specific steps may vary due to the design and functionality updates of the AllTick website. Here is a general guidance process:

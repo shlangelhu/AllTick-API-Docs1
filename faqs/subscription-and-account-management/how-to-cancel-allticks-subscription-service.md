@@ -1,3 +1,21 @@
+---
+description: >-
+  AllTick's subscription service is non-cancellable during the service period,
+  meaning once you've subscribed to AllTick's services, you will be able to
+  enjoy its data services throughout the entire sub
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # How to cancel AllTick's subscription service?
 
 AllTick's subscription service is non-cancellable during the service period, meaning once you've subscribed to AllTick's services, you will be able to enjoy its data services throughout the entire subscription period but will not be able to cancel the service and receive a refund during this time. This policy ensures that users fully consider and evaluate their needs before subscribing while also guaranteeing that AllTick can continue to provide high-quality data services.

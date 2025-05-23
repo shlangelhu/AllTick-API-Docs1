@@ -1,3 +1,21 @@
+---
+description: >-
+  AllTick focuses on providing real-time and historical financial market data
+  APIs, but does not directly offer data analysis and visualization tools.
+  However, acquiring accurate and timely financial da
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # Does AllTick provide data analysis and visualization tools?
 
 AllTick focuses on providing real-time and historical financial market data APIs, but does not directly offer data analysis and visualization tools. However, acquiring accurate and timely financial data is foundational for effective data analysis and creating insightful visualizations. For users needing data analysis and visualization, consider integrating AllTick's data with other data analysis and visualization tools. Here are some recommended providers and capabilities to assist in your data analysis and visualization efforts:

@@ -1,3 +1,21 @@
+---
+description: >-
+  When encountering technical issues with API usage, you can seek solutions
+  through the following steps: Check the API Documentation Start by thoroughly
+  reading the API documentation provided by AllTick
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # I encountered a technical problem when using the API, how can I solve it?
 
 When encountering technical issues with API usage, you can seek solutions through the following steps:

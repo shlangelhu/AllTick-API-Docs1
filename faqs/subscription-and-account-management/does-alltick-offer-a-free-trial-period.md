@@ -1,3 +1,21 @@
+---
+description: >-
+  Yes, after registering with AllTick, users will receive a one-week free trial
+  period. During this week, you can access AllTick's financial market data APIs,
+  including real-time and historical data
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # Does AllTick offer a free trial period?
 
 Yes, after registering with AllTick, users will receive a one-week free trial period. During this week, you can access AllTick's financial market data APIs, including real-time and historical data services, for free. This free trial period offers you the opportunity to fully evaluate AllTick's services, including the accuracy of the data, the response speed of the API, and the overall user experience.

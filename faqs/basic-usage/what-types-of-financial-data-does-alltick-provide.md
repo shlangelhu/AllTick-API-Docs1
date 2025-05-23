@@ -1,3 +1,21 @@
+---
+description: >-
+  AllTick offers extensive financial market data, encompassing but not limited
+  to the following types: Forex Data Covers real-time and historical data for
+  over 1,000 currency pairs, including major pair
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # What types of financial data does AllTick provide?
 
 AllTick offers extensive financial market data, encompassing but not limited to the following types:

@@ -1,3 +1,18 @@
+---
+description: Websocket request example
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # Websocket request example
 
 English / [中文](https://apis.alltick.co/websocket-api/websocket-qing-qiu-shi-li)

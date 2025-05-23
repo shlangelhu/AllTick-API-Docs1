@@ -1,3 +1,21 @@
+---
+description: >-
+  HTTP interface restrictions 1. Frequency Limits  2. IP Limits Requests are
+  limited based on the token, not the IP address. Example:： The basic plan
+  allows 1 request per second. If a token requests the
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # HTTP interface restrictions
 
 English / [中文](https://apis.alltick.co/jie-ru-liu-cheng/jie-kou-xian-zhi-shuo-ming/http-jie-kou-xian-zhi)

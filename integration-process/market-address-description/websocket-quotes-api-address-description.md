@@ -1,3 +1,22 @@
+---
+description: >-
+  Stock Market Data WebSocket Subscription Interface Address Base Path:
+  /quote-stock-b-ws-api Complete URL:
+  wss://quote.alltick.io/quote-stock-b-ws-api Authentication Information Each
+  time a connection
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # Websocket Quotes API Address Description
 
 English / [中文](https://apis.alltick.co/jie-ru-liu-cheng/hang-qing-di-zhi-shuo-ming/websocket-hang-qing-api-di-zhi-shuo-ming)
@@ -45,8 +64,6 @@ Once the connection is established, you can subscribe to market data for forex, 
 ***
 
 **Note:** For the security of your account, please ensure your token information is kept safe. If you need further assistance or have any questions, feel free to contact our technical support team at any time.
-
-
 
 ***
 

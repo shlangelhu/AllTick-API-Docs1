@@ -1,3 +1,20 @@
+---
+description: >-
+  Cancel quote subscription Request - Protocol Number：22006 Data definition Data
+  Structure (JSON)
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # Cancel quote subscription
 
 English / [中文](https://apis.alltick.co/websocket-api/gu-piao-websocket-jie-kou-api/qu-xiao-bao-jia-ding-yue)

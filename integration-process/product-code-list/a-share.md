@@ -1,3 +1,20 @@
+---
+description: >-
+  List of codes for all A-shares (Shanghai and Shenzhen markets), click the link
+  below to view
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # A Share
 
 English / [中文](https://apis.alltick.co/jie-ru-liu-cheng/chan-pin-code-lie-biao/a-gu)

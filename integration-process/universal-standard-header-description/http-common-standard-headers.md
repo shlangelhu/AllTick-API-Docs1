@@ -1,3 +1,20 @@
+---
+description: >-
+  Request Common Standard Header  Introduction to response common standard
+  header
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # HTTP Common Standard Headers
 
 English / [中文](https://apis.alltick.co/jie-ru-liu-cheng/tong-yong-biao-zhun-tou-shuo-ming/http-tong-yong-biao-zhun-tou)

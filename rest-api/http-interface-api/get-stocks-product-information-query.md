@@ -1,3 +1,20 @@
+---
+description: >-
+  This interface only supports batch requests for basic information on US, HK,
+  and A-share products. Request Frequency
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # GET Stocks product information query
 
 English / [中文](https://apis.alltick.co/rest-api/stock-http-interface-api/get-latest-transaction-price-query-1)

@@ -1,3 +1,21 @@
+---
+description: >-
+  The following is the maximum market depth for each product type: It is normal
+  for inactive products to be smaller than the maximum range listed below. There
+  is a situation where the unilateral depth
+layout:
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # GET Order Book（Depth） Query
 
 English / [中文](https://apis.alltick.co/rest-api/gu-piao-http-jie-kou-api/get-zui-xin-pan-kou-bao-jia-cha-xun)

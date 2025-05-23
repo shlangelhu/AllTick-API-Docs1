@@ -1,3 +1,21 @@
+---
+description: >-
+  Registering for an AllTick account typically involves the following steps,
+  aimed at providing users access to its financial market data API. Note that
+  the specific registration process may vary over
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # How to register an AllTick account?
 
 Registering for an AllTick account typically involves the following steps, aimed at providing users access to its financial market data API. Note that the specific registration process may vary over time or differ based on website updates. Here is a basic guidance process:

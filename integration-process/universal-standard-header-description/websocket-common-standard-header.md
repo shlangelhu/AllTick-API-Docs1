@@ -1,3 +1,20 @@
+---
+description: >-
+  Request Common Standard Header Introduction   Introduction to response common
+  standard header
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # Websocket Common Standard Header
 
 English / [中文](https://apis.alltick.co/jie-ru-liu-cheng/tong-yong-biao-zhun-tou-shuo-ming/websocket-tong-yong-biao-zhun-tou)

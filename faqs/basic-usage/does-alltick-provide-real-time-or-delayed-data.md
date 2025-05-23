@@ -1,3 +1,21 @@
+---
+description: >-
+  AllTick provides real-time financial market data, focusing on offering both
+  real-time and historical data support to developers, fintech companies,
+  traders, fund companies, exchanges, trading platform
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # Does AllTick provide real-time or delayed data?
 
 AllTick provides real-time financial market data, focusing on offering both real-time and historical data support to developers, fintech companies, traders, fund companies, exchanges, trading platforms, researchers, and research institutions. This includes data across multiple asset categories such as forex, stocks, commodities, and cryptocurrencies.

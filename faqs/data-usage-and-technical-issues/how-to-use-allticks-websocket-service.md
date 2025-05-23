@@ -1,3 +1,21 @@
+---
+description: >-
+  Using AllTick's WebSocket service typically involves the following steps,
+  aimed at providing developers with a stream of real-time financial data.
+  Please note that specific implementation details may
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # How to Use AllTick's WebSocket Service?
 
 Using AllTick's WebSocket service typically involves the following steps, aimed at providing developers with a stream of real-time financial data. Please note that specific implementation details may vary based on the API documentation provided by AllTick. Below is a general guidance process:

@@ -1,3 +1,21 @@
+---
+description: >-
+  Yes, AllTick provides a historical data query service. AllTick offers not only
+  real-time financial market data but also historical data for various asset
+  classes, including forex, stocks, commodities,
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # Does AllTick Provide Historical Data Query?
 
 Yes, AllTick provides a historical data query service. AllTick offers not only real-time financial market data but also historical data for various asset classes, including forex, stocks, commodities, and cryptocurrencies. This enables users to access past market data for historical trend analysis, backtesting trading strategies, market research, and various other applications.

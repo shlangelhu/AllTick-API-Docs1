@@ -1,3 +1,21 @@
+---
+description: >-
+  Yes, AllTick's API supports batch requests. This means you can request
+  multiple data points or perform multiple operations within a single API call,
+  thus enhancing data processing efficiency and reduc
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # Does AllTick's API support batch requests?
 
 Yes, AllTick's API supports batch requests. This means you can request multiple data points or perform multiple operations within a single API call, thus enhancing data processing efficiency and reducing network latency. Batch requests are particularly useful in scenarios requiring a large amount of financial data from AllTick, such as obtaining historical prices for multiple stocks or querying real-time exchange rates for multiple currency pairs simultaneously.

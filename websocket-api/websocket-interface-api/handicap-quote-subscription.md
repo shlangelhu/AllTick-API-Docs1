@@ -1,3 +1,21 @@
+---
+description: >-
+  This interface supports subscribing to the latest market depth (real-time
+  tick-by-tick, Order Book) data for products, but does not support historical
+  market depth or historical tick data. Interface
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # Order Book (Real-time Tick-by-Tick, Market Depth) Subscription
 
 English / [中文](https://apis.alltick.co/websocket-api/gu-piao-websocket-jie-kou-api/pan-kou-bao-jia-ding-yue)

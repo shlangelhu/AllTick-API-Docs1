@@ -1,3 +1,21 @@
+---
+description: >-
+  Managing and limiting data usage is crucial to ensure you don't exceed the
+  limits of your AllTick or any data service subscription. This not only helps
+  avoid potential extra charges but also ensures
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # How do I limit my data usage to avoid exceeding my subscription limits?
 
 Managing and limiting data usage is crucial to ensure you don't exceed the limits of your AllTick or any data service subscription. This not only helps avoid potential extra charges but also ensures the continued availability of the service. Here are some strategies and recommendations:

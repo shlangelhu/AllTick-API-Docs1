@@ -1,3 +1,18 @@
+---
+description: List of codes for all cryptocurrencies, click the link below to view
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # Cryptocurrency (Digital Currency)
 
 English / [中文](https://apis.alltick.co/jie-ru-liu-cheng/chan-pin-code-lie-biao/jia-mi-huo-bi-shu-zi-bi)

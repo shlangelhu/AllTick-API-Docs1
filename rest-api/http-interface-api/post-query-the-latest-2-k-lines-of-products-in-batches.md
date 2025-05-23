@@ -1,4 +1,22 @@
-# POST Query the latest 2 K lines of products in batches
+---
+description: >-
+  This interface allows batch querying of multiple products and multiple K-line
+  types (e.g., 1-minute, 15-minute, 30-minute), but only the latest two K-lines
+  can be queried at once. For clients using th
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
+# POST Query the latest 2 K lines of products in batches（High , Low, Open, Close）
 
 English / [中文](https://app.gitbook.com/s/AnPIgTqJ2rek1QSPVUja/rest-api/stock-http-interface-api/post-pi-liang-cha-xun-chan-pin-zui-xin-2-genkxian)
 

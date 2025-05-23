@@ -1,3 +1,21 @@
+---
+description: >-
+  Welcome Welcome to the API documentation section of AllTick! This is the
+  perfect place for you to explore the AllTick suite, offering tutorials,
+  overviews, feature introductions, and use cases covered
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # Welcome
 
 English / [中文](https://apis.alltick.co/)

@@ -1,3 +1,21 @@
+---
+description: >-
+  Before reporting an issue, it's crucial to gather and organize detailed
+  information about the problem as much as possible, including, but not limited
+  to: Collect Detailed Information Specific time and
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # How to report data issues or API malfunctions?
 
 \

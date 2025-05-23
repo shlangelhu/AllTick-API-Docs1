@@ -1,3 +1,21 @@
+---
+description: >-
+  This API supports batch subscription to real-time trade prices (tick-by-tick
+  data、Latest Price) but does not provide historical trade prices. Each
+  WebSocket connection allows one active subscription
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # Latest Trade Price (Real-time Tick Data) Batch Subscription
 
 English / [中文](https://apis.alltick.co/websocket-api/gu-piao-websocket-jie-kou-api/cheng-jiao-bao-jia-ding-yue)

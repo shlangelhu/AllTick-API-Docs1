@@ -1,3 +1,20 @@
+---
+description: >-
+  HTTP interface restrictions Websocket interface limitations Error code
+  description
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # Interface restriction description
 
 English / [中文](https://apis.alltick.co/jie-ru-liu-cheng/jie-kou-xian-zhi-shuo-ming)

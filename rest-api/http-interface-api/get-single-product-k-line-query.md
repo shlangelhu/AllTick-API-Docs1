@@ -1,4 +1,22 @@
-# GET Single Product K line query
+---
+description: >-
+  This interface can be used to query historical K-line data, but it only allows
+  querying one product at a time. It is recommended to cache the retrieved
+  historical K-lines in a local database. For clie
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
+# GET Single Product K line query（High Low, Open, Close）
 
 English / [中文](https://apis.alltick.co/rest-api/gu-piao-http-jie-kou-api/getkxian-cha-xun)
 

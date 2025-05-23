@@ -1,8 +1,23 @@
+---
+description: List of codes for US stocks, click the link below to view
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # US Stock
 
 English / [中文](https://apis.alltick.co/jie-ru-liu-cheng/chan-pin-code-lie-biao/mei-gu)
 
-## List of codes for US stocks, click the link below to view:： <a href="#mei-gu-quan-code" id="mei-gu-quan-code"></a>
+## List of codes for US stocks, click the link below to view: <a href="#mei-gu-quan-code" id="mei-gu-quan-code"></a>
 
 [https://docs.google.com/spreadsheets/d/1avkeR1heZSj6gXIkDeBt8X3nv4EzJetw4yFuKjSDYtA/edit?gid=583033325#gid=583033325](https://docs.google.com/spreadsheets/d/1avkeR1heZSj6gXIkDeBt8X3nv4EzJetw4yFuKjSDYtA/edit?gid=583033325#gid=583033325)
 

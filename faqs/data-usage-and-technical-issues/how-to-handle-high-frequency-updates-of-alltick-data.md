@@ -1,3 +1,21 @@
+---
+description: >-
+  When handling high-frequency update data from AllTick or any financial data
+  service provider, several strategies should be adopted to ensure the
+  efficiency and accuracy of data processing.
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # How to Handle High-Frequency Updates of AllTick Data?
 
 When handling high-frequency update data from AllTick or any financial data service provider, several strategies should be adopted to ensure the efficiency and accuracy of data processing. Here are some recommended practices:
