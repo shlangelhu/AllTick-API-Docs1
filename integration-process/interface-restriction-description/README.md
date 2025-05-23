@@ -1,3 +1,18 @@
+---
+description: HTTP 接口限制 Websocket 接口限制 错误码说明
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # 接口限制说明
 
 [English ](https://en.apis.alltick.co/integration-process/interface-restriction-description)/ 中文

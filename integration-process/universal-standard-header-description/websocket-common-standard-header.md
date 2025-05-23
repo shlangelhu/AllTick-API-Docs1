@@ -1,5 +1,5 @@
 ---
-description: Websocket 通用标准头 请求通用标准头介绍
+description: Websocket 通用标准头 请求通用标准头介绍 应答通用标准头介绍
 layout:
   title:
     visible: true
