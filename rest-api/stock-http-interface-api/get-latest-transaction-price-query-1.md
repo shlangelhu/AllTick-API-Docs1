@@ -1,3 +1,18 @@
+---
+description: 接口说明 该接口仅支持批量请求美股、港股、A股产品的部分基础信息。 请求频率
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # GET 股票产品基础信息批量查询
 
 [English](https://en.apis.alltick.co/rest-api/stock-http-interface-api/get-product-information-query) / 中文

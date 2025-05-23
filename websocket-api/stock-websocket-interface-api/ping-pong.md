@@ -1,3 +1,20 @@
+---
+description: >-
+  接口说明 要求请求者每10秒发送一次，在30秒内如果没有收到心跳请求，就会认为超时，断开请求者的websocket连接 请求-协议号：22000
+  数据结构(json)
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # 心跳
 
 [English ](https://en.apis.alltick.co/websocket-api/stock-websocket-interface-api/ping-pang)/ 中文

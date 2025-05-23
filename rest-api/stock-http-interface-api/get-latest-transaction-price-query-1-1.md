@@ -1,3 +1,21 @@
+---
+description: >-
+  涨跌幅说明 Alltick的接口不提供涨跌幅或24小时涨跌幅字段。客户可以通过获取Alltick的数据自行计算涨跌幅。 每日涨跌幅计算方法：
+  方法一：使用HTTP接口获取当天的日K线收盘价和前一日的日K线收盘价，计算公式如下： 涨跌幅 = (当天收盘价 - 前一日收盘价) / 前一日收盘价 *
+  100% 方法二：使用WebSocket接口获取最新价格，并通过HTTP接口获取前一日的日K线收盘价，
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # 涨跌幅、休市、假期、涨停跌停、新股上市和退市
 
 [English](https://app.gitbook.com/s/hl2stTwtjPsR73Ky9JWD/rest-api/http-interface-api/get-stocks-product-information-query-1) / 中文

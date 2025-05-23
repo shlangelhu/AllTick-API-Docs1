@@ -1,3 +1,20 @@
+---
+description: >-
+  股票市场数据WebSocket订阅 接口地址 基本路径 认证信息 每次建立连接时，必须在URL中附加您的认证token，订阅说明
+  连接成功后，您可以根据需要订阅特定的股票市场数据。详细的调用方法请参考我们的WebSocket接口列表。外汇、加密货币与商品市场数据WebSocket订阅
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # Websocket 行情 API 地址说明
 
 [English ](https://en.apis.alltick.co/integration-process/market-address-description/websocket-quotes-api-address-description)/ 中文
@@ -45,8 +62,6 @@ wss://quote.alltick.io/quote-b-ws-api?token=您的token
 ***
 
 **注意事项**：为了您的账户安全，请确保妥善保管您的token信息。若需进一步帮助或有任何疑问，欢迎随时联系我们的技术支持团队。
-
-
 
 ***
 

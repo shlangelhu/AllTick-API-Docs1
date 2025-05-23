@@ -1,5 +1,16 @@
 ---
 description: 申请属于你的token
+layout:
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
 ---
 
 # Token 申请

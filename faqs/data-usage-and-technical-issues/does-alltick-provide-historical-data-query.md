@@ -1,3 +1,21 @@
+---
+description: >-
+  是的，AllTick提供历史数据查询服务。AllTick不仅提供实时金融市场数据，还包括外汇、股票、商品和加密货币等多种资产类别的历史数据。这使得用户能够访问过去的市场数据，进行历史趋势分析、回溯测试交易策略、市场研究和其他多种应用。
+  如何使用AllTick查询历史数据：
+  查阅API文档：首先，访问AllTick的官方API文档。文档中应该详细说明了如何构造请求来查询历史数据，包括可用的参数、时间
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # AllTick是否提供历史数据查询？
 
 是的，AllTick提供历史数据查询服务。AllTick不仅提供实时金融市场数据，还包括外汇、股票、商品和加密货币等多种资产类别的历史数据。这使得用户能够访问过去的市场数据，进行历史趋势分析、回溯测试交易策略、市场研究和其他多种应用。

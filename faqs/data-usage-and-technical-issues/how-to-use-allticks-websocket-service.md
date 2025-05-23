@@ -1,3 +1,21 @@
+---
+description: >-
+  使用AllTick的WebSocket服务通常涉及以下几个步骤，旨在为开发者提供实时金融数据的流。请注意，具体的实现细节可能会根据AllTick提供的API文档有所不同，以下是一个通用的指导流程：
+  了解WebSocket协议
+  WebSocket是一种网络通信协议，提供了全双工通信渠道，允许数据在客户端和服务器之间实时双向传输。了解WebSocket的基本工作原理有助于您更有效地使用AllTick的
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # 如何使用AllTick的WebSocket服务？
 
 使用AllTick的WebSocket服务通常涉及以下几个步骤，旨在为开发者提供实时金融数据的流。请注意，具体的实现细节可能会根据AllTick提供的API文档有所不同，以下是一个通用的指导流程：

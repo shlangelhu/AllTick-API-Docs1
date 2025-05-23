@@ -1,3 +1,21 @@
+---
+description: >-
+  基于金融市场数据API服务的通常做法AllTick支持以下一种或多种数据格式： JSON (JavaScript Object Notation)
+  JSON是最常见的数据交换格式之一，以其易于阅读和编写的特点，以及易于机器解析和生成的优势，在Web API中广泛使用。
+  为了确切了解AllTick提供的数据格式，以及如何有效地使用这些数据，请直接查阅AllTick提供的官方API文档。文档中通常会详
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # AllTick的API支持哪些数据格式？
 
 基于金融市场数据API服务的通常做法AllTick支持以下一种或多种数据格式：

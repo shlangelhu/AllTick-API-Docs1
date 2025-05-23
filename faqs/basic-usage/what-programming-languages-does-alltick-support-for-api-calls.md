@@ -1,3 +1,21 @@
+---
+description: >-
+  根据AllTick网站的内容，AllTick支持多种客户端开发语言，以便开发者可以使用自己熟悉的技术进行API调用。这些语言包括但不限于： Python
+  Go JavaScript Java
+  这些语言的支持使得开发者能够在不同的平台和环境中轻松集成AllTick提供的金融市场数据API，无论是在Web开发、桌面应用程序还是移动应用程序中。通过提供跨语言的客户端库和快速入门示例代码，
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # AllTick支持哪些编程语言进行API调用？
 
 根据AllTick网站的内容，AllTick支持多种客户端开发语言，以便开发者可以使用自己熟悉的技术进行API调用。这些语言包括但不限于：

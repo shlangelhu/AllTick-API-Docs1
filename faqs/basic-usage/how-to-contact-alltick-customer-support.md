@@ -1,3 +1,22 @@
+---
+description: >-
+  要联系AllTick的客户支持，通常有几种方法可以尝试，虽然具体的联系方式需要根据AllTick网站上提供的最新信息为准。以下是一些常见的联系客户支持的方法：
+  官方网站
+  访问AllTick的官方网站https://alltick.co，查找“联系我们”或“客户支持”部分。通常，网站会提供一个联系表单、电子邮件地址、或者客服热线电话。
+  电子邮件 如果网站上提供了客户支持的电子邮件地址，您可以直接通过
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # 如何联系AllTick的客户支持？
 
 要联系AllTick的客户支持，通常有几种方法可以尝试，虽然具体的联系方式需要根据AllTick网站上提供的最新信息为准。以下是一些常见的联系客户支持的方法：

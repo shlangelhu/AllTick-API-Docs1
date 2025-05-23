@@ -1,3 +1,21 @@
+---
+description: >-
+  如果您忘记了AllTick账户的登录密码，通常可以通过以下步骤重置密码： 访问登录页面 首先，访问AllTick官方网站，并找到登录页面。
+  寻找“忘记密码”链接 在登录表单附近，应该有一个“忘记密码？”或类似的链接。点击这个链接开始重置密码的过程。 输入您的电子邮件地址
+  按照指示，输入您用于注册AllTick账户的电子邮件地址。确保输入的是正确的电子邮件地址，因为重置密码的指令将发送到这个地址。
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # 我忘记了我的登录密码，该怎么办？
 
 如果您忘记了AllTick账户的登录密码，通常可以通过以下步骤重置密码：

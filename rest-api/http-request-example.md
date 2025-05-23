@@ -1,3 +1,18 @@
+---
+description: HTTP 请求示例
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # HTTP 请求示例
 
 [English ](https://en.apis.alltick.co/rest-api/http-request-example)/ 中文
@@ -219,8 +234,6 @@ print(text3)
 ```
 {% endtab %}
 {% endtabs %}
-
-
 
 ***
 

@@ -1,3 +1,21 @@
+---
+description: >-
+  该接口支持批量订阅产品的最新成交价(实时逐笔Tick数据，也是当前价、最新价)，不支持历史成交价格(历史逐笔tick数据)。
+  该接口特性为对于每一个websocket连接，每发送一次该请求，后台会默认覆盖上一次订阅请求（例如，如果您最初订阅了A、B、C这三只产品，想要追加订阅E、F、G，则需要重新发送一次A、B、C、E、F、G），订阅成功后会进行推送数据。
+  注意： 1、订阅一次成功后，不需要再频繁
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # 最新成交价(实时逐笔Tick数据、当前价、最新价)批量订阅
 
 [English ](https://en.apis.alltick.co/websocket-api/stock-websocket-interface-api/transaction-quote-subscription)/ 中文

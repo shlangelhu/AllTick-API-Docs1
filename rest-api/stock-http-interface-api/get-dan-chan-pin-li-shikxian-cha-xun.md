@@ -1,3 +1,22 @@
+---
+description: >-
+  该接口可用来查询历史k线，但每次只能查询一个产品，建议将查询到的历史K线缓存本地数据库。
+  使用HTTP接口获取K线的客户，建议将/kline和/batch-kline这2个接口结合使用,步骤如下： 首先，通过 /kline
+  接口轮询请求历史数据并存储到本地数据库，后续历史数据可直接从客户的数据库获取，无需再通过接口请求。 然后，后续持续使用 /batch-kline
+  接口批量请求多个产品的最新2根
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # GET 单产品历史K线查询（最高、最低、开盘、收盘价）
 
 [English ](https://en.apis.alltick.co/rest-api/stock-http-interface-api/get-k-line-query)/ 中文

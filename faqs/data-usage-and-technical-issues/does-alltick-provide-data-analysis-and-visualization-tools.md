@@ -1,3 +1,20 @@
+---
+description: >-
+  AllTick本身专注于提供实时和历史金融市场数据API，不直接提供数据分析和可视化工具。然而，获取准确、及时的金融数据是进行有效数据分析和创建有洞察力的可视化的基础。对于需要数据分析和可视化的用户，可以考虑将AllTick提供的数据与其他数据分析和可视化工具结合使用。以下是一些推荐的供应商和基础能力，以帮助您进行数据分析和可视化：
+  数据分析工具 Python：Python是一种广泛使用的编程语言
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # AllTick是否提供数据分析和可视化工具？
 
 AllTick本身专注于提供实时和历史金融市场数据API，不直接提供数据分析和可视化工具。然而，获取准确、及时的金融数据是进行有效数据分析和创建有洞察力的可视化的基础。对于需要数据分析和可视化的用户，可以考虑将AllTick提供的数据与其他数据分析和可视化工具结合使用。以下是一些推荐的供应商和基础能力，以帮助您进行数据分析和可视化：

@@ -1,3 +1,20 @@
+---
+description: >-
+  根据AllTick网站提供的信息，AllTick旨在为开发者、金融科技公司、交易者、基金公司、交易所、交易平台以及研究者和研究机构提供实时和历史金融市场数据。这表明AllTick的数据服务是设计来满足包括商业用途在内的多种需求的。
+  然而，使用AllTick数据的具体条款，包括是否可以将数据用于商业用途，通常会在其服务条款或许可协议中明确规定。这些条款可能会详细说明数据的使用范围、限制以及任何相关的
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # 我可以使用AllTick的数据进行商业用途吗？
 
 根据AllTick网站提供的信息，AllTick旨在为开发者、金融科技公司、交易者、基金公司、交易所、交易平台以及研究者和研究机构提供实时和历史金融市场数据。这表明AllTick的数据服务是设计来满足包括商业用途在内的多种需求的。

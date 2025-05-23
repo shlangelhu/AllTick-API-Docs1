@@ -1,3 +1,18 @@
+---
+description: 错误码说明
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # 错误码说明
 
 [English ](https://en.apis.alltick.co/integration-process/interface-restriction-description/error-code-description)/ 中文

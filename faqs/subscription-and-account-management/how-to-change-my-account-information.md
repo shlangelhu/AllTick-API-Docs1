@@ -1,3 +1,22 @@
+---
+description: >-
+  更改AllTick账户信息通常涉及以下步骤。请注意，具体步骤可能会因AllTick网站的设计和功能更新而有所不同，以下是一般性的指导流程： 登录账户
+  首先，访问AllTick官方网站并使用您的用户名和密码登录到您的账户。 访问账户设置
+  登录后，在网站的用户界面中找到“账户设置”、“个人资料”或类似的部分。这通常位于页面的顶部导航栏或者账户概览页面。
+  在账户设置或个人资料页面，寻找“编辑”、“更改”
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # 如何更改我的账户信息？
 
 更改AllTick账户信息通常涉及以下步骤。请注意，具体步骤可能会因AllTick网站的设计和功能更新而有所不同，以下是一般性的指导流程：

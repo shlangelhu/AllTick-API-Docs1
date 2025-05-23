@@ -1,3 +1,18 @@
+---
+description: Websocket 请求示例  Websocket 行情 API 地址说明
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # Websocket 请求示例
 
 [English ](https://en.apis.alltick.co/websocket-api/websocket-request-example)/ 中文

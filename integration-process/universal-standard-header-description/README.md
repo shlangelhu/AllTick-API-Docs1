@@ -1,3 +1,18 @@
+---
+description: HTTP 通用标准头 Websocket 通用标准头
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # 通用标准头说明
 
 [English ](https://en.apis.alltick.co/integration-process/universal-standard-header-description)/ 中文

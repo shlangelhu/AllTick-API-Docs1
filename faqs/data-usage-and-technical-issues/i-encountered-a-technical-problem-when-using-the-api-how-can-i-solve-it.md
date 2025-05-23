@@ -1,3 +1,21 @@
+---
+description: >-
+  遇到API使用中的技术问题时，可以通过以下步骤来寻求解决方案： 检查API文档
+  首先，仔细阅读AllTick提供的API文档。确保您的请求符合API的规范，包括正确的端点地址、请求方法（GET、POST等）、必需的参数以及参数格式。文档中可能也包含了常见问题的解答。
+  查看错误代码和消息 如果API响应包含错误代码或消息，这些信息通常能提供关于问题原因的重要线索。查找这些错误代码在API文档中的具体
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # 我在使用API时遇到了技术问题，该怎么解决？
 
 遇到API使用中的技术问题时，可以通过以下步骤来寻求解决方案：

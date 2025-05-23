@@ -1,3 +1,18 @@
+---
+description: 全部加密货币产品的code列表
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # 加密货币(数字币)
 
 [English ](https://en.apis.alltick.co/integration-process/product-code-list/cryptocurrency-digital-currency)/ 中文

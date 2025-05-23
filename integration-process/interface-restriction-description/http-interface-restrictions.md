@@ -1,3 +1,20 @@
+---
+description: >-
+  HTTP接口限制 1. 频率类限制 2. IP类限制 HTTP接口只会根据Token限制请求频率，对IP没有限制
+  示例：基础计划规定1秒只能请求1次，如果Token在14:03:01请求了/kline接口1次，并在相同的一分钟内调用了/trade-tick接口1次，后台服务都将正常提供服务。如果Token在14:03:01内对/kline接口发出2次请求，第一次请求将正常得到服务，而第二次请求则会
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # HTTP 接口限制
 
 [English ](https://en.apis.alltick.co/integration-process/interface-restriction-description/http-interface-restrictions)/ 中文

@@ -1,3 +1,21 @@
+---
+description: >-
+  在报告问题之前，尽可能收集和整理详细的问题信息，包括但不限于： 收集详细信息 在报告问题之前，尽可能收集和整理详细的问题信息，包括但不限于：
+  出现问题的具体时间和日期。 受影响的API端点（URL）。 发送的请求示例（确保移除任何敏感信息，如API密钥）。
+  接收到的响应，包括错误代码和消息（如果有）。 问题重现的步骤（如果可能）。 查看文档和社区 在直接报告之前，查看AllTick的官方文档、FA
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # 如何报告数据问题或API故障？
 
 在报告问题之前，尽可能收集和整理详细的问题信息，包括但不限于：

@@ -1,3 +1,22 @@
+---
+description: >-
+  AllTick提供的金融市场数据通常具有非常高的更新频率，以确保用户可以接收到准确且实时的市场信息。具体的数据更新频率可能依据不同类型的数据而有所不同：
+  外汇（Forex）数据：可能每秒更新多次，因为外汇市场极其活跃，价格变动频繁。
+  商品（Commodities）数据：根据市场和商品的不同，更新频率也可能每秒多次。
+  股票（Stocks）数据：在交易时段内，股票数据通常实时更新，更新频率可以达到每秒
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # AllTick的数据更新频率是多少？
 
 AllTick提供的金融市场数据通常具有非常高的更新频率，以确保用户可以接收到准确且实时的市场信息。具体的数据更新频率可能依据不同类型的数据而有所不同：

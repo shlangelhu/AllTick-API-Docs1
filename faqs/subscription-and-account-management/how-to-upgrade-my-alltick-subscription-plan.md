@@ -1,3 +1,21 @@
+---
+description: >-
+  升级AllTick订阅计划通常涉及以下几个步骤。请注意，具体的操作步骤可能会根据AllTick网站的设计和功能更新而有所变化，以下是一个通用的指导流程：
+  登录账户 首先，访问AllTick官方网站并登录到您的账户。您需要输入您的用户名和密码。 访问账户设置或订阅管理
+  登录后，在网站的用户界面中找到“账户设置”、“订阅管理”或类似的部分。这通常位于页面的顶部导航栏或者账户概览页面。 查找升级选项 在
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # 如何升级我的AllTick订阅计划？
 
 升级AllTick订阅计划通常涉及以下几个步骤。请注意，具体的操作步骤可能会根据AllTick网站的设计和功能更新而有所变化，以下是一个通用的指导流程：

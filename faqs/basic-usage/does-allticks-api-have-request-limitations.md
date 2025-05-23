@@ -1,3 +1,22 @@
+---
+description: >-
+  大多数API服务，包括提供金融市场数据的AllTick，都会设定一定的请求限制，以确保服务的稳定性和公平性。这些限制可能包括： 速率限制（Rate
+  Limiting）
+  速率限制指的是在一定时间内允许的最大请求次数。例如，AllTick可能会限制客户在每分钟或每秒钟内可以发起的请求次数。超过这个限制可能会导致请求被暂时拒绝。
+  并发限制 并发限制指的是同时处理的请求数量上限。这意味着如果有太多的并发请
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # AllTick的API有请求限制吗？
 
 大多数API服务，包括提供金融市场数据的AllTick，都会设定一定的请求限制，以确保服务的稳定性和公平性。这些限制可能包括：

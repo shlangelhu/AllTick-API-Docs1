@@ -1,3 +1,20 @@
+---
+description: >-
+  以下是每类产品最大的盘口深度： 1、不活跃的产品存在小于下面列的最大档的情况，属于正常情况
+  2、存在单边深度是空的情况，例如股票涨停跌停时，单边盘口可能是空的
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # GET 最新盘口(最新深度、Order Book)查询
 
 [English ](https://en.apis.alltick.co/rest-api/stock-http-interface-api/get-latest-handicap-quotation-query)/ 中文

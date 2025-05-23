@@ -1,3 +1,22 @@
+---
+description: >-
+  K线推送说明
+  Alltick的WebSocket接口不支持K线数据的推送。由于许多客户对此有疑问，特此说明：无论是历史K线还是实时K线，目前仅支持通过HTTP接口直接获取。推荐的实现方式如下：
+  实现方式建议（仅供参考）： 1、定时拉取K线：为了实现K线的快速更新，建议购买高请求频率的套餐，以提高拉取频率。
+  2、结合使用HTTP接口：建议客户将/kline和/batch-kline两个接口结合使用，
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # K线推送(不支持)
 
 [English ](https://app.gitbook.com/s/hl2stTwtjPsR73Ky9JWD/websocket-api/websocket-interface-api/ping-pong-1)/ 中文

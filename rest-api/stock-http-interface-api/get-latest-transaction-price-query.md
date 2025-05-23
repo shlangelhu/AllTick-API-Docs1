@@ -1,3 +1,18 @@
+---
+description: 接口说明 该接口支持批量请求产品的最新成交价(最新逐笔Tick数据、也是当前价、最新价)，不支持请求历史成交价(历史逐笔tick数据)。
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # GET 最新成交价(最新tick、当前价、最新价)批量查询
 
 [English ](https://en.apis.alltick.co/rest-api/stock-http-interface-api/get-latest-transaction-price-query)/ 中文

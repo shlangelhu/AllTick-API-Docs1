@@ -1,3 +1,21 @@
+---
+description: >-
+  该接口可以一次性批量查询多个产品，且可批量一次性查询多个k线类型（k线类型指的是1分钟，15分钟，30分钟等），但只能批量查询最新的2根k线。
+  使用HTTP接口获取K线的客户，建议将/kline和/batch-kline这2个接口结合使用,步骤如下： 首先，通过 /kline
+  接口轮询请求历史数据并存储到本地数据库，后续历史数据可直接从客户的数据库获取，无需再通过接口请求。 然后，后续持续使用
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # POST 批量查询产品最新2根K线（最高、最低、开盘、收盘价）
 
 [English](https://en.apis.alltick.co/rest-api/stock-http-interface-api/get-batch-k-line-query) / 中文

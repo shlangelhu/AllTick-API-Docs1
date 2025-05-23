@@ -1,3 +1,18 @@
+---
+description: 全部外汇产品的code列表
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # 外汇
 
 [English ](https://en.apis.alltick.co/integration-process/product-code-list/forex)/ 中文

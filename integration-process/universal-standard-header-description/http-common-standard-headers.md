@@ -1,3 +1,18 @@
+---
+description: HTTP 通用标准头 请求通用标准头介绍
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # HTTP 通用标准头
 
 [English ](https://en.apis.alltick.co/integration-process/universal-standard-header-description/http-common-standard-headers)/ 中文
