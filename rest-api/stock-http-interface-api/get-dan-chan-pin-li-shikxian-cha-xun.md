@@ -136,10 +136,6 @@ layout:
 
 <table data-full-width="true"><thead><tr><th width="245">名称</th><th width="186">类型</th><th width="172">必选</th><th>说明</th></tr></thead><tbody><tr><td>» ret</td><td>integer</td><td>true</td><td></td></tr><tr><td>» msg</td><td>string</td><td>true</td><td></td></tr><tr><td>» trace</td><td>string</td><td>true</td><td></td></tr><tr><td>» data</td><td>object</td><td>true</td><td></td></tr><tr><td>»» code</td><td>string</td><td>true</td><td>代码</td></tr><tr><td>»» kline_type</td><td>integer</td><td>true</td><td>k线类型<br>1、1是1分钟K，2是5分钟K，3是15分钟K，4是30分钟K，5是小时K，6是2小时K(股票不支持2小时)，7是4小时K(股票不支持4小时)，8是日K，9是周K，10是月K （注：股票不支持2小时K、4小时K）<br>2、最短的k线只支持1分钟</td></tr><tr><td>»» kline_list</td><td>[object]</td><td>true</td><td></td></tr><tr><td>»»» timestamp</td><td>string</td><td>true</td><td>该K线时间戳</td></tr><tr><td>»»» open_price</td><td>string</td><td>true</td><td>该K线开盘价</td></tr><tr><td>»»» close_price</td><td>string</td><td>true</td><td>该K线收盘价</td></tr><tr><td>»»» high_price</td><td>string</td><td>true</td><td>该K线最高价</td></tr><tr><td>»»» low_price</td><td>string</td><td>true</td><td>该K线最低价</td></tr><tr><td>»»» volume</td><td>string</td><td>true</td><td>该K线成交数量</td></tr><tr><td>»»» turnover</td><td>string</td><td>true</td><td>该K线成交金额</td></tr></tbody></table>
 
-{% openapi src="../../.gitbook/assets/MultiMarkets-BusinessAPI.swagger (1).json" path="/quote-stock-b-api/kline" method="get" %}
-[MultiMarkets-BusinessAPI.swagger (1).json](<../../.gitbook/assets/MultiMarkets-BusinessAPI.swagger (1).json>)
-{% endopenapi %}
-
 #### AllTick网站
 
 {% hint style="info" %}
