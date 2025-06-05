@@ -29,7 +29,7 @@ The following is the maximum market depth for each product type:
 1. It is normal for inactive products to be smaller than the maximum range listed below.
 2. There is a situation where the unilateral depth is empty. For example, when the stock price limit rises or falls, the unilateral market opening may be empty.
 
-<table data-full-width="false"><thead><tr><th width="120.6390380859375"></th><th width="218.35546875">FX、Metals</th><th width="136.671875">Cryptocurrency</th><th width="120.4453125">HK Stocks</th><th>CN Stocks</th></tr></thead><tbody><tr><td>Order Book Description</td><td>Maximum 1 gears（Only Price, No Volume）</td><td>Maximum 5 gears</td><td>Maximum 10 gears</td><td>Maximum 5 gears</td></tr></tbody></table>
+<table data-full-width="false"><thead><tr><th width="136.6390380859375"></th><th width="218.35546875">FX、Metals</th><th width="136.671875">Cryptocurrency</th><th width="134.8453369140625">HK Stocks</th><th>CN Stocks</th></tr></thead><tbody><tr><td>Order Book Description</td><td>Maximum 1 gears（Only Price, No Volume）</td><td>Maximum 5 gears</td><td>Maximum 10 gears</td><td>Maximum 5 gears</td></tr></tbody></table>
 
 ## Request Frequency
 
