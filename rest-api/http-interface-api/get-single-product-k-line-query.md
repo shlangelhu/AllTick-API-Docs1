@@ -131,10 +131,6 @@ Encode the following JSON using URL encoding and assign it to the 'query' query 
 
 <table><thead><tr><th width="157.20703125">Name</th><th width="109.15625">Type</th><th width="98.421875">Required</th><th>Description</th></tr></thead><tbody><tr><td>» ret</td><td>integer</td><td>true</td><td></td></tr><tr><td>» msg</td><td>string</td><td>true</td><td></td></tr><tr><td>» trace</td><td>string</td><td>true</td><td></td></tr><tr><td>» data</td><td>object</td><td>true</td><td></td></tr><tr><td>»» code</td><td>string</td><td>true</td><td>Code</td></tr><tr><td>»» kline_type</td><td>integer</td><td>true</td><td>Type of K-line: <br>1、1 represents 1-minute K-line, 2 represents 5-minute K-line, 3 represents 15-minute K-line, 4 represents 30-minute K-line, 5 represents 1-hour K-line, 6 represents 2-hour K-line (not supported for stocks), 7 represents 4-hour K-line (not supported for stocks), 8 represents daily K-line, 9 represents weekly K-line, and 10 represents monthly K-line. (Note: Stocks do not support 2-hour and 4-hour K-lines.)<br>2、The shortest K-line supported is 1 minute.</td></tr><tr><td>»» kline_list</td><td>[object]</td><td>true</td><td></td></tr><tr><td>»»» timestamp</td><td>string</td><td>true</td><td>Timestamp of the K-line</td></tr><tr><td>»»» open_price</td><td>string</td><td>true</td><td>Opening price of the K-line</td></tr><tr><td>»»» close_price</td><td>string</td><td>true</td><td>Closing price of the K-line</td></tr><tr><td>»»» high_price</td><td>string</td><td>true</td><td>Highest price of the K-line</td></tr><tr><td>»»» low_price</td><td>string</td><td>true</td><td>Lowest price of the K-line</td></tr><tr><td>»»» volume</td><td>string</td><td>true</td><td>Trading volume of the K-line</td></tr><tr><td>»»» turnover</td><td>string</td><td>true</td><td>Trading turnover of the K-line</td></tr></tbody></table>
 
-{% openapi src="../../.gitbook/assets/MultiMarkets-BusinessAPI.openapi.json" path="https://quote.alltick.io/quote-stock-b-api/kline" method="get" %}
-[MultiMarkets-BusinessAPI.openapi.json](../../.gitbook/assets/MultiMarkets-BusinessAPI.openapi.json)
-{% endopenapi %}
-
 ### Official Website
 
 {% hint style="info" %}

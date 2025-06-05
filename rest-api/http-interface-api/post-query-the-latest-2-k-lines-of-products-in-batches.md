@@ -138,28 +138,9 @@ The following JSON should be URL-encoded and assigned to the `query` query strin
 
 ## Response Result
 
-| Status Code | Status Meaning | Description | Data Model |
-| ----------- | -------------- | ----------- | ---------- |
-| 200         | OK             | OK          | Inline     |
+<table><thead><tr><th>Status Code</th><th>Status Meaning</th><th width="148.5999755859375">Description</th><th>Data Model</th></tr></thead><tbody><tr><td>200</td><td>OK</td><td>OK</td><td>Inline</td></tr></tbody></table>
 
-| Name                 | Type      | Required | Description                                             |
-| -------------------- | --------- | -------- | ------------------------------------------------------- |
-| » ret                | integer   | true     | Return code                                             |
-| » msg                | string    | true     | Message corresponding to the return code                |
-| » trace              | string    | true     | Request trace                                           |
-| » data               | object    | true     |                                                         |
-| »» tick\_list        | \[object] | true     |                                                         |
-| »»» code             | string    | false    | Code                                                    |
-| »»» seq              | string    | false    | Sequence                                                |
-| »»» tick\_time       | string    | false    | Timestamp                                               |
-| »»» price            | string    | false    | Price                                                   |
-| »»» volume           | string    | false    | Volume                                                  |
-| »»» turnover         | string    | false    | Turnover                                                |
-| »»» trade\_direction | integer   | false    | Trading direction, 0 for default, 1 for BUY, 2 for SELL |
-
-{% openapi src="../../.gitbook/assets/api (1).json" path="/quote-stock-b-api/batch-kline" method="post" %}
-[api (1).json](<../../.gitbook/assets/api (1).json>)
-{% endopenapi %}
+<table><thead><tr><th width="165.199951171875">Name</th><th width="96">Type</th><th width="135.00006103515625">Required</th><th>Description</th></tr></thead><tbody><tr><td>» ret</td><td>integer</td><td>true</td><td>Return code</td></tr><tr><td>» msg</td><td>string</td><td>true</td><td>Message corresponding to the return code</td></tr><tr><td>» trace</td><td>string</td><td>true</td><td>Request trace</td></tr><tr><td>» data</td><td>object</td><td>true</td><td></td></tr><tr><td>»» kline_list</td><td>[object]</td><td>true</td><td></td></tr><tr><td>»»» code</td><td>string</td><td>false</td><td>Code</td></tr><tr><td>»»» kline_type</td><td>integer</td><td>integer</td><td><p>Kline Types:</p><ol><li>1= 1-minute,2 = 5-minute,3 = 15-minute,<br>4 = 30-minute,<br>5 = 1-hour,<br>6 = 2-hour (not supported for stocks),<br>7 = 4-hour (not supported for stocks),<br>8 = daily, 9 = weekly,<br>10 = monthly(Note: 2-hour and 4-hour Klines are not supported for stocks)</li><li>The shortest supported Kline is 1-minute.</li></ol></td></tr><tr><td>»»» kline_data</td><td>[array]</td><td>true</td><td></td></tr><tr><td>»»» timestamp</td><td>string</td><td>true</td><td>Timestamp of the Kline</td></tr><tr><td>»»» open_price</td><td>string</td><td>false</td><td>Open price of the Kline</td></tr><tr><td>»»» close_price</td><td>string</td><td>true</td><td><p><strong>Close price of the Kline</strong>:</p><ol><li>During trading hours, for the latest Kline, this is also the <strong>last traded price</strong></li><li>During market closure, for the latest Kline, this is the <strong>official closing price</strong></li></ol></td></tr><tr><td>»»» high_price</td><td>integer</td><td>true</td><td>High price of the Kline</td></tr><tr><td>»»» low_price</td><td>integer</td><td>true</td><td>Low price of the Kline</td></tr><tr><td>»»» volume</td><td>string</td><td>true</td><td>Trade volume of the Kline</td></tr><tr><td>»»» turnover</td><td>string</td><td>true</td><td>Trade amount (turnover) of the Kline</td></tr></tbody></table>
 
 ### Official Website
 

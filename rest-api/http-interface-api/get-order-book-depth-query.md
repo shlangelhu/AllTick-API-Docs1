@@ -154,10 +154,6 @@ Encode the following JSON into URL format and assign it to the `query` query str
 | »» »» price     | string    | false    | Price                                                                                                                                        |
 | »» »» volume    | string    | false    | <p>Volume:</p><p>1、Forex, precious metals, and CFD indices do not provide volume.</p><p>2、Stocks and cryptocurrency data provide volume.</p> |
 
-{% openapi src="../../.gitbook/assets/MultiMarkets-BusinessAPI.openapi (1).json" path="/quote-b-api/depth-tick" method="get" expanded="true" %}
-[MultiMarkets-BusinessAPI.openapi (1).json](<../../.gitbook/assets/MultiMarkets-BusinessAPI.openapi (1).json>)
-{% endopenapi %}
-
 ### Official Website
 
 {% hint style="info" %}

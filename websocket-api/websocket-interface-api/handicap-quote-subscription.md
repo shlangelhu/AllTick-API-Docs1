@@ -99,6 +99,10 @@ After a successful connection, you can subscribe to specific forex, cryptocurren
             {
                 "code": "BTCUSDT",
                 "depth_level": 5
+            },
+            {
+                "code": "ETHUSDT",
+                "depth_level": 5
             }
         ]
     }
