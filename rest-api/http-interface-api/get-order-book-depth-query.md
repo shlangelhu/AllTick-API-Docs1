@@ -1,8 +1,4 @@
 ---
-description: >-
-  The following is the maximum market depth for each product type: It is normal
-  for inactive products to be smaller than the maximum range listed below. There
-  is a situation where the unilateral depth
 layout:
   title:
     visible: true
