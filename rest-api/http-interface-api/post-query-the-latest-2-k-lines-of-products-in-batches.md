@@ -72,64 +72,76 @@ This method allows for quick updates of the latest K-lines while avoiding limita
 
 ***
 
-#### Additional Notes
+## <mark style="color:red;">The batch query for the latest product K-lines includes many parameters, so they are placed in the request body. Only the</mark> <mark style="color:red;"></mark><mark style="color:red;">`token`</mark> <mark style="color:red;"></mark><mark style="color:red;">parameter is kept in the URL.</mark>
 
-* For both endpoints, the batch query parameters are expected to be provided in the request body, as the number of parameters can be extensive.
-* Ensure that the token parameter is included in the URL for authentication purposes.
-
-## Request Parameters
-
-| Name  | Position | Type   | Required | Description                                       |
-| ----- | -------- | ------ | -------- | ------------------------------------------------- |
-| token | query    | string | No       |                                                   |
-| query | query    | string | No       | See explanation of query request parameters below |
-
-> Query Request Parameters
-
-The following JSON should be URL-encoded and assigned to the `query` query string in the URL.
+## Body request parameters
 
 ```
 {
-  "trace": "edd5df80-df7f-4acf-8f67-68fd2f096426",
+  "trace": "c2a8a146-a647-4d6f-ac07-8c4805bf0b74",
   "data": {
-    "symbol_list": [
+    "data_list": [
       {
-        "code": "857.HK"
+        "code": "700.HK",
+        "kline_type": 1,
+        "kline_timestamp_end": 0,
+        "query_kline_num": 1,
+        "adjust_type": 0
       },
       {
-        "code": "UNH.US"
+        "code": "GOOGL.US",
+        "kline_type": 1,
+        "kline_timestamp_end": 0,
+        "query_kline_num": 1,
+        "adjust_type": 0
       }
     ]
   }
 }
 ```
 
-## Query Request Parameters
+## Request parameters
 
-| Name           | Type      | Required | Description |
-| -------------- | --------- | -------- | ----------- |
-| trace          | string    | Yes      |             |
-| data           | object    | Yes      |             |
-| » symbol\_list | \[object] | Yes      |             |
-| »» code        | string    | No       | Code        |
+<table data-full-width="false"><thead><tr><th width="182.836669921875">Name</th><th width="88.910888671875">Position</th><th width="82.2265625">Type</th><th width="90.3702392578125">Required</th><th>Description</th></tr></thead><tbody><tr><td>token</td><td>query</td><td>string</td><td>Yes</td><td></td></tr><tr><td>body</td><td>body</td><td>object</td><td>No</td><td></td></tr><tr><td>» trace</td><td>body</td><td>string</td><td>Yes</td><td>Trace code used for logging purposes, ensure uniqueness for each request</td></tr><tr><td>» data</td><td>body</td><td>object</td><td>Yes</td><td></td></tr><tr><td>»» data_list</td><td>body</td><td>[object]</td><td>Yes</td><td></td></tr><tr><td>»»» code</td><td>body</td><td>string</td><td>Yes</td><td>Refer to the code list and select the code you want to query：<a href="https://docs.google.com/spreadsheets/d/1avkeR1heZSj6gXIkDeBt8X3nv4EzJetw4yFuKjSDYtA/edit?gid=495387863#gid=495387863">[Click on the code list]</a></td></tr><tr><td>»»» kline_type</td><td>body</td><td>integer</td><td>Yes</td><td>Type of K-line: <br>1、1 represents 1-minute K-line, 2 represents 5-minute K-line, 3 represents 15-minute K-line, 4 represents 30-minute K-line, 5 represents 1-hour K-line, 6 represents 2-hour K-line (not supported for stocks), 7 represents 4-hour K-line (not supported for stocks), 8 represents daily K-line, 9 represents weekly K-line, and 10 represents monthly K-line. (Note: Stocks do not support 2-hour and 4-hour K-lines.)<br>2、The shortest K-line supported is 1 minute.<br>3、Query yesterday's closing price, with kline_type set to 8.</td></tr><tr><td>»»» kline_timestamp_end</td><td>body</td><td>integer</td><td>Yes</td><td><p>Query K-lines from a specified time:</p><p>1、Send 0 to query from the latest trading day.</p><p>2、Send a timestamp to query from that time.</p><p>3、Only forex, precious metals, and cryptocurrencies support timestamps; stock codes do not.</p></td></tr><tr><td>»»» query_kline_num</td><td>body</td><td>integer</td><td>Yes</td><td>1、Number of K-lines to query, maximum of 1000<br>2、To query yesterday's closing price, set kline_type to 8 and query_kline_num to 2. From the 2 returned k-line data points, the one with the smaller timestamp represents yesterday's closing price.</td></tr><tr><td>»»» adjust_type</td><td>body</td><td>integer</td><td>Yes</td><td>Adjustment type, effective only for stock codes, e.g., 0: ex-rights, 1: pre-adjustment, currently only supports 0</td></tr></tbody></table>
 
-> Response Example
+## **Response example**
 
 ```
 {
   "ret": 200,
   "msg": "ok",
-  "trace": "edd5df80-df7f-4acf-8f67-68fd2f096426",
+  "trace": "c2a8a146-a647-4d6f-ac07-8c4805bf0b74",
   "data": {
-    "tick_list": [
+    "kline_list": [
       {
-        "code": "857.HK",
-        "seq": "30841439",
-        "tick_time": "1677831545217",
-        "price": "136.302",
-        "volume": "0",
-        "turnover": "0",
-        "trade_direction": 0
+        "code": "700.HK",
+        "kline_type": 1,
+        "kline_data": [
+          {
+            "timestamp": "1677829200",
+            "open_price": "136.421",
+            "close_price": "136.412",
+            "high_price": "136.422",
+            "low_price": "136.407",
+            "volume": "0",
+            "turnover": "0"
+          }
+        ]
+      },
+      {
+        "code": "GOOGL.US",
+        "kline_type": 1,
+        "kline_data": [
+          {
+            "timestamp": "1677829200",
+            "open_price": "136.421",
+            "close_price": "136.412",
+            "high_price": "136.422",
+            "low_price": "136.407",
+            "volume": "0",
+            "turnover": "0"
+          }
+        ]
       }
     ]
   }
