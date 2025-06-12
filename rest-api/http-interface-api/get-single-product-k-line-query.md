@@ -44,7 +44,7 @@ This method allows for quick updates of the latest K-lines while avoiding limita
 
 ## API Endpoints
 
-1. **US Stocks, Hong Kong Stocks, A Shares, Major Index Data,CFD Index** **API Endpoints:**
+1. **US Stocks, Hong Kong Stocks, A Shares, Major Index Data API Endpoints:**
 
 * **Base Path:** `/quote-stock-b-api/kline`
 * **Full URL:** `https://quote.alltick.io/quote-stock-b-api/kline`
@@ -61,7 +61,7 @@ This method allows for quick updates of the latest K-lines while avoiding limita
 When sending a query request, you must include the method name and token information. An example request is as follows:\
 `https://quote.alltick.io/quote-stock-b-api/kline?token=your_token&query=queryData`
 
-2. **Request Example for Forex, Precious Metals, Cryptocurrencies, Commodities:**
+2. **Request Example for Forex, Precious Metals, Cryptocurrencies, Commodities,CFD Index:**
 
 When sending a query request, you must include the method name and token information. An example request is as follows:\
 `https://quote.alltick.io/quote-b-api/kline?token=your_token&query=queryData`
