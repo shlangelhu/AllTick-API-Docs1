@@ -44,12 +44,12 @@ This method allows for quick updates of the latest K-lines while avoiding limita
 
 ## API Endpoints
 
-1. **US Stocks, Hong Kong Stocks, A Shares, Major Index Data API Endpoints:**
+1. **US Stocks, Hong Kong Stocks, A Shares, Major Index Data,CFD Index** **API Endpoints:**
 
 * **Base Path:** `/quote-stock-b-api/kline`
 * **Full URL:** `https://quote.alltick.io/quote-stock-b-api/kline`
 
-2. **Forex, Precious Metals, Cryptocurrencies, Commodities API Endpoints:**
+2. **Forex, Precious Metals, Cryptocurrencies, Commodities ,CFD Index** **API Endpoints:**
 
 * **Base Path:** `/quote-b-api/kline`
 * **Full URL:** `https://quote.alltick.io/quote-b-api/kline`
