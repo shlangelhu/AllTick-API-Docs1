@@ -3,17 +3,6 @@ description: >-
   HTTP interface restrictions 1. Frequency Limits  2. IP Limits Requests are
   limited based on the token, not the IP address. Example:： The basic plan
   allows 1 request per second. If a token requests the
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
 # HTTP interface restrictions
@@ -38,8 +27,8 @@ English / [中文](https://apis.alltick.co/jie-ru-liu-cheng/jie-kou-xian-zhi-shu
 
 * **`/kline` API**:
   * Queries must specify **one product code** per request.
-  * A maximum of **1,000 K-line records** can be returned per request.
-  * If more than 1,000 records are requested, only the first 1,000 will be returned.
+  * A maximum of 5**00 K-line records** can be returned per request.
+  * If more than 5**00** records are requested, only the first 5**00** will be returned.
 * **`/batch-kline` API**:
   * Supports multiple product codes per request.
   * The number of codes allowed depends on the purchased plan.
