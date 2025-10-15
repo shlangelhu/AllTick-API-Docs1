@@ -3,17 +3,6 @@ description: >-
   API地址说明 股票HTTP接口API地址 /quote-stock-b-api 股票查询API 查询API为https协议，完整的url为：
   https://quote.alltick.io/quote-stock-b-api 每发送一次查询请求时，需要带上方法名和token信息\
   单产品请求K线示例：
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
 # HTTP 行情 API 地址说明
@@ -27,7 +16,7 @@ layout:
 /quote-stock-b-api 股票查询API
 
 查询API为https协议，完整的url为：\
-[https://quote.alltick.io/quote-stock-b-api](https://quote.alltick.io/quote-stock-b-api)
+[https://quote.alltick.io/quote-stock-b-api](https://quote.alltick.co/quote-stock-b-api)
 
 每发送一次查询请求时，需要带上方法名和token信息\\
 
