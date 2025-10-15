@@ -16,7 +16,7 @@ description: >-
 /quote-stock-b-api 股票查询API
 
 查询API为https协议，完整的url为：\
-[https://quote.alltick.o/quote-stock-b-api](https://quote.alltick.co/quote-stock-b-api)
+[https://quote.alltick.co/quote-stock-b-api](https://quote.alltick.co/quote-stock-b-api)
 
 每发送一次查询请求时，需要带上方法名和token信息\\
 
