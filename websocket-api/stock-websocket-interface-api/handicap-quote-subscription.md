@@ -3,17 +3,6 @@ description: >-
   该接口支持订阅产品的最新盘口(实时逐笔深度、Order Book)数据，不支持历史盘口和历史逐笔tick数据。
   该接口特性：对于每一个websocket连接，每发送一次该请求，后台会默认覆盖上一次订阅请求（例如，如果您最初订阅了A、B、C这三只产品，想要追加订阅E、F、G，则需要重新发送一次A、B、C、E、F、G），订阅成功后会进行推送数据。
   注意： 1、订阅一次成功后，不需要再频繁的发起订阅请求
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
 # 最新盘口(实时逐笔深度、Order Book)订阅
@@ -51,12 +40,12 @@ layout:
 **1、美股、港股、A股、大盘数据接口地址：**
 
 * 基本路径: /quote-stock-b-ws-api
-* 完整URL: wss://quote.alltick.io/quote-stock-b-ws-api
+* 完整URL: wss://quote.alltick.co/quote-stock-b-ws-api
 
 **2、外汇、贵金属、加密货币、原油、CFD指数、商品接口地址：**
 
 * 基本路径: /quote-b-ws-api
-* 完整URL: wss://quote.alltick.io/quote-b-ws-api
+* 完整URL: wss://quote.alltick.co/quote-b-ws-api
 
 ## 请求示例 <a href="#qing-qiu-shi-li" id="qing-qiu-shi-li"></a>
 
@@ -64,7 +53,7 @@ layout:
 
 每次建立连接时，必须在URL中附加您的认证token，如下所示：
 
-wss://quote.alltick.io/quote-stock-b-ws-api?token=您的token
+wss://quote.alltick.co/quote-stock-b-ws-api?token=您的token
 
 连接成功后，您可以根据需要订阅特定的股票市场数据。详细的调用方法请参考下面的文档说明。
 
@@ -72,7 +61,7 @@ wss://quote.alltick.io/quote-stock-b-ws-api?token=您的token
 
 每次建立连接时，必须在URL中附加您的认证token，如下所示：
 
-wss://quote.alltick.io/quote-b-ws-api?token=您的token
+wss://quote.alltick.co/quote-b-ws-api?token=您的token
 
 连接成功后，您可以根据需要订阅特定的外汇、加密货币、贵金属、商品数据。详细的调用方法请参考下面的文档说明。
 
