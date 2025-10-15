@@ -3,17 +3,6 @@ description: >-
   This API supports batch subscription to real-time trade prices (tick-by-tick
   data、Latest Price) but does not provide historical trade prices. Each
   WebSocket connection allows one active subscription
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
 # Latest Trade Price (Real-time Tick Data) Batch Subscription
@@ -45,12 +34,12 @@ To handle network disconnections, clients should implement an auto-reconnect mec
 **1、Stock Market Data API for US, HK, A-shares, and Index:**
 
 Base Path: `/quote-stock-b-ws-api`\
-Full URL: `wss://quote.alltick.io/quote-stock-b-ws-api`&#x20;
+Full URL: `wss://quote.alltick.co/quote-stock-b-ws-api`&#x20;
 
 **2、API for Forex, Precious Metals, Cryptocurrencies, and Commodities:**
 
 Base Path: `/quote-b-ws-api`\
-Full URL: `wss://quote.alltick.io/quote-b-ws-api`
+Full URL: `wss://quote.alltick.co/quote-b-ws-api`
 
 ## Request Examples <a href="#request-examples" id="request-examples"></a>
 
@@ -58,7 +47,7 @@ Full URL: `wss://quote.alltick.io/quote-b-ws-api`
 
 Each time you establish a connection, you must append your authentication token to the URL as follows:
 
-`wss://quote.alltick.io/quote-stock-b-ws-api?token=your_token`
+`wss://quote.alltick.co/quote-stock-b-ws-api?token=your_token`
 
 After a successful connection, you can subscribe to specific stock market data as needed. Please refer to the documentation below for detailed calling methods.
 
@@ -66,7 +55,7 @@ After a successful connection, you can subscribe to specific stock market data a
 
 Each time you establish a connection, you must append your authentication token to the URL as follows:
 
-`wss://quote.alltick.io/quote-b-ws-api?token=your_token`
+`wss://quote.alltick.co/quote-b-ws-api?token=your_token`
 
 After a successful connection, you can subscribe to specific forex, cryptocurrency, precious metals, and commodities data as needed. Please refer to the documentation below for detailed calling methods.
 

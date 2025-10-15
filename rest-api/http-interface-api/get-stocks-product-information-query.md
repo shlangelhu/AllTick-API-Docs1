@@ -26,14 +26,14 @@ This interface only supports batch requests for basic information on US, HK, and
 ## **Interface Address**
 
 * **Base Path:** `/quote-stock-b-api/static_info`
-* **Full URL:** `https://quote.alltick.io/quote-stock-b-api/static_info`
+* **Full URL:** `https://quote.alltick.co/quote-stock-b-api/static_info`
 
 ## **Request Example**
 
 When sending a query request, it must include the method name and token information. An example of a request is as follows:
 
 ```arduino
-https://quote.alltick.io/quote-stock-b-api/static_info?token=您的token&query=queryData
+https://quote.alltick.co/quote-stock-b-api/static_info?token=您的token&query=queryData
 ```
 
 ## Request Parameters

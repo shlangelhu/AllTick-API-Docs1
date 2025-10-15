@@ -35,10 +35,10 @@ This method allows for quick updates of the latest K-lines while avoiding limita
 
 1. **US Stocks, Hong Kong Stocks, A Shares, Major Index Data API Endpoints:**
    * **Base Path:** `/quote-stock-b-api/batch-kline`
-   * **Full URL:** `https://quote.alltick.io/quote-stock-b-api/batch-kline`
+   * **Full URL:** `https://quote.alltick.co/quote-stock-b-api/batch-kline`
 2. **Forex, Precious Metals, Cryptocurrencies, Commodities API Endpoints:**
    * **Base Path:** `/quote-b-api/batch-kline`
-   * **Full URL:** `https://quote.alltick.io/quote-b-api/batch-kline`
+   * **Full URL:** `https://quote.alltick.co/quote-b-api/batch-kline`
 
 ***
 
@@ -49,14 +49,14 @@ This method allows for quick updates of the latest K-lines while avoiding limita
     When sending the query request, you must include the method name and token information. An example request is as follows:
 
     ```plaintext
-    https://quote.alltick.io/quote-stock-b-api/batch-kline?token=your_token
+    https://quote.alltick.co/quote-stock-b-api/batch-kline?token=your_token
     ```
 2.  **Request Example for Forex, Precious Metals, Cryptocurrencies, Commodities:**\
     The batch query function for retrieving the latest K-line data requires many parameters, which should be included in the request body. Only the `token` parameter should be included in the URL.\
     When sending the query request, you must include the method name and token information. An example request is as follows:
 
     ```plaintext
-    https://quote.alltick.io/quote-b-api/batch-kline?token=your_token
+    https://quote.alltick.co/quote-b-api/batch-kline?token=your_token
     ```
 
 ***

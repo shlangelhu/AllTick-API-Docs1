@@ -4,17 +4,6 @@ description: >-
   /quote-stock-b-ws-api Complete URL:
   wss://quote.alltick.io/quote-stock-b-ws-api Authentication Information Each
   time a connection
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
 # Websocket Quotes API Address Description
@@ -26,14 +15,14 @@ English / [中文](https://apis.alltick.co/jie-ru-liu-cheng/hang-qing-di-zhi-shu
 **Interface Address**
 
 * **Base Path**: /quote-stock-b-ws-api
-* **Complete URL**: wss://quote.alltick.io/quote-stock-b-ws-api
+* **Complete URL**: wss://quote.alltick.co/quote-stock-b-ws-api
 
 **Authentication Information**
 
 Each time a connection is established, you must append your authentication token to the URL as shown below:
 
 ```arduino
-wss://quote.alltick.io/quote-stock-b-ws-api?token=yourToken
+wss://quote.alltick.co/quote-stock-b-ws-api?token=yourToken
 ```
 
 **Subscription Instructions**
@@ -47,14 +36,14 @@ Once the connection is successful, you can subscribe to specific stock market da
 **Interface Address**
 
 * **Base Path**: /quote-b-ws-api
-* **Complete URL**: wss://quote.alltick.io/quote-b-ws-api
+* **Complete URL**: wss://quote.alltick.co/quote-b-ws-api
 
 **Authentication Information**
 
 When establishing a connection, you also need to append your authentication token to the URL to ensure the security of data transmission. The correct format should be as follows:
 
 ```arduino
-wss://quote.alltick.io/quote-b-ws-api?token=yourToken
+wss://quote.alltick.co/quote-b-ws-api?token=yourToken
 ```
 
 **Subscription Instructions**

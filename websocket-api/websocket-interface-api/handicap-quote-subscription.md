@@ -3,17 +3,6 @@ description: >-
   This interface supports subscribing to the latest market depth (real-time
   tick-by-tick, Order Book) data for products, but does not support historical
   market depth or historical tick data. Interface
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
 # Order Book (Real-time Tick-by-Tick, Market Depth) Subscription
@@ -51,13 +40,13 @@ This interface supports subscribing to the latest market depth (real-time tick-b
 
 Base Path: `/quote-stock-b-ws-api`&#x20;
 
-Full URL: `wss://quote.alltick.io/quote-stock-b-ws-api`
+Full URL: `wss://quote.alltick.co/quote-stock-b-ws-api`
 
 **2、API for Forex, Precious Metals, Cryptocurrencies, and Commodities:**
 
 Base Path: `/quote-b-ws-api`&#x20;
 
-Full URL: `wss://quote.alltick.io/quote-b-ws-api`
+Full URL: `wss://quote.alltick.co/quote-b-ws-api`
 
 ## Request Examples
 
@@ -65,7 +54,7 @@ Full URL: `wss://quote.alltick.io/quote-b-ws-api`
 
 Each time you establish a connection, you must append your authentication token to the URL as follows:
 
-`wss://quote.alltick.io/quote-stock-b-ws-api?token=your_token`
+`wss://quote.alltick.co/quote-stock-b-ws-api?token=your_token`
 
 After a successful connection, you can subscribe to specific stock market data as needed. Please refer to the documentation below for detailed calling methods.
 
@@ -73,7 +62,7 @@ After a successful connection, you can subscribe to specific stock market data a
 
 Each time you establish a connection, you must append your authentication token to the URL as follows:
 
-`wss://quote.alltick.io/quote-b-ws-api?token=your_token`
+`wss://quote.alltick.co/quote-b-ws-api?token=your_token`
 
 After a successful connection, you can subscribe to specific forex, cryptocurrency, precious metals, and commodities data as needed. Please refer to the documentation below for detailed calling methods.
 
