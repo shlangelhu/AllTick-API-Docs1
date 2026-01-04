@@ -1,16 +1,5 @@
 ---
 description: 贵金属(黄金白银)、原油产品的code列表
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
 # 商品(贵金属)

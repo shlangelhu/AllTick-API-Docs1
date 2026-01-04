@@ -3,17 +3,6 @@ description: >-
   保护您的AllTick账户安全是非常重要的，以下是一些推荐的最佳实践： 使用强密码
   创建一个复杂的密码，至少包含8个字符，结合使用大小写字母、数字和特殊符号。避免使用容易被猜到的密码，如“password”、“123456”或其他常见组合。
   定期更新密码 定期更改您的密码，特别是在使用相同密码的其他网站发生安全漏洞时。 保护您的电子邮件账户 您的电子邮件账户是恢复AllTick账户密码的关键。
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
 # 如何保护我的AllTick账户安全？

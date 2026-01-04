@@ -3,17 +3,6 @@ description: >-
   处理AllTick或任何金融数据服务提供商的高频更新数据时，需要采取一些策略来确保数据处理的效率和准确性。以下是一些推荐的做法： 使用适当的数据处理架构
   考虑使用事件驱动架构或消息队列（如Kafka、RabbitMQ）来处理实时数据流。这些技术可以帮助您有效地管理数据流，确保数据按顺序处理，并允许系统组件独立扩展。
   利用缓存技术 对于需要频繁访问的数据，使用内存缓存（如Redis、Memcache
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
 # 如何处理AllTick数据的高频更新？

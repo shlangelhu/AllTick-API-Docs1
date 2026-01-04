@@ -1,16 +1,5 @@
 ---
 description: HTTP 行情 API 地址说明 Websocket 行情 API 地址说明
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
 # 行情地址说明

@@ -3,17 +3,6 @@ description: >-
   AllTick 提供哪些类型的金融数据？ 如何获取AllTick的API密钥？ AllTick的数据更新频率是多少？
   如何在我的应用程序中集成AllTick的数据？ AllTick支持哪些编程语言进行API调用？ 我可以使用AllTick的数据进行商业用途吗？
   如何联系AllTick的客户支持？ AllTick的API有请求限制吗？ 如何报告数据问题或API故障？ AllTick提供实时数据还是延
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
 # 基础使用

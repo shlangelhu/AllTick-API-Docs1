@@ -2,17 +2,6 @@
 description: >-
   AllTick提供的是实时金融市场数据。专注于为开发者、金融科技公司、交易者、基金公司、交易所、交易平台以及研究者和研究机构提供实时和历史数据支持。这包括外汇、股票、商品和加密货币等多种资产类别的数据。
   实时数据对于进行市场分析、交易决策和风险管理至关重要，尤其是在快速变化的金融市场中。AllTick通过WebSocket等技术提供超低延迟的实时数据流，确保用户能够接收到准确及时的市场信息。
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
 # AllTick提供实时数据还是延迟数据？

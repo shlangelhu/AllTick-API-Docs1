@@ -3,17 +3,6 @@ description: >-
   第1步：熟悉接口地址和参数 目标：深入理解接口的URL结构及其期望的参数。 操作：仔细阅读行情地址说明文档，掌握各接口的访问URL和必要参数。 
   第2步：申请属于你的token 目标：获得访问接口所需的凭证。 操作：按照指南申请专属的Token，以确保您的请求被成功认证。  第3步：了解接口调用限制
   目标：避免因违反限制条件而导致请求失败。 操作：阅读接口限制说明，注意请求频率、数据请求量等相关限
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
 # 流程说明

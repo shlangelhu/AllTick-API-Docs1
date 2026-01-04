@@ -3,17 +3,6 @@ description: >-
   获取特定金融市场的实时通知和警报通常涉及使用AllTick金融数据API服务，以及实现一套逻辑来监控市场数据变化并触发通知。以下是一般性的步骤和建议：
   确定监控指标 首先，明确您需要监控的金融市场指标，如股票价格、交易量、市场新闻、经济指标变化等。 访问金融数据API
   使用AllTick或其他金融数据提供商的API来访问实时市场数据。您可能需要注册账户并获取API密钥。 设置阈值和条件 根据您的监
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
 # 如何获取特定金融市场的实时通知和警报？

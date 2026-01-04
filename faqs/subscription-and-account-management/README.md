@@ -3,17 +3,6 @@ description: >-
   如何注册AllTick账户？ AllTick有免费试用期吗？ 如何取消AllTick的订阅服务？ 我的订阅包括哪些服务？
   如何升级我的AllTick订阅计划？ 如何更改我的账户信息？ 我忘记了我的登录密码，该怎么办？ 如何保护我的AllTick账户安全？
   是否可以多人共享一个AllTick账户？ 我的订阅可以退款吗？
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
 # 订阅与账户管理

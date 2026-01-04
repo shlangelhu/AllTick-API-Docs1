@@ -1,16 +1,5 @@
 ---
 description: 美股产品的code列表
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
 # 美股

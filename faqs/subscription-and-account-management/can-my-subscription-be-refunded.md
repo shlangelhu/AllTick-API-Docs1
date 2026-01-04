@@ -3,17 +3,6 @@ description: >-
   通常情况下，AllTick和类似的金融数据服务平台的订阅是不可退款的。这意味着一旦您购买了订阅服务，无论是月度还是年度计划，您通常不会有资格获得已支付费用的退款。这种政策有助于服务提供商管理和维护高质量的数据流和服务稳定性。
   为什么订阅通常不可退款： 即时访问高价值数据：订阅服务通常提供即时访问高价值的市场数据和分析工具，用户一旦获得访问权限，即可立即消费这些内容。
   服务成本：提供实时或历史金融数
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
 # 我的订阅可以退款吗？

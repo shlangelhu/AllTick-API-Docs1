@@ -2,17 +2,6 @@
 description: >-
   AllTick的订阅服务在服务期内是不可取消的，这意味着一旦您订阅了AllTick的服务，您将能够在整个订阅期内享受其数据服务，但无法在期间取消服务并获得退款。这种策略确保用户在订阅前能够充分考虑和评估自己的需求，同时也保证了AllTick能够持续提供高质量的数据服务。
   当您的订阅接近续费日期时，AllTick提供了灵活的续费选项。您可以自主选择是否继续续费服务，AllTick不会绑定您的信用卡进
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
 # 如何取消AllTick的订阅服务？

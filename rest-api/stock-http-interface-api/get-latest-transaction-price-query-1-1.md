@@ -1,93 +1,292 @@
 ---
-description: >-
-  涨跌幅说明 Alltick的接口不提供涨跌幅或24小时涨跌幅字段。客户可以通过获取Alltick的数据自行计算涨跌幅。 每日涨跌幅计算方法：
-  方法一：使用HTTP接口获取当天的日K线收盘价和前一日的日K线收盘价，计算公式如下： 涨跌幅 = (当天收盘价 - 前一日收盘价) / 前一日收盘价 *
-  100% 方法二：使用WebSocket接口获取最新价格，并通过HTTP接口获取前一日的日K线收盘价，
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
+description: 接口说明 该接口仅支持批量请求美股、港股、A股产品的部分基础信息。 请求频率
 ---
 
-# 涨跌幅、休市、假期、涨停跌停、新股上市和退市
+# GET 复牌信息查询接口文档
 
-[English](https://app.gitbook.com/s/hl2stTwtjPsR73Ky9JWD/rest-api/http-interface-api/get-stocks-product-information-query-1) / 中文
+[English](https://en.apis.alltick.co/rest-api/stock-http-interface-api/get-product-information-query) / 中文
 
-## 涨跌幅说明
+## GET /static\_info
 
-Alltick的接口不提供涨跌幅或24小时涨跌幅字段。客户可以通过获取Alltick的数据自行计算涨跌幅。
+## 接口说明
 
-1.  **每日涨跌幅计算方法**：
+该接口提供全球主要交易所（SSE、NYSE、NASDAQ）的停复牌信息查询，所有接口均返回JSON格式数据，按公告时间倒序排列。
 
-    * **方法一**：使用HTTP接口获取当天的日K线收盘价和前一日的日K线收盘价，计算公式如下：
+## **请求频率**
 
-    涨跌幅 = (当天收盘价 - 前一日收盘价) / 前一日收盘价 \* 100%
+<table data-full-width="false"><thead><tr><th width="91">计划</th><th width="221">单独请求</th><th width="472">同时请求多个http接口</th></tr></thead><tbody><tr><td>免费</td><td>每10秒，只能1次请求</td><td><p>1、10秒只能请求1个接口</p><p><mark style="color:red;">2、多个接口请求时，需注意/batch-kline接口需间隔10秒</mark><br>3、所有接口相加，1分钟最大请求10次(6秒1次)<br>4、每天总共最大可请求14400次，超过则第二天凌晨恢复使用</p></td></tr><tr><td>基础</td><td>每1秒，只能1次请求</td><td><p>1、同1秒只能请求1个接口</p><p><mark style="color:red;">2、多个接口请求时，需注意/batch-kline接口需间隔3秒</mark><br>3、所有接口相加，1分钟最大请求60次(1秒1次)<br>4、每天总共最大可请求86400次，超过则第二天凌晨恢复使用</p></td></tr><tr><td>高级</td><td>每1秒，最大可10次请求</td><td><p>1、所以接口相加，每1秒可请求10次</p><p><mark style="color:red;">2、多个接口请求时，需注意/batch-kline接口需间隔2秒</mark><br>3、所有接口相加，1分钟最大请求600次(1秒10次)<br>4、每天总共最大可请求864000次，超过则第二天凌晨恢复使用</p></td></tr><tr><td>专业</td><td>每1秒，最大可20次请求</td><td><p>1、所以接口相加，每1秒可请求20次</p><p><mark style="color:red;">2、多个接口请求时，需注意/batch-kline接口需间隔1秒</mark><br>3、所有接口相加，1分钟最大请求1200次(1秒20次)<br>4、每天总共最大可请求1728000次，超过则第二天凌晨恢复使用</p></td></tr><tr><td>全部港股</td><td>每1秒，最大可20次请求</td><td><p>1、所以接口相加，每1秒可请求20次</p><p><mark style="color:red;">2、多个接口请求时，需注意/batch-kline接口需间隔1秒</mark><br>3、所有接口相加，1分钟最大请求1200次(1秒20次)<br>4、每天总共最大可请求1728000次，超过则第二天凌晨恢复使用</p></td></tr><tr><td>全部A股</td><td>每1秒，最大可20次请求</td><td><p>1、所以接口相加，每1秒可请求20次</p><p><mark style="color:red;">2、多个接口请求时，需注意/batch-kline接口需间隔1秒</mark><br>3、所有接口相加，1分钟最大请求1200次(1秒20次)<br>4、每天总共最大可请求1728000次，超过则第二天凌晨恢复使用</p></td></tr><tr><td>全部美股</td><td>每1秒，最大可20次请求</td><td><p>1、所以接口相加，每1秒可请求20次</p><p><mark style="color:red;">2、多个接口请求时，需注意/batch-kline接口需间隔1秒</mark><br>3、所有接口相加，1分钟最大请求1200次(1秒20次)<br>4、每天总共最大可请求1728000次，超过则第二天凌晨恢复使用</p></td></tr></tbody></table>
 
-    * **方法二**：使用WebSocket接口获取最新价格，并通过HTTP接口获取前一日的日K线收盘价，计算公式如下：
+## 接口限制 <a href="#jie-kou-xian-zhi" id="jie-kou-xian-zhi"></a>
 
-    涨跌幅 = (最新价格 - 前一日收盘价) / 前一日收盘价 \* 100%
-2.  **24小时涨跌幅计算方法**：
+1、请务必阅读：[HTTP接口限制说明](https://apis.alltick.co/integration-process/interface-restriction-description/http-interface-restrictions)
 
-    * 使用WebSocket的最新成交价格接口（请求-协议号：22004），实时接收逐笔成交价格（tick数据）。
-    * 需自行存储WebSocket接口推送的24小时前的最新价格，以便进行后续计算。
-    * 计算公式：
+2、请务必阅读：[错误码说明](https://apis.alltick.co/integration-process/interface-restriction-description/error-code-description)
 
-    24小时涨跌幅 = (最新价格 - 24小时前的最新价格) / 24小时前的最新价格 \* 100%
+## **接口地址**
 
-## 休市或交易时间说明
+**1、查询上海证券交易所停复牌信息：**
 
-Alltick并未提供休市或交易时间的接口。客户可以通过[【产品列表】](https://docs.google.com/spreadsheets/d/1avkeR1heZSj6gXIkDeBt8X3nv4EzJetw4yFuKjSDYtA/edit?gid=495387863#gid=495387863)查看各类产品的固定交易时间。请点击以下链接访问产品列表：
+* 基本路径: /api/suspension/sse
+* 完整URL: [https://quote.alltick.co/api/suspension/sse](https://quote.alltick.co/api/suspension/sse)
 
-[【产品列表】](https://docs.google.com/spreadsheets/d/1avkeR1heZSj6gXIkDeBt8X3nv4EzJetw4yFuKjSDYtA/edit?gid=495387863#gid=495387863)
+**2、**&#x67E5;询纽约证券交易所停复牌信&#x606F;**：**
 
-## 假期说明
+* 基本路径: /api/suspension/nyse
+* 完整URL: [https://quote.alltick.co/api/suspension/nyse](https://quote.alltick.co/api/suspension/nyse)
 
-Alltick不提供假期接口。假期休市通知将提前在我们的Telegram频道发布，具体休市的产品信息请以Telegram频道的通知为准。请及时关注频道以获取假期休市的最新通知。您可以通过以下链接关注我们的Telegram频道：\
-中文频道：[Telegram的频道](https://t.me/alltick_cn)\
-英文频道：[Telegram Channel](https://t.me/alltick_en)
+**3、**&#x67E5;询纳斯达克交易所停复牌信&#x606F;**：**
 
-## 股票涨停跌停说明
+* 基本路径: /api/suspension/nasdaq
+* 完整URL: [https://quote.alltick.co/api/suspension/nasdaq](https://quote.alltick.co/api/suspension/nasdaq)
 
-Alltick未提供涨停和跌停的判断接口。客户可以通过以下方式判断股票是否涨停或跌停：
+## **请求示例**
 
-1. **深度盘口接口数据判断**：当订阅深度盘口接口时，如果仅一侧有数据，而另一侧的价格和成交量均返回为0，则可判断为涨停或跌停。具体判断方法如下：
-   * 如果只有`bid`一侧有数据，而`ask`的价格和成交量全部返回为0，则该股票属于涨停。
-   * 如果只有`ask`一侧有数据，而`bid`的价格和成交量全部返回为0，则该股票属于跌停。
+### 1. 获取上证所数据接口
 
-以下是数据返回的示例截图：
+#### 接口信息
 
-<figure><img src="../../.gitbook/assets/image (6).png" alt="" width="563"><figcaption></figcaption></figure>
+* **URL**: `/api/suspension/sse`
+* **方法**: GET
+* **描述**: 获取上海证券交易所（SSE）全部停复牌信息
 
-## 股票退市判断说明
+#### 请求参数
 
-Alltick未提供退市判断接口。客户可以通过以下方式判断股票是否已退市：
+| 字段名   | 类型     | 是否必填 | 描述        |
+| ----- | ------ | ---- | --------- |
+| token | string | 是    | 用户套餐token |
 
-**判断方法**：当订阅深度盘口接口时，如果`bid`和`ask`两侧的价格和成交量全部返回为0，则表示该股票已退市。
+#### 响应示例
 
-以下是数据返回的示例截图：
+```json
+{
+  "success": true,
+  "timestamp": "2024-01-15T10:30:00",
+  "totalCount": 125,
+  "data": [
+    {
+      "symbol": "600000",
+      "symbolName": "浦发银行",
+      "haltReason": "重大事项停牌",
+      "haltDate": "2024-01-15",
+      "haltTime": "09:30:00",
+      "haltPeriod": "全天停牌",
+      "resumeDate": "2024-01-16",
+      "resumeTime": "09:30:00",
+      "publishDate": "2024-01-14 18:00:00"
+    }
+  ]
+}
 
-<figure><img src="../../.gitbook/assets/image (7).png" alt="" width="563"><figcaption></figcaption></figure>
+```
 
-## 新股上市说明
+#### 响应字段说明
 
-Alltick未提供新股上市的判断接口。我们会定期更新[【产品列表】](https://docs.google.com/spreadsheets/d/1avkeR1heZSj6gXIkDeBt8X3nv4EzJetw4yFuKjSDYtA/edit?gid=495387863#gid=495387863)，以反映新上市的股票，并已将退市的股票从列表中删除。
+#### 公共字段
 
-产品列表点击以下链接：
+| 字段名          | 类型      | 是否必填 | 描述                              |
+| ------------ | ------- | ---- | ------------------------------- |
+| » success    | boolean | 是    | 请求是否成功                          |
+| » timestamp  | string  | 是    | 响应时间戳（格式：yyyy-MM-dd'T'HH:mm:ss） |
+| » totalCount | integer | 是    | 数据总条数                           |
+| » data       | array   | 是    | 停复牌信息列表                         |
 
-[【产品列表】](https://docs.google.com/spreadsheets/d/1avkeR1heZSj6gXIkDeBt8X3nv4EzJetw4yFuKjSDYtA/edit?gid=495387863#gid=495387863)
+#### data字段（停复牌信息列表中的对象）
 
+每个对象包含以下字段：
 
+| 字段名           | 类型     | 是否允许为空 | 描述   |
+| ------------- | ------ | ------ | ---- |
+| » symbol      | string | 否      | 股票代码 |
+| » symbolName  | string | 是      | 股票名称 |
+| » haltReason  | string | 是      | 停牌原因 |
+| » haltDate    | string | 是      | 停牌日期 |
+| » haltTime    | string | 是      | 停牌时间 |
+| » haltPeriod  | string | 是      | 停牌期限 |
+| » resumeDate  | string | 是      | 复牌日期 |
+| » resumeTime  | string | 是      | 复牌时间 |
+| » publishDate | string | 否      | 公告时间 |
 
+#### 调用示例
 
+```bash
+curl -X GET "<https://quote.alltick.co/api/suspension/sse?token=您的Token>" -H "Accept: application/json"
+```
 
+***
 
+### 2. 获取纽交所数据接口
+
+#### 接口信息
+
+* **URL**: `/api/suspension/nyse`
+* **方法**: GET
+* **描述**: 获取纽约证券交易所（NYSE）全部停复牌信息
+
+#### 请求参数
+
+| 字段名   | 类型     | 是否必填 | 描述        |
+| ----- | ------ | ---- | --------- |
+| token | string | 是    | 用户套餐token |
+
+#### 响应示例
+
+```json
+{
+  "success": true,
+  "timestamp": "2024-01-15T10:30:00",
+  "totalCount": 89,
+  "data": [
+    {
+      "symbol": "AAPL",
+      "haltReason": "新闻待公布",
+      "haltDate": "2024-01-15",
+      "haltTime": "10:15:00",
+      "haltDateTime": "2024-01-15 10:15:00",
+      "resumeDate": "2024-01-15",
+      "resumeTime": "11:00:00",
+      "resumeDateTime": "2024-01-15 11:00:00",
+      "sourceExchange": "NYSE"
+      "publishDate": "2024-01-15 10:10:00
+    }
+  ]
+}
+
+```
+
+#### 响应字段说明
+
+#### 公共字段
+
+| 字段名          | 类型      | 是否必填 | 描述                              |
+| ------------ | ------- | ---- | ------------------------------- |
+| » success    | boolean | 是    | 请求是否成功                          |
+| » timestamp  | string  | 是    | 响应时间戳（格式：yyyy-MM-dd'T'HH:mm:ss） |
+| » totalCount | integer | 是    | 数据总条数                           |
+| » data       | array   | 是    | 停复牌信息列表                         |
+
+#### data字段（停复牌信息列表中的对象）
+
+每个对象包含以下字段：
+
+| 字段名              | 类型     | 是否允许为空 | 描述     |
+| ---------------- | ------ | ------ | ------ |
+| » symbol         | string | 否      | 股票代码   |
+| » haltReason     | string | 是      | 停牌原因   |
+| » haltTime       | string | 是      | 停牌时间   |
+| » haltDateTime   | string | 是      | 停牌日期时间 |
+| » resumeDate     | string | 是      | 复牌日期   |
+| » resumeTime     | string | 是      | 复牌时间   |
+| » resumeDateTime | string | 是      | 复牌日期时间 |
+| » sourceExchange | string | 是      | 交易所代码  |
+| » publishDate    | string | 否      | 公告时间   |
+
+#### 调用示例
+
+```bash
+curl -X GET "<https://quote.alltick.co/api/suspension/nyse?token=您的Token>" -H "Accept: application/json"
+```
+
+***
+
+### 3. 获取纳斯达克数据接口
+
+#### 接口信息
+
+* **URL**: `/api/suspension/nasdaq`
+* **方法**: GET
+* **描述**: 获取纳斯达克交易所（NASDAQ）全部停复牌信息
+
+#### 请求参数
+
+| 字段名   | 类型     | 是否必填 | 描述        |
+| ----- | ------ | ---- | --------- |
+| token | string | 是    | 用户套餐token |
+
+#### 响应示例
+
+```json
+{
+  "success": true,
+  "timestamp": "2024-01-15T10:30:00",
+  "totalCount": 156,
+  "data": [
+    {
+      "symbol": "GOOGL",
+      "haltDate": "2024-01-15",
+      "haltTime": "13:45:00",
+      "haltDateTime": "2024-01-15 13:45:00",
+      "sourceExchange": "NASDAQ",
+      "haltReason": "波动性暂停",
+      "pauseThresholdPrice": "145.50",
+      "resumeDate": "2024-01-15",
+      "resumeTime": "14:00:00",
+      "resumeDateTime": "2024-01-15 14:00:00",
+      "publishDate": "2024-01-15 13:44:30"
+    }
+  ]
+}
+
+```
+
+#### 响应字段说明
+
+#### 公共字段
+
+| 字段名          | 类型      | 是否必填 | 描述                              |
+| ------------ | ------- | ---- | ------------------------------- |
+| » success    | boolean | 是    | 请求是否成功                          |
+| » timestamp  | string  | 是    | 响应时间戳（格式：yyyy-MM-dd'T'HH:mm:ss） |
+| » totalCount | integer | 是    | 数据总条数                           |
+| » data       | array   | 是    | 停复牌信息列表                         |
+
+#### data字段（停复牌信息列表中的对象）
+
+每个对象包含以下字段：
+
+<table><thead><tr><th width="207.800048828125">字段名</th><th>类型</th><th>是否允许为空</th><th>描述</th></tr></thead><tbody><tr><td>» symbol</td><td>string</td><td>否</td><td>股票代码</td></tr><tr><td>» haltDate</td><td>string</td><td>是</td><td>停牌日期</td></tr><tr><td>» haltTime</td><td>string</td><td>是</td><td>停牌时间</td></tr><tr><td>» haltDateTime</td><td>string</td><td>是</td><td>停牌日期时间</td></tr><tr><td>» sourceExchange</td><td>string</td><td>是</td><td>交易所代码</td></tr><tr><td>» haltReason</td><td>string</td><td>是</td><td>停牌原因</td></tr><tr><td>» pauseThresholdPrice</td><td>string</td><td>是</td><td>暂停阈值价格</td></tr><tr><td>» resumeDate</td><td>string</td><td>是</td><td>恢复日期</td></tr><tr><td>» resumeTime</td><td>string</td><td>是</td><td>恢复报价时间</td></tr><tr><td>» resumeDateTime</td><td>string</td><td>是</td><td>恢复交易时间</td></tr><tr><td>» publishDate</td><td>string</td><td>否</td><td>公告时间</td></tr></tbody></table>
+
+#### 调用示例
+
+```bash
+curl -X GET "<https://quote.alltick.co/api/suspension/nasdaq?token=您的Token>" -H "Accept: application/json"
+```
+
+***
+
+### 错误响应
+
+所有接口在发生错误时返回以下格式：
+
+```json
+{
+  "success": false,
+  "error": "错误描述信息"
+}
+
+```
+
+**HTTP状态码**: 500
+
+#### 错误响应字段说明
+
+| 字段名     | 类型      | 是否必填 | 描述              |
+| ------- | ------- | ---- | --------------- |
+| success | boolean | 是    | 请求是否成功，固定为false |
+| error   | string  | 是    | 错误描述信息          |
+
+***
+
+### 注意事项
+
+1. 所有接口均不支持分页，返回最近一年的全量数据
+2. 数据已按公告时间倒序排列（最新的在前）
+3. 响应中的时间格式：
+   * timestamp字段：ISO格式（<mark style="color:red;">`yyyy-MM-dd'T'HH:mm:ss`</mark>）
+   * 其他时间字段：具体格式依赖API源数据，但通常为<mark style="color:red;">`yyyy-MM-dd HH:mm:ss`</mark>
+4. 建议设置适当的超时时间，大数据量时可能需要较长时间
+5. 字段为空说明：
+   * <mark style="color:red;">**"否"：字段始终有值，不会为null**</mark>
+   * <mark style="color:red;">**"是"：字段可能为null或空字符串，调用方需进行空值判断**</mark>
 
 
 

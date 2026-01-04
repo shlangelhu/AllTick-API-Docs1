@@ -3,17 +3,6 @@ description: >-
   注册AllTick账户通常涉及以下几个步骤，旨在为用户提供访问其金融市场数据API的权限。请注意，具体的注册流程可能会随时间变化或根据网站的更新而有所不同，以下是一个基本的指导流程：
   访问官方网站 打开浏览器，访问AllTick的官方网站：https://alltick.co 找到注册/创建账户选项
   在网站首页上，寻找“注册”、“创建账户”或类似的按钮。这通常位于页面的顶部导航栏或首页的显眼位置。
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
 # 如何注册AllTick账户？

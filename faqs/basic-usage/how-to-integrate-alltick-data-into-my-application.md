@@ -4,17 +4,6 @@ description: >-
   首先，您需要注册AllTick账户并获取API密钥。API密钥是您访问AllTick数据的凭证，确保您的请求被正确认证。 阅读API文档
   在开始编码之前，仔细阅读AllTick提供的API文档。文档中会详细介绍如何使用API，包括可用的数据类型、请求格式、响应结构以及任何限制或要求。
   选择编程语言 根据您的开发环境
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
 # 如何在我的应用程序中集成AllTick的数据？

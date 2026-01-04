@@ -3,17 +3,6 @@ description: >-
   管理和限制数据使用量是确保不超出AllTick或任何数据服务订阅限制的关键。这不仅有助于避免可能的额外费用，也确保服务的持续可用性。以下是一些策略和建议：
   了解您的订阅详情 清楚地了解您的订阅计划包括的数据使用限制，如每月的API调用次数、数据下载量等。这些信息通常可以在服务协议或用户账户的订阅管理部分找到。
   监控数据使用 利用AllTick提供的工具或API来监控您的数据使用情况。及时检查以确保
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
 # 如何限制我的数据使用量以避免超出订阅限制？

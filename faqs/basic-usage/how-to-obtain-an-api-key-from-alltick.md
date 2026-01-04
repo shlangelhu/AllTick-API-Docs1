@@ -4,17 +4,6 @@ description: >-
   注册账户：访问AllTick官方网站，并找到注册页面。填写必要的信息，如姓名、电子邮件地址和密码，完成账户创建过程。
   登录账户：使用您刚注册的账户信息登录AllTick。 访问API管理：登录后，导航到API管理或API密钥管理页面。这通常在用户的账户设置或开发者工具部分。
   生成API密钥：在API管理页面，您通常会找到生成API密钥的选项。
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
 # 如何获取AllTick的API密钥？

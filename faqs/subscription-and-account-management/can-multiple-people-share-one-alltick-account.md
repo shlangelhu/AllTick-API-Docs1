@@ -4,17 +4,6 @@ description: >-
   常见的账户共享政策包括：
   禁止共享：明确禁止共享账户信息，特别是登录凭证，如用户名和密码。这是因为共享账户可能会导致数据安全风险，增加未经授权访问的可能性，并可能违反数据使用和访问的法律规定。
   特定许可：某些服务
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
 # 是否可以多人共享一个AllTick账户？

@@ -2,17 +2,6 @@
 description: >-
   是的，AllTick的API支持批量请求。这意味着您可以在单个API调用中请求多个数据点或执行多个操作，从而提高数据处理的效率和减少网络延迟。批量请求特别适用于需要从AllTick获取大量金融数据的场景，如批量获取多个股票的历史价格、同时查询多个货币对的实时汇率等。
   如何使用批量请求： 阅读API文档：详细查阅AllTick提供的API文档，了解批量请求的具体实现方法，包括如何构造请求体、支持的最
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
 # AllTick的API是否支持批量请求？

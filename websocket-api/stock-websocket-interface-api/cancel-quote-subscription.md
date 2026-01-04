@@ -1,16 +1,5 @@
 ---
 description: 接口说明 取消报价订阅 请求-协议号：22006 data定义 数据结构(json)
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
 # 取消报价订阅

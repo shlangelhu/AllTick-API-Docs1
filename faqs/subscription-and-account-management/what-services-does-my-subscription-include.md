@@ -3,17 +3,6 @@ description: >-
   AllTick主要提供包括外汇、股票、商品和加密货币在内的实时及历史金融市场数据API服务。这些服务旨在为开发者、金融科技公司、交易者、机构和研究机构提供可靠的数据源，以支持他们构建创新的交易和分析工具。
   具体提供的服务包括： 外汇API：提供来自世界领先银行机构的1000多种货币对的实时更新。
   商品API：提供所有主要贵金属（如黄金、白银）和能源类别的实时及历史数据。
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
 # 我的订阅包括哪些服务？

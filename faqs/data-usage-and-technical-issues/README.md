@@ -3,17 +3,6 @@ description: >-
   如何使用AllTick的WebSocket服务？ AllTick的API支持哪些数据格式？ 如何处理AllTick数据的高频更新？
   我在使用API时遇到了技术问题，该怎么解决？ 如何确保从AllTick接收的数据的准确性？ AllTick是否提供历史数据查询？
   如何限制我的数据使用量以避免超出订阅限制？ AllTick的API是否支持批量请求？
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
 # 数据使用与技术问题

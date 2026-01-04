@@ -2,17 +2,6 @@
 description: >-
   WebSocket接口限制 1、IP类限制 1.1  Websocket的连接数是根据Token允许的连接数做限制的，不针对IP地址限制。
   例如：基础计划规定一个Token只允许一个websocket连接，IP地址A已经发起了一个websocket连接的情况下，1、如果您使用相同的IP地址A尝试发起第二个websocket连接将会被拒绝；2、如果您使用IP地址B尝试发起第二个websocket连接
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
 # Websocket 接口限制

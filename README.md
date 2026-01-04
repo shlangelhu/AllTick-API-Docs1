@@ -3,17 +3,6 @@ description: >-
   欢迎 欢迎光临 AllTick API文档部分！这里是您探索
   AllTick集合的绝佳去处，提供了教程、概述、功能介绍以及覆盖的用例等内容。不论您是否有疑问，或者只是想获取更多信息，这里都是您的理想选择。我们的文档区域是您了解我们的行情数据
   API 并充分发挥其功能的宝贵资源。
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
 # 欢迎

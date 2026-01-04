@@ -2,17 +2,6 @@
 description: >-
   GET 单产品历史K线查询（最高、最低、开盘、收盘价） GET 最新盘口(最新深度、Order Book)查询 GET
   最新成交价(最新tick、当前价、最新价)批量查询 POST 批量查询产品最新2根K线（最高、最低、开盘、收盘价） GET 股票产品基础信息批量查询
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
 # HTTP接口API
