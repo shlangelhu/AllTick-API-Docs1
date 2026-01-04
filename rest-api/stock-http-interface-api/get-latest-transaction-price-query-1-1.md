@@ -29,12 +29,12 @@ description: 接口说明 该接口仅支持批量请求美股、港股、A股�
 * 基本路径: /api/suspension/sse
 * 完整URL: [https://quote.alltick.co/api/suspension/sse](https://quote.alltick.co/api/suspension/sse)
 
-**2、**&#x67E5;询纽约证券交易所停复牌信&#x606F;**：**
+**2、查询纽约证券交易所停复牌信息：**
 
 * 基本路径: /api/suspension/nyse
 * 完整URL: [https://quote.alltick.co/api/suspension/nyse](https://quote.alltick.co/api/suspension/nyse)
 
-**3、**&#x67E5;询纳斯达克交易所停复牌信&#x606F;**：**
+**3、查询纳斯达克交易所停复牌信息：**
 
 * 基本路径: /api/suspension/nasdaq
 * 完整URL: [https://quote.alltick.co/api/suspension/nasdaq](https://quote.alltick.co/api/suspension/nasdaq)
