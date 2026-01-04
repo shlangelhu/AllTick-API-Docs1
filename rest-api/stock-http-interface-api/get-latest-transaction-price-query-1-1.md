@@ -282,7 +282,7 @@ curl -X GET "<https://quote.alltick.co/api/suspension/nasdaq?token=您的Token>"
 2. 数据已按公告时间倒序排列（最新的在前）
 3. 响应中的时间格式：
    * timestamp字段：ISO格式（<mark style="color:red;">`yyyy-MM-dd'T'HH:mm:ss`</mark>）
-   * 其他时间字段：<mark style="color:orange;">yyyy-MM-dd HH:mm:ss</mark>
+   * 其他时间字段：<mark style="color:red;">yyyy-MM-dd HH:mm:ss</mark>
 4. 建议设置适当的超时时间，大数据量时可能需要较长时间
 5. 字段为空说明：
    * <mark style="color:red;">**"否"：字段始终有值，不会为null**</mark>
