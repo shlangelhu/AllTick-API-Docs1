@@ -8,11 +8,11 @@ description: >-
 
 English / [中文](https://apis.alltick.co/rest-api/stock-http-interface-api/get-latest-transaction-price-query-1)
 
-## St=Resumption Information Query API Documentation
+## Resumption Information Query API Documentation
 
 ## Interface Description
 
-This interface only supports batch requests for basic information on US, HK, and A-share products.
+This API provides queries for suspension and resumption information from major global exchanges (SSE, NYSE, NASDAQ). All APIs return data in JSON format, sorted in descending order by announcement time.
 
 ## Request Frequency
 
@@ -25,114 +25,228 @@ This interface only supports batch requests for basic information on US, HK, and
 
 ## **Interface Address**
 
-* **Base Path:** `/quote-stock-b-api/static_info`
-* **Full URL:** `https://quote.alltick.co/quote-stock-b-api/static_info`
+1. **Query Suspension/Resumption Information of the Shanghai Stock Exchange (SSE):**
+
+* Base Path: `/api/suspension/sse`
+* Full URL: `https://quote.alltick.co/api/suspension/sse`
+
+2. **Query Suspension/Resumption Information of the New York Stock Exchange (NYSE):**
+
+* Base Path: `/api/suspension/nyse`
+* Full URL: `https://quote.alltick.co/api/suspension/nyse`
+
+3. **Query Suspension/Resumption Information of the Nasdaq Stock Exchange:**
+
+* Base Path: `/api/suspension/nasdaq`
+* Full URL: `https://quote.alltick.co/api/suspension/nasdaq`
 
 ## **Request Example**
 
-When sending a query request, it must include the method name and token information. An example of a request is as follows:
+### 1. Retrieve the Shanghai Stock Exchange data API
 
-```arduino
-https://quote.alltick.co/quote-stock-b-api/static_info?token=您的token&query=queryData
-```
+#### API Information
 
-## Request Parameters
+* **URL**: `/api/suspension/sse`
+* **Method**: GET
+* **Description**: Retrieve all suspension and resumption information from the Shanghai Stock Exchange (SSE).
 
-| Name  | Position | Type   | Required | Description                                  |
-| ----- | -------- | ------ | -------- | -------------------------------------------- |
-| token | query    | string | No       |                                              |
-| query | query    | string | No       | See explanation for query request parameters |
+#### Request Parameters
 
-> Query Request Parameters
+<table><thead><tr><th>Field</th><th width="151.4000244140625">Type</th><th width="155">Required</th><th>Description</th></tr></thead><tbody><tr><td>token</td><td>string</td><td>Yes</td><td>User subscription token</td></tr></tbody></table>
 
-Encode the following JSON into URL format and assign it to the `query` query string in the URL.
+#### Response Example
 
-```
+```json
 {
-  "trace": "edd5df80-df7f-4acf-8f67-68fd2f096426",
-  "data": {
-    "symbol_list": [
-      {
-        "code": "857.HK"
-      },
-      {
-        "code": "UNH.US"
-      }
-    ]
-  }
+  "success": true,
+  "timestamp": "2024-01-15T10:30:00",
+  "totalCount": 125,
+  "data": [
+    {
+      "symbol": "600000",
+      "symbolName": "浦发银行",
+      "haltReason": "重大事项停牌",
+      "haltDate": "2024-01-15",
+      "haltTime": "09:30:00",
+      "haltPeriod": "全天停牌",
+      "resumeDate": "2024-01-16",
+      "resumeTime": "09:30:00",
+      "publishDate": "2024-01-14 18:00:00"
+    }
+  ]
 }
-```
-
-## Query Request Parameters
-
-| Name           | Type      | Required | Description |
-| -------------- | --------- | -------- | ----------- |
-| trace          | string    | Yes      |             |
-| data           | object    | Yes      |             |
-| » symbol\_list | \[object] | Yes      |             |
-| » » code       | string    | No       | Code        |
-
-## Response Example
 
 ```
+
+#### Response Field Description
+
+#### Common Fields
+
+<table><thead><tr><th width="160.4000244140625">Field</th><th width="107.4000244140625">Type</th><th width="163.800048828125">Required</th><th>Description</th></tr></thead><tbody><tr><td>success</td><td>boolean</td><td>Yes</td><td>Whether the request was successful</td></tr><tr><td>timestamp</td><td>string</td><td>Yes</td><td>Response timestamp (format: yyyy-MM-dd'T'HH:mm:ss)</td></tr><tr><td>totalCount</td><td>integer</td><td>Yes</td><td>Total number of records</td></tr><tr><td>data</td><td>array</td><td>Yes</td><td>List of suspension/resumption records</td></tr></tbody></table>
+
+#### data（Object Fields）
+
+Fields in each object:
+
+<table><thead><tr><th>Field</th><th width="157.39990234375">Type</th><th width="160">Nullable</th><th>Description</th></tr></thead><tbody><tr><td>symbol</td><td>string</td><td>No</td><td>Stock symbol</td></tr><tr><td>symbolName</td><td>string</td><td>Yes</td><td>Stock name</td></tr><tr><td>haltReason</td><td>string</td><td>Yes</td><td>Reason for suspension</td></tr><tr><td>haltDate</td><td>string</td><td>Yes</td><td>Suspension date</td></tr><tr><td>haltTime</td><td>string</td><td>Yes</td><td>Suspension time</td></tr><tr><td>haltPeriod</td><td>string</td><td>Yes</td><td>Suspension duration</td></tr><tr><td>resumeDate</td><td>string</td><td>Yes</td><td>Resumption date</td></tr><tr><td>resumeTime</td><td>string</td><td>Yes</td><td>Resumption time</td></tr><tr><td>publishDate</td><td>string</td><td>No</td><td>Announcement time</td></tr></tbody></table>
+
+#### Example Request
+
+```bash
+curl -X GET "<https://quote.alltick.co/api/suspension/sse?token=您的Token>" -H "Accept: application/json"
+```
+
+***
+
+### 2. Obtain the NYSE data API
+
+#### API Information
+
+* **URL**: `/api/suspension/nyse`
+* Method: GET
+* Description: Retrieve all suspension and resumption information from the New York Stock Exchange (NYSE).
+
+#### Request Parameters
+
+<table><thead><tr><th>Field</th><th width="161.199951171875">Type</th><th width="139.7999267578125">Required</th><th>Description</th></tr></thead><tbody><tr><td>token</td><td>string</td><td>Yes</td><td>User subscription token</td></tr></tbody></table>
+
+#### Response Example
+
+```json
 {
-  "ret": 200,
-  "msg": "ok",
-  "trace": "edd5df80-df7f-4acf-8f67-68fd2f096426",
-  "data": {
-    "static_info_list": [
-      {
-        "board": "HKEquity",
-        "bps": "101.7577888985738336",
-        "circulating_shares": "9267359712",
-        "currency": "HKD",
-        "dividend_yield": "3.4558141358352833",
-        "eps": "13.7190213011686429",
-        "eps_ttm": "18.0567016900844671",
-        "exchange": "SEHK",
-        "hk_shares": "9267359712",
-        "lot_size": "100",
-        "name_cn": "腾讯控股",
-        "name_en": "TENCENT",
-        "name_hk": "騰訊控股",
-        "symbol": "700.HK",
-        "total_shares": "9267359712"
-      }
-    ]
-  }
+  "success": true,
+  "timestamp": "2024-01-15T10:30:00",
+  "totalCount": 89,
+  "data": [
+    {
+      "symbol": "AAPL",
+      "haltReason": "新闻待公布",
+      "haltDate": "2024-01-15",
+      "haltTime": "10:15:00",
+      "haltDateTime": "2024-01-15 10:15:00",
+      "resumeDate": "2024-01-15",
+      "resumeTime": "11:00:00",
+      "resumeDateTime": "2024-01-15 11:00:00",
+      "sourceExchange": "NYSE"
+      "publishDate": "2024-01-15 10:10:00
+    }
+  ]
 }
+
 ```
 
-## Response Result
+#### Response Field Description
 
-| Status Code | Status Meaning | Description | Data Model |
-| ----------- | -------------- | ----------- | ---------- |
-| 200         | OK             | OK          | Inline     |
+#### Common Fields
 
-## Response Data Structure
+<table><thead><tr><th width="166.199951171875">Field</th><th width="150.2000732421875">Type</th><th width="126.2000732421875">Required</th><th>Description</th></tr></thead><tbody><tr><td>success</td><td>boolean</td><td>Yes</td><td>Whether the request was successful</td></tr><tr><td>timestamp</td><td>string</td><td>Yes</td><td>Response timestamp (format: yyyy-MM-dd'T'HH:mm:ss)</td></tr><tr><td>totalCount</td><td>integer</td><td>Yes</td><td>Total number of records</td></tr><tr><td>data</td><td>array</td><td>Yes</td><td>List of suspension/resumption records</td></tr></tbody></table>
 
-| Name                    | Type      | Required | Description                                            |
-| ----------------------- | --------- | -------- | ------------------------------------------------------ |
-| » ret                   | integer   | true     | Return code                                            |
-| » msg                   | string    | true     | Message corresponding to the return code               |
-| » trace                 | string    | true     | Request trace                                          |
-| » data                  | object    | true     |                                                        |
-| »» static\_info\_list   | \[object] | true     |                                                        |
-| »»» board               | string    | false    | The sector to which the stock belongs                  |
-| »»» bps                 | string    | false    | Net assets per share                                   |
-| »»» circulating\_shares | string    | false    | circulating capital                                    |
-| »»» currency            | string    | false    | Transaction currency                                   |
-| »»» dividend\_yield     | string    | false    | dividends                                              |
-| »»» eps                 | string    | false    | earnings per share                                     |
-| »»» eps\_ttm            | string    | false    | earnings per share (TTM)                               |
-| »»» exchange            | string    | false    | The exchange to which the product belongs              |
-| »»» hk\_shares          | string    | false    | Hong Kong stocks share capital (Hong Kong stocks only) |
-| »»» lot\_size           | string    | false    | Number of shares per lot                               |
-| »»» name\_cn            | string    | false    | Product name in simplified Chinese                     |
-| »»» name\_en            | string    | false    | English product name                                   |
-| »»» name\_hk            | string    | false    | Product name in traditional Chinese                    |
-| »»» symbol              | string    | false    | Product code                                           |
-| »»» total\_shares       | string    | false    | total share capital                                    |
+#### data（Object Fields）
+
+Fields in each object:
+
+<table><thead><tr><th>Field</th><th width="154.4000244140625">Type</th><th width="146.199951171875">Nullable</th><th>Description</th></tr></thead><tbody><tr><td>symbol</td><td>string</td><td>No</td><td>Stock symbol</td></tr><tr><td>haltReason</td><td>string</td><td>Yes</td><td>Reason for suspension</td></tr><tr><td>haltTime</td><td>string</td><td>Yes</td><td>Suspension time</td></tr><tr><td>haltDateTime</td><td>string</td><td>Yes</td><td>Suspension date and time</td></tr><tr><td>resumeDate</td><td>string</td><td>Yes</td><td>Resumption date</td></tr><tr><td>resumeTime</td><td>string</td><td>Yes</td><td>Resumption time</td></tr><tr><td>resumeDateTime</td><td>string</td><td>Yes</td><td>Resumption date and time</td></tr><tr><td>sourceExchange</td><td>string</td><td>Yes</td><td>Exchange code</td></tr><tr><td>publishDate</td><td>string</td><td>No</td><td>Announcement time</td></tr></tbody></table>
+
+#### Example Request
+
+```bash
+curl -X GET "<https://quote.alltick.co/api/suspension/nyse?token=您的Token>" -H "Accept: application/json"
+```
+
+***
+
+### 3. NASDAQ Suspension/Resumption Data API
+
+#### API Information
+
+* **URL**: `/api/suspension/nasdaq`
+* **Method**: GET
+* **Description**: Retrieve all suspension and resumption information from the NASDAQ Stock Exchange.
+
+#### Request Parameters
+
+<table><thead><tr><th width="173.800048828125">Field</th><th width="126.60009765625">Type</th><th width="131">Required</th><th>Description</th></tr></thead><tbody><tr><td>token</td><td>string</td><td>Yes</td><td>User subscription token</td></tr></tbody></table>
+
+#### Response Example
+
+```json
+{
+  "success": true,
+  "timestamp": "2024-01-15T10:30:00",
+  "totalCount": 156,
+  "data": [
+    {
+      "symbol": "GOOGL",
+      "haltDate": "2024-01-15",
+      "haltTime": "13:45:00",
+      "haltDateTime": "2024-01-15 13:45:00",
+      "sourceExchange": "NASDAQ",
+      "haltReason": "波动性暂停",
+      "pauseThresholdPrice": "145.50",
+      "resumeDate": "2024-01-15",
+      "resumeTime": "14:00:00",
+      "resumeDateTime": "2024-01-15 14:00:00",
+      "publishDate": "2024-01-15 13:44:30"
+    }
+  ]
+}
+
+```
+
+#### Response Field Description
+
+#### Common Fields
+
+<table><thead><tr><th width="141.800048828125">Field</th><th width="119">Type</th><th width="144.60009765625">Required</th><th>Description</th></tr></thead><tbody><tr><td>success</td><td>boolean</td><td>Yes</td><td>Whether the request was successfu</td></tr><tr><td>timestamp</td><td>string</td><td>Yes</td><td>Response timestamp (format: yyyy-MM-dd'T'HH:mm:ss)</td></tr><tr><td>totalCount</td><td>integer</td><td>Yes</td><td>Total number of records</td></tr><tr><td>data</td><td>array</td><td>Yes</td><td>List of suspension/resumption records</td></tr></tbody></table>
+
+#### data（Object Fields）
+
+Fields in each object:
+
+<table><thead><tr><th width="185.4000244140625">Field</th><th width="126.2000732421875">Type</th><th width="142">Nullable</th><th>Description</th></tr></thead><tbody><tr><td>symbol</td><td>string</td><td>No</td><td>Stock symbol</td></tr><tr><td>haltDate</td><td>string</td><td>Yes</td><td>Suspension date</td></tr><tr><td>haltTime</td><td>string</td><td>Yes</td><td>Suspension time</td></tr><tr><td>haltDateTime</td><td>string</td><td>Yes</td><td>Suspension date and time</td></tr><tr><td>sourceExchange</td><td>string</td><td>Yes</td><td>Exchange code</td></tr><tr><td>haltReason</td><td>string</td><td>Yes</td><td>Reason for suspension</td></tr><tr><td>pauseThresholdPrice</td><td>string</td><td>Yes</td><td>Pause threshold price</td></tr><tr><td>resumeDate</td><td>string</td><td>Yes</td><td>Resumption date</td></tr><tr><td>resumeTime</td><td>string</td><td>Yes</td><td>Quote resumption time</td></tr><tr><td>resumeDateTime</td><td>string</td><td>Yes</td><td>Trading resumption time</td></tr><tr><td>publishDate</td><td>string</td><td>No</td><td>Announcement time</td></tr></tbody></table>
+
+#### Example Request
+
+```bash
+curl -X GET "<https://quote.alltick.co/api/suspension/nasdaq?token=您的Token>" -H "Accept: application/json"
+```
+
+***
+
+### Error Response
+
+All APIs return the following format when an error occurs:
+
+```json
+{
+  "success": false,
+  "error": "Error description"
+}
+
+```
+
+**HTTP Status Code:** 500
+
+#### Error Response Fields
+
+| Field   | Type    | Required | Description       |
+| ------- | ------- | -------- | ----------------- |
+| success | boolean | Yes      | Always `false`    |
+| error   | string  | Yes      | Error description |
+
+***
+
+### Notes
+
+* Pagination is **not supported**; all APIs return the full dataset for the **most recent one year**.
+* Data is sorted by **announcement time in descending order** (latest first).
+* Time format details:
+  * `timestamp`: ISO format (`yyyy-MM-dd'T'HH:mm:ss`)
+  * Other time fields: `yyyy-MM-dd HH:mm:ss`
+* It is recommended to set an appropriate timeout, as large data volumes may require longer response times.
+* Field nullability:
+  * **"No"**: The field always has a value and will never be null.
+  * **"Yes"**: The field may be null or an empty string; callers should handle null checks accordingly.
 
 ### Official Website
 
