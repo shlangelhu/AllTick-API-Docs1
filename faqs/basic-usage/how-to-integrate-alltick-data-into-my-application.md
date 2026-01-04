@@ -3,17 +3,6 @@ description: >-
   Integrating AllTick data into your application typically involves the
   following key steps: Obtain an API Key: First, you need to register for an
   AllTick account and obtain an API key. The API key serv
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
 # How to integrate AllTick data into my application?

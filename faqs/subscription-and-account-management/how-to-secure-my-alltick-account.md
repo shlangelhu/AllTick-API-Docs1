@@ -3,17 +3,6 @@ description: >-
   Ensuring the security of your AllTick account is crucial. Here are some
   recommended best practices: Use a Strong Password Create a complex password
   that includes at least 8 characters, combining upper
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
 # How to secure my AllTick account?

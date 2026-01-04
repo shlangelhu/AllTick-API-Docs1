@@ -3,17 +3,6 @@ description: >-
   If you've forgotten your AllTick account password, it can typically be reset
   through the following steps: Visit the Login Page First, visit the AllTick
   official website and navigate to the login page.
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
 # I forgot my login password, what should I do?

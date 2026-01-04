@@ -3,17 +3,6 @@ description: >-
   Yes, AllTick's API supports batch requests. This means you can request
   multiple data points or perform multiple operations within a single API call,
   thus enhancing data processing efficiency and reduc
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
 # Does AllTick's API support batch requests?

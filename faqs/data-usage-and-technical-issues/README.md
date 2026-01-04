@@ -3,17 +3,6 @@ description: >-
   How to Use AllTick's WebSocket Service? What data formats does AllTick's API
   support? How to Handle High-Frequency Updates of AllTick Data? I encountered a
   technical problem when using the API,
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
 # Data usage and technical issues

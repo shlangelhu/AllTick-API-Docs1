@@ -3,17 +3,6 @@ description: >-
   AllTick primarily offers real-time and historical financial market data API
   services, including forex, stocks, commodities, and cryptocurrencies. These
   services are designed to provide developers,
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
 # What services does my subscription include?

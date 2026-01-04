@@ -3,17 +3,6 @@ description: >-
   According to the content on the AllTick website, AllTick supports multiple
   client development languages, enabling developers to make API calls using the
   technologies they are familiar with. These lang
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
 # What programming languages does AllTick support for API calls?

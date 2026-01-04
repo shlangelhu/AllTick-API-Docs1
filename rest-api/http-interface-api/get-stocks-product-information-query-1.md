@@ -1,106 +1,138 @@
 ---
 description: >-
-  Price Change Calculation Alltick API does not provide price change or 24-hour
-  price change fields. Users can calculate price changes using Alltick data.
-  1、Daily Price Change Calculation Method 1:
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
+  This interface only supports batch requests for basic information on US, HK,
+  and A-share products. Request Frequency
 ---
 
-# Price changes, Market closure, Holidays, Limit up/down, New listings, and Delistings
+# GET Resumption Information Query API Documentation
 
-English / [中文](https://app.gitbook.com/s/AnPIgTqJ2rek1QSPVUja/rest-api/stock-http-interface-api/get-latest-transaction-price-query-1-1)
+English / [中文](https://apis.alltick.co/rest-api/stock-http-interface-api/get-latest-transaction-price-query-1)
 
-## Price Change Calculation <a href="#interface-limitations" id="interface-limitations"></a>
+## St=Resumption Information Query API Documentation
 
-**Alltick API does not provide price change or 24-hour price change fields.** Users can calculate price changes using Alltick data.
+## Interface Description
 
-**1、Daily Price Change Calculation**
+This interface only supports batch requests for basic information on US, HK, and A-share products.
 
-**Method 1:** Use the HTTP API to get the daily K-line closing price for today and the previous day：
+## Request Frequency
 
-**Formula:**\
-`Price Change (%) = (Today's Closing Price - Previous Day's Closing Price) / Previous Day's Closing Price * 100%`
+<table data-full-width="false"><thead><tr><th width="138">Plan</th><th width="194">Individual request</th><th width="332">Request multiple HTTP interfaces</th></tr></thead><tbody><tr><td>Free</td><td>Once every 10 seconds, only 1 request can be made</td><td><p>1、1 request per 10 seconds.</p><p>2、/batch-kline needs 10-second intervals.</p><p>3、Total of 10 requests per minute (every 6 seconds).</p><p>4、Max 14400 daily requests; excess resets at midnight.</p></td></tr><tr><td>Basic</td><td>Only 1 request per second</td><td><p>1、One request per second.</p><p>2、/batch-kline: 1 request every 3 seconds.</p><p>3、Total of 60 requests per minute (1 request per second).</p><p>4、Max 86400 daily requests; excess resets at midnight.</p></td></tr><tr><td>Premium</td><td>Up to 10 requests per second</td><td><p>1、Combined interfaces: 10 requests/second.</p><p>2、/batch-kline: 1 request/2 seconds.</p><p>3、Total: 600 requests/minute (10/second).</p><p>4、Daily limit: 864,000 requests; reset daily at midnight if exceeded.</p></td></tr><tr><td>Professional</td><td>Up to 20 requests per second</td><td><p>1、Combined interfaces: 20 requests/second.</p><p>2、/batch-kline: 1 request/second interval.</p><p>3、Total: 1200 requests/minute (20/second).</p><p>4、Daily limit: 1,728,000 requests; reset daily at midnight if exceeded.</p></td></tr><tr><td>All HK Stocks</td><td>Up to 20 requests per second</td><td><p>1、Combined interfaces: 20 requests/second.</p><p>2、/batch-kline: 1 request/second interval.</p><p>3、Total: 1200 requests/minute (20/second).</p><p>4、Daily limit: 1,728,000 requests; reset daily at midnight if exceeded.</p></td></tr><tr><td>All CN Stocks</td><td>Up to 20 requests per second</td><td><p>1、Combined interfaces: 20 requests/second.</p><p>2、/batch-kline: 1 request/second interval.</p><p>3、Total: 1200 requests/minute (20/second).</p><p>4、Daily limit: 1,728,000 requests; reset daily at midnight if exceeded.</p></td></tr></tbody></table>
 
-**Method 2:** Use the WebSocket API to get the latest price and the HTTP API to retrieve the previous day's closing price for the daily candlestick chart. The calculation formula is as follows:
+## Interface Limitations <a href="#interface-limitations" id="interface-limitations"></a>
 
-**Formula:**\
-`Price Change (%) = (Latest Price - Previous Day's Closing Price) / Previous Day's Closing Price * 100%`
+1. Please be sure to read:[ \[ HTTP Interface Limitations \].](https://en.apis.alltick.co/integration-process/interface-restriction-description/http-interface-restrictions)
+2. Please be sure to read: [\[ Error Code Descriptions \].](https://en.apis.alltick.co/integration-process/interface-restriction-description/error-code-description)
 
-**2、24-Hour Price Change Calculation**
+## **Interface Address**
 
-Use the WebSocket trade price API (Request Protocol: 22004) to receive real-time tick data.
+* **Base Path:** `/quote-stock-b-api/static_info`
+* **Full URL:** `https://quote.alltick.co/quote-stock-b-api/static_info`
 
-To calculate, store the latest price from 24 hours ago and use the following formula:
+## **Request Example**
 
-**Formula:**\
-`24H Price Change (%) = (Latest Price - Price 24 Hours Ago) / Price 24 Hours Ago * 100%`
+When sending a query request, it must include the method name and token information. An example of a request is as follows:
 
-## Market Closure and Trading Hours
+```arduino
+https://quote.alltick.co/quote-stock-b-api/static_info?token=您的token&query=queryData
+```
 
-Alltick does not provide an interface for market closure or trading hours. Customers can view the fixed trading hours for various products in the [Product List](https://docs.google.com/spreadsheets/d/1avkeR1heZSj6gXIkDeBt8X3nv4EzJetw4yFuKjSDYtA/edit?gid=495387863#gid=495387863).
+## Request Parameters
 
-## Holiday Notice
+| Name  | Position | Type   | Required | Description                                  |
+| ----- | -------- | ------ | -------- | -------------------------------------------- |
+| token | query    | string | No       |                                              |
+| query | query    | string | No       | See explanation for query request parameters |
 
-Alltick does not provide a holiday interface. Holiday market closure notifications will be posted in advance on our Telegram channel. Please refer to the Telegram channel for specific product information regarding market closures. Stay updated by following our channel:
+> Query Request Parameters
 
-* Chinese Channel：[Telegram Channel](https://t.me/alltick_cn)
-* English Channel：[Telegram Channel](https://t.me/alltick_en)
+Encode the following JSON into URL format and assign it to the `query` query string in the URL.
 
-## Explanation of Price Limits for Stocks
+```
+{
+  "trace": "edd5df80-df7f-4acf-8f67-68fd2f096426",
+  "data": {
+    "symbol_list": [
+      {
+        "code": "857.HK"
+      },
+      {
+        "code": "UNH.US"
+      }
+    ]
+  }
+}
+```
 
-**Alltick does not provide an API to determine stock limit-up or limit-down.** Users can determine this using the depth market data API:
+## Query Request Parameters
 
-**Depth Market Data Judgment：**
+| Name           | Type      | Required | Description |
+| -------------- | --------- | -------- | ----------- |
+| trace          | string    | Yes      |             |
+| data           | object    | Yes      |             |
+| » symbol\_list | \[object] | Yes      |             |
+| » » code       | string    | No       | Code        |
 
-When subscribing to the depth market data API:
+## Response Example
 
-* If only one side (bid or ask) has data, and the other side's price and volume are both **zero**, the stock is at its limit-up or limit-down.
+```
+{
+  "ret": 200,
+  "msg": "ok",
+  "trace": "edd5df80-df7f-4acf-8f67-68fd2f096426",
+  "data": {
+    "static_info_list": [
+      {
+        "board": "HKEquity",
+        "bps": "101.7577888985738336",
+        "circulating_shares": "9267359712",
+        "currency": "HKD",
+        "dividend_yield": "3.4558141358352833",
+        "eps": "13.7190213011686429",
+        "eps_ttm": "18.0567016900844671",
+        "exchange": "SEHK",
+        "hk_shares": "9267359712",
+        "lot_size": "100",
+        "name_cn": "腾讯控股",
+        "name_en": "TENCENT",
+        "name_hk": "騰訊控股",
+        "symbol": "700.HK",
+        "total_shares": "9267359712"
+      }
+    ]
+  }
+}
+```
 
-**Judgment Rules:**
+## Response Result
 
-* **Limit-Up:** Only the **bid** side has data, while the **ask** price and volume are **zero**.
-* **Limit-Down:** Only the **ask** side has data, while the **bid** price and volume are **zero**.
+| Status Code | Status Meaning | Description | Data Model |
+| ----------- | -------------- | ----------- | ---------- |
+| 200         | OK             | OK          | Inline     |
 
-Below is a sample screenshot of the data returned:\
+## Response Data Structure
 
-
-<figure><img src="../../.gitbook/assets/image (7).png" alt="" width="563"><figcaption></figcaption></figure>
-
-## Explanation of Stock Delisting
-
-Alltick does not provide an interface for delisting judgment. Customers can determine if a stock is delisted using the following method:
-
-**Judgment Method**: When subscribing to the depth market data interface, if both the bid and ask sides' prices and volumes return as 0, the stock is considered delisted.
-
-Below is a sample screenshot of the data returned:
-
-<figure><img src="../../.gitbook/assets/image (8).png" alt="" width="563"><figcaption></figcaption></figure>
-
-
-
-## New Stock Listing Notice
-
-Alltick does not provide an interface for determining new stock listings. We regularly update the [Product List ](https://docs.google.com/spreadsheets/d/1avkeR1heZSj6gXIkDeBt8X3nv4EzJetw4yFuKjSDYtA/edit?gid=495387863#gid=495387863)to reflect newly listed stocks and remove delisted stocks.
-
-Click the link to access the product list:
-
-[\[ Product List \]](https://docs.google.com/spreadsheets/d/1avkeR1heZSj6gXIkDeBt8X3nv4EzJetw4yFuKjSDYtA/edit?gid=495387863#gid=495387863)
-
-
-
-
-
-
+| Name                    | Type      | Required | Description                                            |
+| ----------------------- | --------- | -------- | ------------------------------------------------------ |
+| » ret                   | integer   | true     | Return code                                            |
+| » msg                   | string    | true     | Message corresponding to the return code               |
+| » trace                 | string    | true     | Request trace                                          |
+| » data                  | object    | true     |                                                        |
+| »» static\_info\_list   | \[object] | true     |                                                        |
+| »»» board               | string    | false    | The sector to which the stock belongs                  |
+| »»» bps                 | string    | false    | Net assets per share                                   |
+| »»» circulating\_shares | string    | false    | circulating capital                                    |
+| »»» currency            | string    | false    | Transaction currency                                   |
+| »»» dividend\_yield     | string    | false    | dividends                                              |
+| »»» eps                 | string    | false    | earnings per share                                     |
+| »»» eps\_ttm            | string    | false    | earnings per share (TTM)                               |
+| »»» exchange            | string    | false    | The exchange to which the product belongs              |
+| »»» hk\_shares          | string    | false    | Hong Kong stocks share capital (Hong Kong stocks only) |
+| »»» lot\_size           | string    | false    | Number of shares per lot                               |
+| »»» name\_cn            | string    | false    | Product name in simplified Chinese                     |
+| »»» name\_en            | string    | false    | English product name                                   |
+| »»» name\_hk            | string    | false    | Product name in traditional Chinese                    |
+| »»» symbol              | string    | false    | Product code                                           |
+| »»» total\_shares       | string    | false    | total share capital                                    |
 
 ### Official Website
 

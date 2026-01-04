@@ -3,17 +3,6 @@ description: >-
   Typically, subscriptions to AllTick and similar financial data service
   platforms are non-refundable. This means once you've purchased a subscription
   service, whether it's a monthly or annual plan,
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
 # Can my subscription be refunded?
@@ -34,8 +23,7 @@ Typically, subscriptions to AllTick and similar financial data service platforms
 
 If you have any questions about your subscription plan or services, including detailed information about the refund policy, it's recommended to directly contact AllTick's customer support for the most accurate guidance and assistance. This way, you can make an informed decision based on a full understanding of the terms and conditions.
 
-\
-
+<br>
 
 ***
 

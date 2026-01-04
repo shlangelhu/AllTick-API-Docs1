@@ -3,17 +3,6 @@ description: >-
   The requester is required to send a heartbeat request every 10 seconds. If no
   heartbeat request is received within 30 seconds, it will be considered a
   timeout, and the requester's WebSocket connection
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
 # Ping Pong

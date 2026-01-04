@@ -2,17 +2,6 @@
 description: >-
   Request Common Standard Header Introduction   Introduction to response common
   standard header
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
 # Websocket Common Standard Header

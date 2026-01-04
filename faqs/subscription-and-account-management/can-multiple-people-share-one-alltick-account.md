@@ -3,17 +3,6 @@ description: >-
   Typically, most online services and data providers, including financial market
   data services like AllTick, specify policies on account sharing in their terms
   of service. These policies are generally
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
 # Can multiple people share one AllTick account?

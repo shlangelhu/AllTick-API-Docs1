@@ -3,17 +3,6 @@ description: >-
   To contact AllTick's customer support, there are several methods you can try,
   although the specific contact options should be based on the latest
   information provided on the AllTick website.
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
 # How to contact AllTick customer support?

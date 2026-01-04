@@ -2,17 +2,6 @@
 description: >-
   HTTP interface restrictions Websocket interface limitations Error code
   description
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
 # Interface restriction description

@@ -3,17 +3,6 @@ description: >-
   K-line Push Explanation Alltick's WebSocket interface does not support K-line
   data push. Both historical and real-time K-lines can only be accessed through
   the HTTP interface. Recommended implementati
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
 # K-line push (not supported)

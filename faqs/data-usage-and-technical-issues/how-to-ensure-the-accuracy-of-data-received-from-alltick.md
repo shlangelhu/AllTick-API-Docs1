@@ -3,17 +3,6 @@ description: >-
   Ensuring the accuracy of data received from AllTick or any data provider is
   crucial, especially in the financial sector where data accuracy directly
   impacts the quality of decision-making.
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
 # How to ensure the accuracy of data received from AllTick?

@@ -3,17 +3,6 @@ description: >-
   AllTick provides financial market data with very high update frequencies to
   ensure users can receive accurate and real-time market information. The
   specific data update frequency may vary depending
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
 # What is the data update frequency of AllTick?

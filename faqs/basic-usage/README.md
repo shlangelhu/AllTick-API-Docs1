@@ -3,17 +3,6 @@ description: >-
   What types of financial data does AllTick provide? How to obtain an API key
   from AllTick? What is the data update frequency of AllTick? How to integrate
   AllTick data into my application?
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
 # Basic usage

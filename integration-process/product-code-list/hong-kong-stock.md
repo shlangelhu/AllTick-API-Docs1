@@ -1,16 +1,5 @@
 ---
 description: List of codes for all Hong Kong stocks, click the link below to view
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
 # Hong Kong Stock

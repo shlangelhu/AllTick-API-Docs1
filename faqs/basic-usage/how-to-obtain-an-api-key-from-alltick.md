@@ -3,17 +3,6 @@ description: >-
   Obtaining an API key from AllTick typically involves the following steps:
   Register an Account: Visit the official AllTick website and find the
   registration page. Fill in the necessary information,
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
 # How to obtain an API key from AllTick?

@@ -3,17 +3,6 @@ description: >-
   Upgrading your AllTick subscription plan usually involves the following steps.
   Note that specific steps may vary based on the design and functionality
   updates of the AllTick website. Here is a general
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
 # How to upgrade my AllTick subscription plan?

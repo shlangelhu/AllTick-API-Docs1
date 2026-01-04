@@ -3,17 +3,6 @@ description: >-
   Most API services, including those providing financial market data like
   AllTick, set certain request limits to ensure the stability and fairness of
   the service. These limitations can include: Rate Lim
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
 # Does AllTick's API have request limitations?

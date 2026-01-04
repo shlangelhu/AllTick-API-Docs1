@@ -3,17 +3,6 @@ description: >-
   Common practices for financial market data API services like AllTick often
   support one or more of the following data formats: JSON (JavaScript Object
   Notation) JSON is one of the most common data exch
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
 # What data formats does AllTick's API support?

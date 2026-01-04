@@ -2,17 +2,6 @@
 description: >-
   Cancel quote subscription Request - Protocol Number：22006 Data definition Data
   Structure (JSON)
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
 # Cancel quote subscription

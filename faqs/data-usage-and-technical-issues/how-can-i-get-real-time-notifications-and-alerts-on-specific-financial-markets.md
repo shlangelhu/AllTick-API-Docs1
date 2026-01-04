@@ -3,17 +3,6 @@ description: >-
   AllTick focuses on providing real-time and historical financial market data
   APIs, but does not directly offer data analysis and visualization tools.
   However, acquiring accurate and timely financial da
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
 # How can I get real-time notifications and alerts on specific financial markets?

@@ -3,17 +3,6 @@ description: >-
   According to information provided on the AllTick website, AllTick aims to
   offer real-time and historical financial market data to developers, fintech
   companies, traders, fund companies, exchanges,
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
 # Can I use AllTick's data for commercial purposes?

@@ -3,17 +3,6 @@ description: >-
   Websocket interface limitations 1、IP Limits 1.1   WebSocket connection limits
   are based on the allowed connections per Token, not on IP address
   restrictions.  For example, in the Basic plan, one Token
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
 # Websocket interface limitations

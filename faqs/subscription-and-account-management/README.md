@@ -3,17 +3,6 @@ description: >-
   How to register an AllTick account? Does AllTick offer a free trial period?
   How to cancel AllTick's subscription service? What services does my
   subscription include? How to upgrade my AllTick subscrip
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
 # Subscription and Account Management
