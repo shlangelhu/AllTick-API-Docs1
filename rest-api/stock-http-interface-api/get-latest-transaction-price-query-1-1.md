@@ -6,7 +6,7 @@ description: 接口说明 该接口仅支持批量请求美股、港股、A股�
 
 [English](https://en.apis.alltick.co/rest-api/stock-http-interface-api/get-product-information-query) / 中文
 
-## GET /static\_info
+## GET /api/suspension
 
 ## 接口说明
 
