@@ -4,11 +4,11 @@ description: >-
   and A-share products. Request Frequency
 ---
 
-# GET Resumption Information Query API Documentation
+# GET Resumption Information Query API
 
 English / [中文](https://apis.alltick.co/rest-api/stock-http-interface-api/get-latest-transaction-price-query-1)
 
-## Resumption Information Query API Documentation
+## Resumption Information Query API&#x20;
 
 ## Interface Description
 
