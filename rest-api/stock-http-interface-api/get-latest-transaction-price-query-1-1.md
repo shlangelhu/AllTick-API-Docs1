@@ -85,12 +85,7 @@ description: 接口说明 该接口仅支持批量请求美股、港股、A股�
 
 #### 公共字段
 
-| 字段名          | 类型      | 是否必填 | 描述                              |
-| ------------ | ------- | ---- | ------------------------------- |
-| » success    | boolean | 是    | 请求是否成功                          |
-| » timestamp  | string  | 是    | 响应时间戳（格式：yyyy-MM-dd'T'HH:mm:ss） |
-| » totalCount | integer | 是    | 数据总条数                           |
-| » data       | array   | 是    | 停复牌信息列表                         |
+<table><thead><tr><th width="203.5">字段名</th><th width="126.5">类型</th><th width="120.5">是否必填</th><th>描述</th></tr></thead><tbody><tr><td>» success</td><td>boolean</td><td>是</td><td>请求是否成功</td></tr><tr><td>» timestamp</td><td>string</td><td>是</td><td>响应时间戳（格式：yyyy-MM-dd'T'HH:mm:ss）</td></tr><tr><td>» totalCount</td><td>integer</td><td>是</td><td>数据总条数</td></tr><tr><td>» data</td><td>array</td><td>是</td><td>停复牌信息列表</td></tr><tr><td>» totalPages</td><td>integer</td><td>否</td><td>数据总页数（分页查询时返回）</td></tr><tr><td>» currentPage</td><td>integer</td><td>否</td><td>当前页（分页查询时返回）</td></tr><tr><td>» currentSize</td><td>integer</td><td>否</td><td>当前页的数据条数（分页查询时返回）</td></tr></tbody></table>
 
 #### data字段（停复牌信息列表中的对象）
 
@@ -161,12 +156,7 @@ curl -X GET "<https://quote.alltick.co/api/suspension/sse?token=您的Token&page
 
 #### 公共字段
 
-| 字段名          | 类型      | 是否必填 | 描述                              |
-| ------------ | ------- | ---- | ------------------------------- |
-| » success    | boolean | 是    | 请求是否成功                          |
-| » timestamp  | string  | 是    | 响应时间戳（格式：yyyy-MM-dd'T'HH:mm:ss） |
-| » totalCount | integer | 是    | 数据总条数                           |
-| » data       | array   | 是    | 停复牌信息列表                         |
+<table><thead><tr><th width="192.5">字段名</th><th width="120">类型</th><th width="124">是否必填</th><th>描述</th></tr></thead><tbody><tr><td>» success</td><td>boolean</td><td>是</td><td>请求是否成功</td></tr><tr><td>» timestamp</td><td>string</td><td>是</td><td>响应时间戳（格式：yyyy-MM-dd'T'HH:mm:ss）</td></tr><tr><td>» totalCount</td><td>integer</td><td>是</td><td>数据总条数</td></tr><tr><td>» data</td><td>array</td><td>是</td><td>停复牌信息列表</td></tr><tr><td>» totalPages</td><td>integer</td><td>否</td><td>数据总页数（分页查询时返回）</td></tr><tr><td>» currentPage</td><td>integer</td><td>否</td><td>当前页（分页查询时返回）</td></tr><tr><td>» currentSize</td><td>integer</td><td>否</td><td>当前页的数据条数（分页查询时返回</td></tr></tbody></table>
 
 #### data字段（停复牌信息列表中的对象）
 
@@ -238,12 +228,7 @@ curl -X GET "<https://quote.alltick.co/api/suspension/nyse?token=您的Token&pag
 
 #### 公共字段
 
-| 字段名          | 类型      | 是否必填 | 描述                              |
-| ------------ | ------- | ---- | ------------------------------- |
-| » success    | boolean | 是    | 请求是否成功                          |
-| » timestamp  | string  | 是    | 响应时间戳（格式：yyyy-MM-dd'T'HH:mm:ss） |
-| » totalCount | integer | 是    | 数据总条数                           |
-| » data       | array   | 是    | 停复牌信息列表                         |
+<table><thead><tr><th width="187.5">字段名</th><th width="126.5">类型</th><th width="120.5">是否必填</th><th>描述</th></tr></thead><tbody><tr><td>» success</td><td>boolean</td><td>是</td><td>请求是否成功</td></tr><tr><td>» timestamp</td><td>string</td><td>是</td><td>响应时间戳（格式：yyyy-MM-dd'T'HH:mm:ss）</td></tr><tr><td>» totalCount</td><td>integer</td><td>是</td><td>数据总条数</td></tr><tr><td>» data</td><td>array</td><td>是</td><td>停复牌信息列表</td></tr><tr><td>» totalPages</td><td>integer</td><td>否</td><td>数据总页数（分页查询时返回）</td></tr><tr><td>» currentPage</td><td>integer</td><td>否</td><td>当前页（分页查询时返回）</td></tr><tr><td>» currentSize</td><td>integer</td><td>否</td><td>当前页的数据条数（分页查询时返回）</td></tr></tbody></table>
 
 #### data字段（停复牌信息列表中的对象）
 
