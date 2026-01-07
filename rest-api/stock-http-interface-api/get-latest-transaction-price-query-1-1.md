@@ -2,7 +2,7 @@
 description: 接口说明 该接口仅支持批量请求美股、港股、A股产品的部分基础信息。 请求频率
 ---
 
-# GET 复牌信息查询接口文档
+# GET 复牌信息查询接口
 
 [English](https://en.apis.alltick.co/rest-api/stock-http-interface-api/get-product-information-query) / 中文
 
@@ -51,9 +51,11 @@ description: 接口说明 该接口仅支持批量请求美股、港股、A股�
 
 #### 请求参数
 
-| 字段名   | 类型     | 是否必填 | 描述        |
-| ----- | ------ | ---- | --------- |
-| token | string | 是    | 用户套餐token |
+| 字段名   | 类型      | 是否必填 | 描述        |
+| ----- | ------- | ---- | --------- |
+| token | string  | 是    | 用户套餐token |
+| page  | integer | 否    | 查询页码      |
+| size  | integer | 否    | 每页数据大小    |
 
 #### 响应示例
 
@@ -109,7 +111,7 @@ description: 接口说明 该接口仅支持批量请求美股、港股、A股�
 #### 调用示例
 
 ```bash
-curl -X GET "<https://quote.alltick.co/api/suspension/sse?token=您的Token>" -H "Accept: application/json"
+curl -X GET "<https://quote.alltick.co/api/suspension/sse?token=您的Token&page=1&size=10>" -H "Accept: application/json"
 ```
 
 ***
@@ -124,9 +126,11 @@ curl -X GET "<https://quote.alltick.co/api/suspension/sse?token=您的Token>" -H
 
 #### 请求参数
 
-| 字段名   | 类型     | 是否必填 | 描述        |
-| ----- | ------ | ---- | --------- |
-| token | string | 是    | 用户套餐token |
+| 字段名   | 类型      | 是否必填 | 描述        |
+| ----- | ------- | ---- | --------- |
+| token | string  | 是    | 用户套餐token |
+| page  | integer | 否    | 查询页码      |
+| size  | integer | 否    | 每页数据大小    |
 
 #### 响应示例
 
@@ -183,7 +187,7 @@ curl -X GET "<https://quote.alltick.co/api/suspension/sse?token=您的Token>" -H
 #### 调用示例
 
 ```bash
-curl -X GET "<https://quote.alltick.co/api/suspension/nyse?token=您的Token>" -H "Accept: application/json"
+curl -X GET "<https://quote.alltick.co/api/suspension/nyse?token=您的Token&page=1&size=10>" -H "Accept: application/json"
 ```
 
 ***
@@ -198,9 +202,11 @@ curl -X GET "<https://quote.alltick.co/api/suspension/nyse?token=您的Token>" -
 
 #### 请求参数
 
-| 字段名   | 类型     | 是否必填 | 描述        |
-| ----- | ------ | ---- | --------- |
-| token | string | 是    | 用户套餐token |
+| 字段名   | 类型      | 是否必填 | 描述        |
+| ----- | ------- | ---- | --------- |
+| token | string  | 是    | 用户套餐token |
+| page  | integer | 否    | 查询页码      |
+| size  | integer | 否    | 每页数据大小    |
 
 #### 响应示例
 
@@ -248,7 +254,7 @@ curl -X GET "<https://quote.alltick.co/api/suspension/nyse?token=您的Token>" -
 #### 调用示例
 
 ```bash
-curl -X GET "<https://quote.alltick.co/api/suspension/nasdaq?token=您的Token>" -H "Accept: application/json"
+curl -X GET "<https://quote.alltick.co/api/suspension/nasdaq?token=您的Token&page=1&size=10>" -H "Accept: application/json"
 ```
 
 ***
