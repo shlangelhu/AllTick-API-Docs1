@@ -52,7 +52,7 @@ This API provides queries for suspension and resumption information from major g
 
 #### Request Parameters
 
-<table><thead><tr><th>Field</th><th width="151.4000244140625">Type</th><th width="155">Required</th><th>Description</th></tr></thead><tbody><tr><td>token</td><td>string</td><td>Yes</td><td>User subscription token</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th width="151.4000244140625">Type</th><th width="155">Required</th><th>Description</th></tr></thead><tbody><tr><td>token</td><td>string</td><td>Yes</td><td>User subscription token</td></tr><tr><td>page</td><td>integer</td><td>No</td><td>Page number</td></tr><tr><td>size</td><td>integer</td><td>No</td><td>Page size</td></tr></tbody></table>
 
 #### Response Example
 
@@ -82,7 +82,7 @@ This API provides queries for suspension and resumption information from major g
 
 #### Common Fields
 
-<table><thead><tr><th width="160.4000244140625">Field</th><th width="107.4000244140625">Type</th><th width="163.800048828125">Required</th><th>Description</th></tr></thead><tbody><tr><td>success</td><td>boolean</td><td>Yes</td><td>Whether the request was successful</td></tr><tr><td>timestamp</td><td>string</td><td>Yes</td><td>Response timestamp (format: yyyy-MM-dd'T'HH:mm:ss)</td></tr><tr><td>totalCount</td><td>integer</td><td>Yes</td><td>Total number of records</td></tr><tr><td>data</td><td>array</td><td>Yes</td><td>List of suspension/resumption records</td></tr></tbody></table>
+<table><thead><tr><th width="160.4000244140625">Field</th><th width="107.4000244140625">Type</th><th width="116.300048828125">Required</th><th>Description</th></tr></thead><tbody><tr><td>success</td><td>boolean</td><td>Yes</td><td>Whether the request was successful</td></tr><tr><td>timestamp</td><td>string</td><td>Yes</td><td>Response timestamp (format: yyyy-MM-dd'T'HH:mm:ss)</td></tr><tr><td>totalCount</td><td>integer</td><td>Yes</td><td>Total number of records</td></tr><tr><td>data</td><td>array</td><td>Yes</td><td>List of suspension/resumption records</td></tr><tr><td>totalPages</td><td>integer</td><td>No</td><td>Total number of pages (returned in paginated queries)</td></tr><tr><td>currentPage</td><td>integer</td><td>No</td><td>Current page (returned in paginated queries)</td></tr><tr><td>currentSize</td><td>integer</td><td>No</td><td>Number of records on the current page (returned in paginated queries)</td></tr></tbody></table>
 
 #### data（Object Fields）
 
@@ -93,7 +93,7 @@ Fields in each object:
 #### Example Request
 
 ```bash
-curl -X GET "<https://quote.alltick.co/api/suspension/sse?token=您的Token>" -H "Accept: application/json"
+curl -X GET "<https://quote.alltick.co/api/suspension/sse?token=您的Token&page=1&size=10>" -H "Accept: application/json"
 ```
 
 ***
@@ -108,7 +108,7 @@ curl -X GET "<https://quote.alltick.co/api/suspension/sse?token=您的Token>" -H
 
 #### Request Parameters
 
-<table><thead><tr><th>Field</th><th width="161.199951171875">Type</th><th width="139.7999267578125">Required</th><th>Description</th></tr></thead><tbody><tr><td>token</td><td>string</td><td>Yes</td><td>User subscription token</td></tr></tbody></table>
+<table><thead><tr><th>Field</th><th width="161.199951171875">Type</th><th width="139.7999267578125">Required</th><th>Description</th></tr></thead><tbody><tr><td>token</td><td>string</td><td>Yes</td><td>User subscription token</td></tr><tr><td>page</td><td>integer</td><td>No</td><td>Page number</td></tr><tr><td>size</td><td>integer</td><td>No</td><td>Page size</td></tr></tbody></table>
 
 #### Response Example
 
@@ -139,7 +139,7 @@ curl -X GET "<https://quote.alltick.co/api/suspension/sse?token=您的Token>" -H
 
 #### Common Fields
 
-<table><thead><tr><th width="166.199951171875">Field</th><th width="150.2000732421875">Type</th><th width="126.2000732421875">Required</th><th>Description</th></tr></thead><tbody><tr><td>success</td><td>boolean</td><td>Yes</td><td>Whether the request was successful</td></tr><tr><td>timestamp</td><td>string</td><td>Yes</td><td>Response timestamp (format: yyyy-MM-dd'T'HH:mm:ss)</td></tr><tr><td>totalCount</td><td>integer</td><td>Yes</td><td>Total number of records</td></tr><tr><td>data</td><td>array</td><td>Yes</td><td>List of suspension/resumption records</td></tr></tbody></table>
+<table><thead><tr><th width="142.199951171875">Field</th><th width="120.2000732421875">Type</th><th width="97.7000732421875">Required</th><th>Description</th></tr></thead><tbody><tr><td>success</td><td>boolean</td><td>Yes</td><td>Whether the request was successful</td></tr><tr><td>timestamp</td><td>string</td><td>Yes</td><td>Response timestamp (format: yyyy-MM-dd'T'HH:mm:ss)</td></tr><tr><td>totalCount</td><td>integer</td><td>Yes</td><td>Total number of records</td></tr><tr><td>data</td><td>array</td><td>Yes</td><td>List of suspension/resumption records</td></tr><tr><td>totalPages</td><td>integer</td><td>No</td><td>Total number of pages (returned in paginated queries)</td></tr><tr><td>currentPage</td><td>integer</td><td>No</td><td>Current page (returned in paginated queries)</td></tr><tr><td>currentSize</td><td>integer</td><td>No</td><td>Number of records on the current page (returned in paginated queries)</td></tr></tbody></table>
 
 #### data（Object Fields）
 
@@ -150,7 +150,7 @@ Fields in each object:
 #### Example Request
 
 ```bash
-curl -X GET "<https://quote.alltick.co/api/suspension/nyse?token=您的Token>" -H "Accept: application/json"
+curl -X GET "<https://quote.alltick.co/api/suspension/nyse?token=您的Token&page=1&size=10>" -H "Accept: application/json"
 ```
 
 ***
@@ -165,7 +165,7 @@ curl -X GET "<https://quote.alltick.co/api/suspension/nyse?token=您的Token>" -
 
 #### Request Parameters
 
-<table><thead><tr><th width="173.800048828125">Field</th><th width="126.60009765625">Type</th><th width="131">Required</th><th>Description</th></tr></thead><tbody><tr><td>token</td><td>string</td><td>Yes</td><td>User subscription token</td></tr></tbody></table>
+<table><thead><tr><th width="173.800048828125">Field</th><th width="126.60009765625">Type</th><th width="131">Required</th><th>Description</th></tr></thead><tbody><tr><td>token</td><td>string</td><td>Yes</td><td>User subscription token</td></tr><tr><td>page</td><td>integer</td><td>No</td><td>Page number</td></tr><tr><td>size</td><td>integer</td><td>No</td><td>Page size</td></tr></tbody></table>
 
 #### Response Example
 
@@ -197,7 +197,7 @@ curl -X GET "<https://quote.alltick.co/api/suspension/nyse?token=您的Token>" -
 
 #### Common Fields
 
-<table><thead><tr><th width="141.800048828125">Field</th><th width="119">Type</th><th width="144.60009765625">Required</th><th>Description</th></tr></thead><tbody><tr><td>success</td><td>boolean</td><td>Yes</td><td>Whether the request was successfu</td></tr><tr><td>timestamp</td><td>string</td><td>Yes</td><td>Response timestamp (format: yyyy-MM-dd'T'HH:mm:ss)</td></tr><tr><td>totalCount</td><td>integer</td><td>Yes</td><td>Total number of records</td></tr><tr><td>data</td><td>array</td><td>Yes</td><td>List of suspension/resumption records</td></tr></tbody></table>
+<table><thead><tr><th width="141.800048828125">Field</th><th width="119">Type</th><th width="102.10009765625">Required</th><th>Description</th></tr></thead><tbody><tr><td>success</td><td>boolean</td><td>Yes</td><td>Whether the request was successfu</td></tr><tr><td>timestamp</td><td>string</td><td>Yes</td><td>Response timestamp (format: yyyy-MM-dd'T'HH:mm:ss)</td></tr><tr><td>totalCount</td><td>integer</td><td>Yes</td><td>Total number of records</td></tr><tr><td>data</td><td>array</td><td>Yes</td><td>List of suspension/resumption records</td></tr><tr><td>totalPages</td><td>integer</td><td>No</td><td>Total number of pages (returned in paginated queries)</td></tr><tr><td>currentPage</td><td>integer</td><td>No</td><td>Current page (returned in paginated queries)</td></tr><tr><td>currentSize</td><td>integer</td><td>No</td><td>Number of records on the current page (returned in paginated queries)</td></tr></tbody></table>
 
 #### data（Object Fields）
 
@@ -208,7 +208,7 @@ Fields in each object:
 #### Example Request
 
 ```bash
-curl -X GET "<https://quote.alltick.co/api/suspension/nasdaq?token=您的Token>" -H "Accept: application/json"
+curl -X GET "<https://quote.alltick.co/api/suspension/nasdaq?token=您的Token&page=1&size=10>" -H "Accept: application/json"
 ```
 
 ***
