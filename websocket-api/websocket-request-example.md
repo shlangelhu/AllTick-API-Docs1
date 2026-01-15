@@ -240,7 +240,7 @@ $worker = new Worker();
 $worker->onWorkerStart = function()
 {
     // Connect to remote websocket server using the websocket protocol
-    $ws_connection = new AsyncTcpConnection("ws://quote.alltick.co/quote-stock-b-ws-api?token=testtoken");
+    $ws_connection = new AsyncTcpConnection("wss://quote.alltick.co/quote-stock-b-ws-api?token=testtoken");
     // Send a websocket heartbeat opcode (0x9) to the server every 55 seconds
     $ws_connection->websocketPingInterval = 10;
     $ws_connection->websocketType = Ws::BINARY_TYPE_BLOB; // BINARY_TYPE_BLOB for text, BINARY_TYPE_ARRAYBUFFER for binary
