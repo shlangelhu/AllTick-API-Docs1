@@ -240,7 +240,7 @@ $worker = new Worker();
 $worker->onWorkerStart = function()
 {
     // Connect to remote websocket server using the websocket protocol
-    $ws_connection = new AsyncTcpConnection("ws://quote.alltick.co/quote-stock-b-ws-api?token=67e0c0fadd49923d3f34136d8e35b55a-c-app", [
+    $ws_connection = new AsyncTcpConnection("ws://quote.alltick.co/quote-stock-b-ws-api?token=testtoken", [
         'ssl' => [
             'verify_peer' => false,
             'verify_peer_name' => false,
