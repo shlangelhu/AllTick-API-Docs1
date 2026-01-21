@@ -33,7 +33,7 @@
   * [GET Order Book（Depth） Query](rest-api/http-interface-api/get-order-book-depth-query.md)
   * [GET Latest transaction price query（Latest Price）](rest-api/http-interface-api/get-latest-transaction-price-query.md)
   * [GET Stocks product information query](rest-api/http-interface-api/get-stocks-product-information-query.md)
-  * [GET Resumption Information Query API](rest-api/http-interface-api/get-stocks-product-information-query-1.md)
+  * [GET Get Trading Halt and Resumption Information](rest-api/http-interface-api/get-stocks-product-information-query-1.md)
   * [Price changes, Market closure, Holidays, Limit up/down, New listings, and Delistings](rest-api/http-interface-api/get-stocks-product-information-query-2.md)
 
 ## Websocket API
