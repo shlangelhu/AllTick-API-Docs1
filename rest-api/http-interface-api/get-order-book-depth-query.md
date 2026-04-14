@@ -75,12 +75,7 @@ Encode the following JSON into URL format and assign it to the `query` query str
 
 ## Query Request Parameters
 
-| Name           | Type      | Required | Description |
-| -------------- | --------- | -------- | ----------- |
-| trace          | string    | Yes      |             |
-| data           | object    | Yes      |             |
-| » symbol\_list | \[object] | Yes      |             |
-| » » code       | string    | No       | Code        |
+<table><thead><tr><th>Name</th><th>Type</th><th width="129">Required</th><th>Description</th></tr></thead><tbody><tr><td>trace</td><td>string</td><td>Yes</td><td></td></tr><tr><td>data</td><td>object</td><td>Yes</td><td></td></tr><tr><td>» symbol_list</td><td>[object]</td><td>Yes</td><td></td></tr><tr><td>» » code</td><td>string</td><td>No</td><td>Code<br><mark style="color:$danger;">Note: The case of the code value must be consistent with the code in the product list.</mark></td></tr></tbody></table>
 
 > Response Example
 

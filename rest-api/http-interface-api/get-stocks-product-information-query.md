@@ -65,12 +65,12 @@ Encode the following JSON into URL format and assign it to the `query` query str
 
 ## Query Request Parameters
 
-| Name           | Type      | Required | Description |
-| -------------- | --------- | -------- | ----------- |
-| trace          | string    | Yes      |             |
-| data           | object    | Yes      |             |
-| » symbol\_list | \[object] | Yes      |             |
-| » » code       | string    | No       | Code        |
+| Name           | Type      | Required | Description                                                                                                                               |
+| -------------- | --------- | -------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| trace          | string    | Yes      |                                                                                                                                           |
+| data           | object    | Yes      |                                                                                                                                           |
+| » symbol\_list | \[object] | Yes      |                                                                                                                                           |
+| » » code       | string    | No       | <p>Code<br><mark style="color:$danger;">Note: The case of the code value must be consistent with the code in the product list.</mark></p> |
 
 ## Response Example
 

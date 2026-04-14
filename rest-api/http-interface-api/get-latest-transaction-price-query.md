@@ -69,12 +69,12 @@ The following JSON should be URL-encoded and assigned to the `query` query strin
 
 ## Query Request Parameters
 
-| Name           | Type      | Required | Description |
-| -------------- | --------- | -------- | ----------- |
-| trace          | string    | Yes      |             |
-| data           | object    | Yes      |             |
-| » symbol\_list | \[object] | Yes      |             |
-| »» code        | string    | No       | Code        |
+| Name           | Type      | Required | Description                                                                                                                               |
+| -------------- | --------- | -------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| trace          | string    | Yes      |                                                                                                                                           |
+| data           | object    | Yes      |                                                                                                                                           |
+| » symbol\_list | \[object] | Yes      |                                                                                                                                           |
+| »» code        | string    | No       | <p>Code<br><mark style="color:$danger;">Note: The case of the code value must be consistent with the code in the product list.</mark></p> |
 
 > Response Example
 
