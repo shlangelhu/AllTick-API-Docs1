@@ -62,7 +62,7 @@ https://quote.alltick.co/quote-stock-b-api/static_info?token=您的token&query=q
 
 ## query请求参数
 
-<table><thead><tr><th width="154.02734375">名称</th><th width="139.6171875">类型</th><th width="139.73828125">必选</th><th>说明</th></tr></thead><tbody><tr><td>trace</td><td>string</td><td>是</td><td></td></tr><tr><td>data</td><td>object</td><td>是</td><td></td></tr><tr><td>» symbol_list</td><td>[object]</td><td>是</td><td></td></tr><tr><td>»» code</td><td>string</td><td>否</td><td>代码：<a href="https://docs.google.com/spreadsheets/d/1avkeR1heZSj6gXIkDeBt8X3nv4EzJetw4yFuKjSDYtA/edit?gid=495387863#gid=495387863">[点击code列表]</a></td></tr></tbody></table>
+<table><thead><tr><th width="154.02734375">名称</th><th width="139.6171875">类型</th><th width="139.73828125">必选</th><th>说明</th></tr></thead><tbody><tr><td>trace</td><td>string</td><td>是</td><td></td></tr><tr><td>data</td><td>object</td><td>是</td><td></td></tr><tr><td>» symbol_list</td><td>[object]</td><td>是</td><td></td></tr><tr><td>»» code</td><td>string</td><td>否</td><td>代码：<a href="https://docs.google.com/spreadsheets/d/1avkeR1heZSj6gXIkDeBt8X3nv4EzJetw4yFuKjSDYtA/edit?gid=495387863#gid=495387863">[点击code列表]</a><br><mark style="color:$danger;">注意：code值大小写与产品列表中的code保持一致</mark></td></tr></tbody></table>
 
 ## 返回示例
 

@@ -73,7 +73,7 @@ description: 接口说明 该接口支持批量请求产品的最新成交价(�
 }
 ```
 
-<table><thead><tr><th width="155.76953125">名称</th><th width="132.1796875">类型</th><th width="175.33984375">必选</th><th>说明</th></tr></thead><tbody><tr><td>trace</td><td>string</td><td>是</td><td></td></tr><tr><td>data</td><td>object</td><td>是</td><td></td></tr><tr><td>» symbol_list</td><td>[object]</td><td>是</td><td></td></tr><tr><td>»» code</td><td>string</td><td>否</td><td>代码：<a href="https://docs.google.com/spreadsheets/d/1avkeR1heZSj6gXIkDeBt8X3nv4EzJetw4yFuKjSDYtA/edit?gid=495387863#gid=495387863">[点击code列表]</a></td></tr></tbody></table>
+<table><thead><tr><th width="155.76953125">名称</th><th width="132.1796875">类型</th><th width="175.33984375">必选</th><th>说明</th></tr></thead><tbody><tr><td>trace</td><td>string</td><td>是</td><td></td></tr><tr><td>data</td><td>object</td><td>是</td><td></td></tr><tr><td>» symbol_list</td><td>[object]</td><td>是</td><td></td></tr><tr><td>»» code</td><td>string</td><td>否</td><td>代码：<a href="https://docs.google.com/spreadsheets/d/1avkeR1heZSj6gXIkDeBt8X3nv4EzJetw4yFuKjSDYtA/edit?gid=495387863#gid=495387863">[点击code列表]</a><br><mark style="color:$danger;">注意：code值大小写与产品列表中的code保持一致</mark></td></tr></tbody></table>
 
 ## 返回示例
 
