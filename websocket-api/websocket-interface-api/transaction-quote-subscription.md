@@ -67,7 +67,7 @@ Json definition
 
 symbol definition
 
-<table><thead><tr><th width="85.5859375">Field</th><th width="85.5234375">Name</th><th width="96.38671875">Type</th><th width="126.8984375">Required</th><th>Description</th></tr></thead><tbody><tr><td>code</td><td>Code</td><td>string</td><td>Yes</td><td>For specific content, please refer to the code list：<a href="https://docs.google.com/spreadsheets/d/1avkeR1heZSj6gXIkDeBt8X3nv4EzJetw4yFuKjSDYtA/edit?gid=495387863#gid=495387863">[Click on the code list]</a></td></tr></tbody></table>
+<table><thead><tr><th width="85.5859375">Field</th><th width="85.5234375">Name</th><th width="96.38671875">Type</th><th width="126.8984375">Required</th><th>Description</th></tr></thead><tbody><tr><td>code</td><td>Code</td><td>string</td><td>Yes</td><td>For specific content, please refer to the code list：<a href="https://docs.google.com/spreadsheets/d/1avkeR1heZSj6gXIkDeBt8X3nv4EzJetw4yFuKjSDYtA/edit?gid=495387863#gid=495387863">[Click on the code list]</a><br><mark style="color:$danger;">Note: The case of the code value must be consistent with the code in the product list</mark>.</td></tr></tbody></table>
 
 ### Data Structure (JSON))
 
