@@ -78,7 +78,7 @@ wss://quote.alltick.co/quote-b-ws-api?token=您的token
 
 #### symbol定义 <a href="#symbol-ding-yi" id="symbol-ding-yi"></a>
 
-<table><thead><tr><th width="128.109375">字段</th><th width="103.89453125">名称</th><th width="90.39453125">类型</th><th width="74.04296875">必填项</th><th>说明</th></tr></thead><tbody><tr><td>code</td><td>代码</td><td>string</td><td>是</td><td>具体内容，请查阅code列表：<a href="https://docs.google.com/spreadsheets/d/1avkeR1heZSj6gXIkDeBt8X3nv4EzJetw4yFuKjSDYtA/edit?gid=495387863#gid=495387863">[点击code列表]</a></td></tr><tr><td>depth_level</td><td>深度层级</td><td>uint32</td><td>否</td><td>如果没有depth_level字段时，后台只会提供一层的报价，请求的层级大于实际报价层级，或者如果没有depth_level字段时，则后台按实际报价有多少层给多少层</td></tr></tbody></table>
+<table><thead><tr><th width="128.109375">字段</th><th width="103.89453125">名称</th><th width="90.39453125">类型</th><th width="74.04296875">必填项</th><th>说明</th></tr></thead><tbody><tr><td>code</td><td>代码</td><td>string</td><td>是</td><td>具体内容，请查阅code列表：<a href="https://docs.google.com/spreadsheets/d/1avkeR1heZSj6gXIkDeBt8X3nv4EzJetw4yFuKjSDYtA/edit?gid=495387863#gid=495387863">[点击code列表]</a><br><mark style="color:$danger;">注意：code值大小写要与产品列表中的code保持一致</mark></td></tr><tr><td>depth_level</td><td>深度层级</td><td>uint32</td><td>否</td><td>如果没有depth_level字段时，后台只会提供一层的报价，请求的层级大于实际报价层级，或者如果没有depth_level字段时，则后台按实际报价有多少层给多少层</td></tr></tbody></table>
 
 ### 数据结构(json)
 

@@ -70,7 +70,7 @@ wss://quote.alltick.co/quote-b-ws-api?token=您的token
 
 #### symbol定义 <a href="#symbol-ding-yi" id="symbol-ding-yi"></a>
 
-<table><thead><tr><th width="151.4140625">字段</th><th width="130.4140625">名称</th><th width="135.0859375">类型</th><th width="120.1796875">必填项</th><th>说明</th></tr></thead><tbody><tr><td>code</td><td>代码</td><td>string</td><td>是</td><td>具体内容，请查阅code列表：<a href="https://docs.google.com/spreadsheets/d/1avkeR1heZSj6gXIkDeBt8X3nv4EzJetw4yFuKjSDYtA/edit?gid=495387863#gid=495387863">[点击code列表]</a></td></tr></tbody></table>
+<table><thead><tr><th width="151.4140625">字段</th><th width="130.4140625">名称</th><th width="135.0859375">类型</th><th width="120.1796875">必填项</th><th>说明</th></tr></thead><tbody><tr><td>code</td><td>代码</td><td>string</td><td>是</td><td>具体内容，请查阅code列表：<a href="https://docs.google.com/spreadsheets/d/1avkeR1heZSj6gXIkDeBt8X3nv4EzJetw4yFuKjSDYtA/edit?gid=495387863#gid=495387863">[点击code列表]</a><br><mark style="color:$danger;">注意：code值大小写要与产品列表中的code保持一致</mark></td></tr></tbody></table>
 
 ### 数据结构(json)
 
