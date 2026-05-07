@@ -11,7 +11,7 @@ The following is the maximum market depth for each product type:
 1. It is normal for inactive products to be smaller than the maximum range listed below.
 2. There is a situation where the unilateral depth is empty. For example, when the stock price limit rises or falls, the unilateral market opening may be empty.
 
-<table data-full-width="false"><thead><tr><th width="136.6390380859375"></th><th width="218.35546875">FX、Metals</th><th width="136.671875">Cryptocurrency</th><th width="134.8453369140625">HK Stocks</th><th>CN Stocks</th></tr></thead><tbody><tr><td>Order Book Description</td><td>Maximum 1 gears（Only Price, No Volume）</td><td>Maximum 5 gears</td><td>Maximum 10 gears</td><td>Maximum 5 gears</td></tr></tbody></table>
+<table data-full-width="false"><thead><tr><th width="136.6390380859375"></th><th width="218.35546875">FX、Metals</th><th width="136.671875">Cryptocurrency</th><th width="134.8453369140625">HK Stocks</th><th>CN Stocks</th></tr></thead><tbody><tr><td>Order Book Description</td><td>Maximum 1 gears</td><td>Maximum 5 gears</td><td>Maximum 10 gears</td><td>Maximum 5 gears</td></tr></tbody></table>
 
 ## Request Frequency
 
@@ -114,22 +114,22 @@ Encode the following JSON into URL format and assign it to the `query` query str
 | ----------- | -------------- | ----------- | ---------- |
 | 200         | OK             | OK          | Inline     |
 
-| Name            | Type      | Required | Description                                                                                                                                  |
-| --------------- | --------- | -------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| » ret           | integer   | true     | Return code                                                                                                                                  |
-| » msg           | string    | true     | Message corresponding to the return code                                                                                                     |
-| » trace         | string    | true     | Request trace                                                                                                                                |
-| » data          | object    | true     |                                                                                                                                              |
-| »» tick\_list   | \[object] | true     |                                                                                                                                              |
-| »» » code       | string    | false    | Code                                                                                                                                         |
-| »» » seq        | string    | false    | Quote sequence number                                                                                                                        |
-| »» » tick\_time | string    | false    | Quote timestamp                                                                                                                              |
-| »» » bids       | \[object] | false    | Bid list                                                                                                                                     |
-| »» »» price     | string    | false    | Price                                                                                                                                        |
-| »» »» volume    | string    | false    | Volume                                                                                                                                       |
-| »» » asks       | \[object] | false    | Ask list                                                                                                                                     |
-| »» »» price     | string    | false    | Price                                                                                                                                        |
-| »» »» volume    | string    | false    | <p>Volume:</p><p>1、Forex, precious metals, and CFD indices do not provide volume.</p><p>2、Stocks and cryptocurrency data provide volume.</p> |
+| Name            | Type      | Required | Description                                                                                                                                                            |
+| --------------- | --------- | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| » ret           | integer   | true     | Return code                                                                                                                                                            |
+| » msg           | string    | true     | Message corresponding to the return code                                                                                                                               |
+| » trace         | string    | true     | Request trace                                                                                                                                                          |
+| » data          | object    | true     |                                                                                                                                                                        |
+| »» tick\_list   | \[object] | true     |                                                                                                                                                                        |
+| »» » code       | string    | false    | Code                                                                                                                                                                   |
+| »» » seq        | string    | false    | Quote sequence number                                                                                                                                                  |
+| »» » tick\_time | string    | false    | Quote timestamp                                                                                                                                                        |
+| »» » bids       | \[object] | false    | Bid list                                                                                                                                                               |
+| »» »» price     | string    | false    | Price                                                                                                                                                                  |
+| »» »» volume    | string    | false    | Volume                                                                                                                                                                 |
+| »» » asks       | \[object] | false    | Ask list                                                                                                                                                               |
+| »» »» price     | string    | false    | Price                                                                                                                                                                  |
+| »» »» volume    | string    | false    | <p>Volume:</p><p>1、Some CFD indices do not provide volume data.</p><p>2、Volume data is available for forex, precious metals, energy, stocks, and cryptocurrencies.</p> |
 
 ### Official Website
 
