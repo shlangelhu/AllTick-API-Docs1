@@ -27,7 +27,7 @@ description: >-
 
 3.2 存在单边深度是空的情况，例如股票涨停跌停时，单边盘口可能是空的
 
-<table><thead><tr><th width="82"></th><th width="181">外汇、贵金属、原油</th><th width="97">加密货币</th><th width="100">港股</th><th width="92">美股</th><th>沪深A股</th></tr></thead><tbody><tr><td>深度说明</td><td>最大1 档<br>(只有委托价，没有量)</td><td>最大5档</td><td>最大10档</td><td>最大1档</td><td>最大5档</td></tr></tbody></table>
+<table><thead><tr><th width="82"></th><th width="181">外汇、贵金属、原油</th><th width="97">加密货币</th><th width="100">港股</th><th width="92">美股</th><th>沪深A股</th></tr></thead><tbody><tr><td>深度说明</td><td>最大1 档</td><td>最大5档</td><td>最大10档</td><td>最大1档</td><td>最大5档</td></tr></tbody></table>
 
 ## 接口限制
 
@@ -126,11 +126,11 @@ wss://quote.alltick.co/quote-b-ws-api?token=您的token
 
 #### bids定义
 
-<table><thead><tr><th width="134.42578125" align="center">字段</th><th width="169.01171875" align="center">名称</th><th width="140.16015625" align="center">类型</th><th align="center">说明</th></tr></thead><tbody><tr><td align="center">price</td><td align="center">买一价，买盘价格</td><td align="center">string</td><td align="center"></td></tr><tr><td align="center">volume</td><td align="center">买一量，买盘量</td><td align="center">string</td><td align="center">1、外汇、贵金属、CFD指数不提供volume<br>2、股票，加密货币数据均提供volume</td></tr></tbody></table>
+<table><thead><tr><th width="134.42578125" align="center">字段</th><th width="169.01171875" align="center">名称</th><th width="140.16015625" align="center">类型</th><th align="center">说明</th></tr></thead><tbody><tr><td align="center">price</td><td align="center">买一价，买盘价格</td><td align="center">string</td><td align="center"></td></tr><tr><td align="center">volume</td><td align="center">买一量，买盘量</td><td align="center">string</td><td align="center"><p>1、部分CFD指数不提供volume</p><p>2、外汇、贵金属、能源、股票，加密货币数据均提供volume</p></td></tr></tbody></table>
 
 #### asks定义
 
-<table><thead><tr><th width="142.23828125" align="center">字段</th><th width="159.4765625" align="center">名称</th><th width="156.50390625" align="center">类型</th><th align="center">说明</th></tr></thead><tbody><tr><td align="center">price</td><td align="center">卖一价，卖盘价格</td><td align="center">string</td><td align="center"></td></tr><tr><td align="center">volume</td><td align="center">卖一量，卖盘量</td><td align="center">string</td><td align="center">1、外汇、贵金属、CFD指数不提供volume<br>2、股票，加密货币数据均提供volume</td></tr></tbody></table>
+<table><thead><tr><th width="142.23828125" align="center">字段</th><th width="159.4765625" align="center">名称</th><th width="156.50390625" align="center">类型</th><th align="center">说明</th></tr></thead><tbody><tr><td align="center">price</td><td align="center">卖一价，卖盘价格</td><td align="center">string</td><td align="center"></td></tr><tr><td align="center">volume</td><td align="center">卖一量，卖盘量</td><td align="center">string</td><td align="center">1、部分CFD指数不提供volume<br> 2、外汇、贵金属、能源、股票，加密货币数据均提供volume</td></tr></tbody></table>
 
 ### 数据结构(json)
 
