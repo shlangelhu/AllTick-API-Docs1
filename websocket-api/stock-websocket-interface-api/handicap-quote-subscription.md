@@ -3,6 +3,24 @@ description: >-
   该接口支持订阅产品的最新盘口(实时逐笔深度、Order Book)数据，不支持历史盘口和历史逐笔tick数据。
   该接口特性：对于每一个websocket连接，每发送一次该请求，后台会默认覆盖上一次订阅请求（例如，如果您最初订阅了A、B、C这三只产品，想要追加订阅E、F、G，则需要重新发送一次A、B、C、E、F、G），订阅成功后会进行推送数据。
   注意： 1、订阅一次成功后，不需要再频繁的发起订阅请求
+layout:
+  width: default
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+  tags:
+    visible: true
+  actions:
+    visible: true
 ---
 
 # 最新盘口(实时逐笔深度、Order Book)订阅
@@ -122,7 +140,7 @@ wss://quote.alltick.co/quote-b-ws-api?token=您的token
 
 #### data定义
 
-<table><thead><tr><th width="123.359375" align="center">字段</th><th width="147.140625" align="center">名称</th><th width="128.4453125" align="center">类型</th><th align="center">说明</th></tr></thead><tbody><tr><td align="center">code</td><td align="center">代码</td><td align="center">string</td><td align="center">具体内容，请查阅code列表：<a href="https://docs.google.com/spreadsheets/d/1avkeR1heZSj6gXIkDeBt8X3nv4EzJetw4yFuKjSDYtA/edit?gid=495387863#gid=495387863">[点击code列表]</a></td></tr><tr><td align="center">seq</td><td align="center">报价序号</td><td align="center">string</td><td align="center"></td></tr><tr><td align="center">tick_time</td><td align="center">报价时间戳</td><td align="center">string</td><td align="center">单位毫秒</td></tr><tr><td align="center">bids</td><td align="center">bid深度</td><td align="center">string</td><td align="center">见下面bids定义</td></tr><tr><td align="center">asks</td><td align="center">ask深度</td><td align="center">string</td><td align="center">见下面asks定义</td></tr></tbody></table>
+<table><thead><tr><th width="123.359375" align="center">字段</th><th width="147.140625" align="center">名称</th><th width="128.4453125" align="center">类型</th><th align="center">说明</th></tr></thead><tbody><tr><td align="center">code</td><td align="center">代码</td><td align="center">string</td><td align="center">具体内容，请查阅code列表：<a href="https://docs.google.com/spreadsheets/d/1avkeR1heZSj6gXIkDeBt8X3nv4EzJetw4yFuKjSDYtA/edit?gid=495387863#gid=495387863">[点击code列表]</a></td></tr><tr><td align="center">seq</td><td align="center">报价序号</td><td align="center">integer</td><td align="center"></td></tr><tr><td align="center">tick_time</td><td align="center">报价时间戳</td><td align="center">integer</td><td align="center">单位毫秒</td></tr><tr><td align="center">bids</td><td align="center">bid深度</td><td align="center">string</td><td align="center">见下面bids定义</td></tr><tr><td align="center">asks</td><td align="center">ask深度</td><td align="center">string</td><td align="center">见下面asks定义</td></tr></tbody></table>
 
 #### bids定义
 
@@ -139,8 +157,8 @@ wss://quote.alltick.co/quote-b-ws-api?token=您的token
     "cmd_id":22999,
     "data":{
 	"code": "HK-1288",
-        "seq": "1605509068000001",
-        "tick_time": "1605509068",
+        "seq": 1605509068000001,
+        "tick_time": 1605509068,
         "bids": [
             {
                 "price": "9.12",
