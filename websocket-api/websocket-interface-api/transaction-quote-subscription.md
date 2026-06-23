@@ -3,6 +3,24 @@ description: >-
   This API supports batch subscription to real-time trade prices (tick-by-tick
   data、Latest Price) but does not provide historical trade prices. Each
   WebSocket connection allows one active subscription
+layout:
+  width: default
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+  tags:
+    visible: true
+  actions:
+    visible: true
 ---
 
 # Latest Trade Price (Real-time Tick Data) Batch Subscription
@@ -109,7 +127,7 @@ symbol definition
 
 #### Definition of data
 
-<table><thead><tr><th width="137.61328125">Field</th><th width="176.65625">Name</th><th width="73.16796875">Type</th><th>Description</th></tr></thead><tbody><tr><td>code</td><td>Code</td><td>string</td><td>Specific content, refer to the code list：<a href="https://docs.google.com/spreadsheets/d/1avkeR1heZSj6gXIkDeBt8X3nv4EzJetw4yFuKjSDYtA/edit?gid=495387863#gid=495387863">[Click on the code list]</a></td></tr><tr><td>seq</td><td>Quote Number</td><td>string</td><td></td></tr><tr><td>tick_time</td><td>Quote Timestamp</td><td>string</td><td>In milliseconds</td></tr><tr><td>price</td><td>Transaction Price</td><td>string</td><td>Last Price</td></tr><tr><td>volume</td><td>Transaction Volume</td><td>string</td><td>Last Trade Volume</td></tr><tr><td>turnover</td><td>Transaction Turnover</td><td>string</td><td>Turnover</td></tr><tr><td>trade_direction</td><td>Transaction Direction</td><td>string</td><td><p>Trade Direction:</p><ol><li>0 is the default value, 1 is Buy, and 2 is Sell.</li><li>For forex, precious metals, and energy, the default return is only 1.</li><li>For stocks and cryptocurrencies, it can return 0, 1, or 2 based on market conditions.</li><li><p>Detailed Explanation:</p><ul><li>0: Neutral, indicating a trade executed at a price between the best bid and best ask.</li><li>1: Aggressive Buy, indicating a trade executed at the ask price or higher.</li><li>2: Aggressive Sell, indicating a trade executed at the bid price or lower.</li></ul></li></ol></td></tr></tbody></table>
+<table><thead><tr><th width="137.61328125">Field</th><th width="176.65625">Name</th><th width="86.66796875">Type</th><th>Description</th></tr></thead><tbody><tr><td>code</td><td>Code</td><td>string</td><td>Specific content, refer to the code list：<a href="https://docs.google.com/spreadsheets/d/1avkeR1heZSj6gXIkDeBt8X3nv4EzJetw4yFuKjSDYtA/edit?gid=495387863#gid=495387863">[Click on the code list]</a></td></tr><tr><td>seq</td><td>Quote Number</td><td>integer</td><td></td></tr><tr><td>tick_time</td><td>Quote Timestamp</td><td>integer</td><td>In milliseconds</td></tr><tr><td>price</td><td>Transaction Price</td><td>string</td><td>Last Price</td></tr><tr><td>volume</td><td>Transaction Volume</td><td>string</td><td>Last Trade Volume</td></tr><tr><td>turnover</td><td>Transaction Turnover</td><td>string</td><td>Turnover</td></tr><tr><td>trade_direction</td><td>Transaction Direction</td><td>string</td><td><p>Trade Direction:</p><ol><li>0 is the default value, 1 is Buy, and 2 is Sell.</li><li>For forex, precious metals, and energy, the default return is only 1.</li><li>For stocks and cryptocurrencies, it can return 0, 1, or 2 based on market conditions.</li><li><p>Detailed Explanation:</p><ul><li>0: Neutral, indicating a trade executed at a price between the best bid and best ask.</li><li>1: Aggressive Buy, indicating a trade executed at the ask price or higher.</li><li>2: Aggressive Sell, indicating a trade executed at the bid price or lower.</li></ul></li></ol></td></tr></tbody></table>
 
 ### Data Structure (JSON)
 
@@ -118,8 +136,8 @@ symbol definition
     "cmd_id":22998,
     "data":{
 	"code": "1288.HK",
-        "seq": "1605509068000001",
-        "tick_time": "1605509068",
+        "seq": 1605509068000001,
+        "tick_time": 1605509068,
         "price": "651.12",
         "volume": "300",
         "turnover": "12345.6",

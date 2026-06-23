@@ -3,6 +3,24 @@ description: >-
   This interface supports subscribing to the latest market depth (real-time
   tick-by-tick, Order Book) data for products, but does not support historical
   market depth or historical tick data. Interface
+layout:
+  width: default
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+  tags:
+    visible: true
+  actions:
+    visible: true
 ---
 
 # Order Book (Real-time Tick-by-Tick, Market Depth) Subscription
@@ -118,7 +136,7 @@ After a successful connection, you can subscribe to specific forex, cryptocurren
 
 #### Definition of data
 
-<table><thead><tr><th width="130.23828125">Field</th><th width="180.63671875">Name</th><th width="103.8203125">Type</th><th>Description</th></tr></thead><tbody><tr><td>code</td><td>Code</td><td>string</td><td>Specific content, refer to the code list：<a href="https://docs.google.com/spreadsheets/d/1avkeR1heZSj6gXIkDeBt8X3nv4EzJetw4yFuKjSDYtA/edit?gid=495387863#gid=495387863">[Click on the code list]</a></td></tr><tr><td>seq</td><td>Quote Number</td><td>string</td><td></td></tr><tr><td>tick_time</td><td>Quote Timestamp</td><td>string</td><td>In milliseconds</td></tr><tr><td>bids</td><td>Bid Depth</td><td>array</td><td>See below for bids definition</td></tr><tr><td>asks</td><td>Ask Depth</td><td>array</td><td>See below for asks definition</td></tr></tbody></table>
+<table><thead><tr><th width="130.23828125">Field</th><th width="180.63671875">Name</th><th width="103.8203125">Type</th><th>Description</th></tr></thead><tbody><tr><td>code</td><td>Code</td><td>string</td><td>Specific content, refer to the code list：<a href="https://docs.google.com/spreadsheets/d/1avkeR1heZSj6gXIkDeBt8X3nv4EzJetw4yFuKjSDYtA/edit?gid=495387863#gid=495387863">[Click on the code list]</a></td></tr><tr><td>seq</td><td>Quote Number</td><td>integer</td><td></td></tr><tr><td>tick_time</td><td>Quote Timestamp</td><td>integer</td><td>In milliseconds</td></tr><tr><td>bids</td><td>Bid Depth</td><td>array</td><td>See below for bids definition</td></tr><tr><td>asks</td><td>Ask Depth</td><td>array</td><td>See below for asks definition</td></tr></tbody></table>
 
 #### bids definition
 
@@ -135,8 +153,8 @@ asks definition
     "cmd_id":22999,
     "data":{
 	"code": "HK-1288",
-        "seq": "1605509068000001",
-        "tick_time": "1605509068",
+        "seq": 1605509068000001,
+        "tick_time": 1605509068,
         "bids": [
             {
                 "price": "9.12",
